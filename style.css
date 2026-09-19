@@ -14,3 +14,7 @@
 /* V17 customer quote button readability */
 .quoteActions #customerBtn{background:#0f766e !important;color:#fff !important;border-color:#0f766e !important;}
 .quoteActions #customerBtn *{color:#fff !important;}
+
+/* V18 */
+#customerBtn{background:#0f766e!important;color:#fff!important;border-color:#0f766e!important;}
+#internalBtn{color:#fff!important;}
