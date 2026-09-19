@@ -7,3 +7,6 @@
 
 /* V15 detail header and action colors */
 .backBtn{background:#e8eefc;color:#1d4ed8;border:1px solid #c7d7fb;font-size:14px;margin-bottom:12px}.detailActions #editBtn{background:#2563eb}.detailActions #deleteBtn{background:#dc2626}.quoteActions #internalBtn{background:#334155}.quoteActions #customerBtn{background:#0f766e}.detailSection{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px}.detailSection h3{color:#1e3a8a}.detailActions button,.quoteActions button{min-height:46px}
+/* V16: clear navigation and save feedback */
+.backBtn{display:inline-flex;align-items:center;gap:6px;background:#e8eefc!important;color:#1d4ed8!important;border:1px solid #b9cdf8!important;border-radius:10px!important;font-weight:700;min-height:42px;padding:0 14px}
+#saveBtn:disabled{opacity:.65;cursor:wait}
