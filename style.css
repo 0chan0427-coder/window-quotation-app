@@ -10,3 +10,7 @@
 /* V16: clear navigation and save feedback */
 .backBtn{display:inline-flex;align-items:center;gap:6px;background:#e8eefc!important;color:#1d4ed8!important;border:1px solid #b9cdf8!important;border-radius:10px!important;font-weight:700;min-height:42px;padding:0 14px}
 #saveBtn:disabled{opacity:.65;cursor:wait}
+
+/* V17 customer quote button readability */
+.quoteActions #customerBtn{background:#0f766e !important;color:#fff !important;border-color:#0f766e !important;}
+.quoteActions #customerBtn *{color:#fff !important;}
