@@ -8,11 +8,11 @@
 </head>
 <body>
 <div class="app">
-<header><div><small>WINDOW QUOTATION</small><h1>창호 견적 관리</h1></div><b>V1</b></header>
+<header><div><small>WINDOW QUOTATION</small><h1>창호 견적 관리</h1></div><b>V2</b></header>
 <main>
 <section id="home">
 <div class="hero"><small>ESTIMATE WORKSPACE</small><h2>현장 견적을<br>간편하게 관리하세요.</h2>
-<p>현장 기본 정보를 저장하는 1차 테스트 버전입니다.</p>
+<p>창호 위치·제품·실측 치수를 입력하고 견적을 저장합니다.</p>
 <button id="newBtn">+ 새 견적 작성</button></div>
 <div class="heading"><div><small>RECENT ESTIMATES</small><h2>최근 견적</h2></div><span id="count">0건</span></div>
 <div id="list"><div class="empty"><h3>아직 작성된 견적이 없습니다.</h3><p>첫 번째 견적을 작성해보세요.</p></div></div>
@@ -24,7 +24,7 @@
 <label>고객명<input id="customerName" maxlength="50"></label>
 <label>현장 주소<input id="address" maxlength="200"></label>
 <label>견적 상태<select id="status"><option>작성중</option><option>견적완료</option><option>계약</option><option>취소</option></select></label>
-<label>메모<textarea id="memo" rows="4"></textarea></label>
+<label>메모<textarea id="memo" rows="4"></textarea></label><h3>창호 항목</h3><div id="items"></div><button type="button" class="secondary" id="addItem">+ 창호 추가</button>
 <div class="actions"><button type="button" class="secondary" id="cancelBtn">취소</button><button type="submit">견적 저장</button></div>
 <p id="message"></p>
 </form>
@@ -35,7 +35,7 @@
 <p>고객명 <strong id="dCustomer"></strong></p><p>주소 <strong id="dAddress"></strong></p>
 <p>상태 <strong id="dStatus"></strong></p><p>메모 <strong id="dMemo"></strong></p><p>현재 총액 <strong id="dTotal">0원</strong></p>
 </div>
-<div class="notice"><b>다음 버전 예정</b><p>창호 항목, 실측 치수, 가격표 자동 조회, 자재비·시공비 계산, 고객용 견적서가 추가됩니다.</p></div>
+<div class="notice"><b>다음 버전 예정</b><p>창호 입력 흐름과 제품 변경 기능을 우선 적용한 테스트 버전입니다.</p></div>
 </section>
 </main><footer>Window Quotation App · V1</footer>
 </div>

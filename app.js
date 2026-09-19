@@ -1,27 +1,17 @@
+const { createClient } = supabase;
+const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const $=id=>document.getElementById(id);
-const views=[$('home'),$('form'),$('detail')];
-let estimates=[];
-function show(view){views.forEach(v=>v.classList.add('hidden'));view.classList.remove('hidden');scrollTo(0,0)}
-$('newBtn').onclick=()=>{ $('estimateForm').reset();$('message').textContent='';show($('form'));$('projectName').focus(); };
-$('backBtn').onclick=$('cancelBtn').onclick=()=>show($('home'));
-$('detailBackBtn').onclick=()=>{show($('home'));loadEstimates()};
-async function loadEstimates(){
- $('list').innerHTML='<div class="empty">불러오는 중...</div>';
- const {data,error}=await supabaseClient.from('estimates').select('*').order('created_at',{ascending:false});
- if(error){$('list').innerHTML='<div class="empty"><h3>목록을 불러오지 못했습니다.</h3><p>'+escapeHtml(error.message)+'</p></div>';return}
- estimates=data||[];$('count').textContent=estimates.length+'건';
- if(!estimates.length){$('list').innerHTML='<div class="empty"><h3>아직 작성된 견적이 없습니다.</h3><p>첫 번째 견적을 작성해보세요.</p></div>';return}
- $('list').innerHTML=estimates.map(e=>`<article class="estimate"><div><h3>${escapeHtml(e.project_name)}</h3><div class="meta">${escapeHtml(e.customer_name||'고객명 미입력')}<br>${escapeHtml(e.address||'주소 미입력')}<br>작성일: ${date(e.created_at)}</div></div><button data-id="${e.id}">상세보기</button></article>`).join('');
- document.querySelectorAll('[data-id]').forEach(b=>b.onclick=()=>detail(estimates.find(e=>e.id===b.dataset.id)));
-}
-$('estimateForm').onsubmit=async ev=>{
- ev.preventDefault();$('message').textContent='저장 중입니다...';
- const payload={project_name:$('projectName').value.trim(),customer_name:$('customerName').value.trim()||null,address:$('address').value.trim()||null,status:$('status').value,memo:$('memo').value.trim()||null,total_amount:0};
- const {error}=await supabaseClient.from('estimates').insert(payload);
- if(error){$('message').textContent='저장 실패: '+error.message;return}
- show($('home'));loadEstimates();
-};
-function detail(e){$('detailTitle').textContent=e.project_name;$('dCustomer').textContent=e.customer_name||'-';$('dAddress').textContent=e.address||'-';$('dStatus').textContent=e.status||'-';$('dMemo').textContent=e.memo||'-';$('dTotal').textContent=Number(e.total_amount||0).toLocaleString('ko-KR')+'원';show($('detail'))}
-function date(v){return v?new Date(v).toLocaleDateString('ko-KR'):'-'}
-function escapeHtml(v){return String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;')}
-loadEstimates();
+const state={items:[]};
+const locations={
+ '발코니창':['입구방 발코니','입구방(2) 발코니','거실 발코니','안방 발코니','건너방 발코니','건너방(2) 발코니'],
+ '분합창':['입구방 분합','거실 분합','안방 분합','건너방 분합'],
+ '내창':['입구방 내창','안방 내창','건너방 내창'],
+ '주방창':['주방창'],'복도창':['복도형 아파트 복도창']};
+const products=['F-140','F-130I','F-230W','F-230WF','F-250','F-250I'];
+const priceProduct={'F-130I':'F-140','F-250I':'F-250'};
+function show(id){['home','form','detail'].forEach(x=>$(x).classList.toggle('hidden',x!==id));}
+function addItem(){const n=state.items.length+1; const el=document.createElement('div');el.className='item card';el.innerHTML=`<div class="itemhead"><b>창 ${n}</b><button type="button" class="textBtn remove">삭제</button></div><label>창 종류<select class="kind"><option value="">선택하세요</option>${Object.keys(locations).map(k=>`<option>${k}</option>`).join('')}<option>직접입력</option></select></label><label>위치<select class="location"><option>창 종류를 먼저 선택</option></select></label><label class="custom hidden">직접 입력<input class="customName"></label><label>제품<select class="product">${products.map(p=>`<option>${p}</option>`).join('')}</select></label><button type="button" class="secondary change">제품 변경</button><div class="dims"><label>실측 가로(mm)<input type="number" class="w" inputmode="numeric" min="1" required></label><label>실측 세로(mm)<input type="number" class="h" inputmode="numeric" min="1" required></label></div><div class="result">가격 조회는 저장 후 처리됩니다.</div>`; $('items').append(el);bindItem(el);state.items.push(el);}
+function bindItem(el){const kind=el.querySelector('.kind'),loc=el.querySelector('.location'),prod=el.querySelector('.product');kind.onchange=()=>{loc.innerHTML=(locations[kind.value]||[]).map(x=>`<option>${x}</option>`).join('')||'<option>직접 입력</option>';el.querySelector('.custom').classList.toggle('hidden',kind.value!=='직접입력');if(kind.value==='분합창')prod.value='F-230WF';if(kind.value==='내창')prod.value='F-230W';if(kind.value==='주방창')prod.value='F-130I';if(kind.value==='복도창')prod.value='F-250I';};el.querySelector('.remove').onclick=()=>{el.remove();};el.querySelector('.change').onclick=()=>prod.focus();}
+async function load(){const {data}=await db.from('estimates').select('*').order('created_at',{ascending:false});$('list').innerHTML='';(data||[]).forEach(r=>{const d=document.createElement('button');d.className='listrow';d.innerHTML=`<b>${r.project_name}</b><span>${r.customer_name||''} · ${r.status}</span>`;d.onclick=()=>detail(r);$('list').append(d);});$('count').textContent=`${(data||[]).length}건`;}
+function detail(r){$('detailTitle').textContent=r.project_name;$('dCustomer').textContent=r.customer_name||'-';$('dAddress').textContent=r.address||'-';$('dStatus').textContent=r.status;$('dMemo').textContent=r.memo||'-';show('detail');}
+$('newBtn').onclick=()=>{show('form');$('items').innerHTML='';state.items=[];addItem();};$('backBtn').onclick=$('cancelBtn').onclick=()=>show('home');$('detailBackBtn').onclick=()=>{show('home');load();};$('addItem').onclick=addItem;$('estimateForm').onsubmit=async e=>{e.preventDefault();$('message').textContent='저장 중...';const payload={project_name:$('projectName').value,customer_name:$('customerName').value,address:$('address').value,status:$('status').value,memo:$('memo').value,total_amount:0};const {data,error}=await db.from('estimates').insert(payload).select().single();if(error){$('message').textContent=error.message;return;}for(const el of state.items){const kind=el.querySelector('.kind').value;const name=kind==='직접입력'?el.querySelector('.customName').value:el.querySelector('.location').value;const product=el.querySelector('.product').value;await db.from('estimate_items').insert({estimate_id:data.id,item_no:[...state.items].indexOf(el)+1,window_name:name,product_code:product,price_product_code:priceProduct[product]||product,actual_width:Number(el.querySelector('.w').value),actual_height:Number(el.querySelector('.h').value)});} $('message').textContent='저장되었습니다.';setTimeout(()=>{show('home');load();},500);};load();
