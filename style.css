@@ -186,3 +186,24 @@
   .xlsQuote.customer .xlsBottom{break-inside:avoid;page-break-inside:avoid}
   .xlsQuote.customer .xlsFooter{break-inside:avoid;page-break-inside:avoid}
 }
+
+/* V29: remove printed site title, reserve full header height for the 5-row meta table, and make color selection explicit */
+.itemhead{display:flex;align-items:center;gap:10px}
+.itemhead .colorBadge{margin-left:auto;padding:4px 8px;border-radius:999px;background:#f1f5f9;color:#475569;font-size:12px;font-weight:700}
+.colorField select.color{font-weight:700}
+.xlsQuote.customer .xlsTop{height:62mm}
+.xlsQuote.customer .xlsMeta{top:31mm}
+.xlsQuote.customer .xlsMeta td{height:5.5mm}
+.xlsQuote.customer .xlsCompany{height:29mm}
+@media print{
+  #detail>h2{display:none!important}
+  #detail>.backBtn{display:none!important}
+  .xlsQuote.customer .xlsTop{height:62mm}
+  .xlsQuote.customer .xlsMeta{top:31mm}
+  .xlsQuote.customer .xlsMeta td{height:5.5mm}
+  .xlsQuote.customer .xlsSection{break-after:avoid;page-break-after:avoid}
+  .xlsQuote.customer .xlsItems{break-before:avoid;page-break-before:avoid}
+}
+
+/* V30 - estimate-wide color selection */
+#estimateColor{font-weight:700;border-color:#7c181d}

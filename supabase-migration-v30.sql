@@ -1,0 +1,3 @@
+-- V30: no new DB column is required.
+-- Estimate-wide color is stored in the existing estimates.extras_data JSONB field as { color: '...' }.
+-- Existing estimate_items.color is retained for backward compatibility but is ignored for quote-wide color display.
