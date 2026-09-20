@@ -1,6 +1,6 @@
 const { createClient } = supabase; const db=createClient(SUPABASE_URL,SUPABASE_ANON_KEY); const $=id=>document.getElementById(id);
 function money(value){return `${Number(value||0).toLocaleString('ko-KR')}원`;}
-const STAFF=[{id:1,name:'한동균 팀장',phone:'010-7415-0619'},{id:2,name:'김민찬 책임',phone:''},{id:3,name:'김영찬 책임',phone:''}]; const STAFF_KEY='window_quote_staff'; const state={items:[],editingId:null,detailRecord:null,detailItems:[],prices:null,staff:null,estimates:[],hasEstimateNo:false};
+const STAFF=[{id:1,name:'한동균 팀장',phone:'010-7415-0619'},{id:2,name:'김민찬 책임',phone:'010-8438-7469'},{id:3,name:'김영찬 책임',phone:'010-5490-9662'}]; const STAFF_KEY='window_quote_staff'; const state={items:[],editingId:null,detailRecord:null,detailItems:[],prices:null,staff:null,estimates:[],hasEstimateNo:false};
 function staffInit(){const saved=localStorage.getItem(STAFF_KEY);state.staff=STAFF.find(x=>String(x.id)===saved)||null;renderStaff();}
 function renderStaff(){const gate=$('staffGate'),choices=$('staffChoices');choices.innerHTML=STAFF.map(x=>`<button class="staffChoice" data-id="${x.id}">${x.name}</button>`).join('');choices.querySelectorAll('button').forEach(b=>b.onclick=()=>{state.staff=STAFF.find(x=>String(x.id)===b.dataset.id);localStorage.setItem(STAFF_KEY,state.staff.id);renderStaff();show('home');load();});gate.classList.toggle('hidden',!!state.staff);$('currentStaff').textContent=state.staff?`현재 담당자: ${state.staff.name}`:'';}
 $('changeStaff').onclick=()=>{localStorage.removeItem(STAFF_KEY);state.staff=null;renderStaff();show('home');};
@@ -126,21 +126,29 @@ function renderCustomerQuote(calc){
     const x=items[i];
     if(x){
       const name=itemName(x)||'-', kind=inferKind(name), outside=['발코니창','복도창'].includes(kind);
-      rows.push(`<tr><td>${i+1}</td><td>${outside?'외창':'내창'}</td><td class="left">${name}</td><td class="left">${x.product_code||'-'}</td><td>${x.window_type==='fixed'?'고정창 / 24T':'일반창 / 28T'}</td><td>기본색</td><td>1</td><td>${outside?'AL 방충망':'-'}</td><td>${x.available?Number(x.amount).toLocaleString('ko-KR'):'-'}</td><td></td></tr>`);
+      const screen=outside?'AL 방충망':'-';
+      rows.push(`<tr><td>${i+1}</td><td>${outside?'외창':'내창'}</td><td class="left">${name}</td><td class="left">${x.product_code||'-'}</td><td>${x.window_type==='fixed'?'고정창 / 24T':'일반창 / 28T'}</td><td>기본색</td><td>1</td><td>${screen}</td><td>${x.available?Number(x.amount).toLocaleString('ko-KR'):'-'}</td><td></td></tr>`);
     }else rows.push(`<tr><td>${i+1}</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>`);
   }
   const payRows=`<div class="xlsPayRow total"><div class="payLabel">계 약 총 액</div><div class="payValue" id="payTotal">${total.toLocaleString('ko-KR')}</div><div id="payMethodText">${pay.method}</div></div>
   <div class="xlsPayRow"><div class="payLabel">계약금</div><div class="payValue" id="payDepositValue">${pay.deposit.toLocaleString('ko-KR')}</div><div id="payDepositLabel">계약금 (${pay.depositRate}%)</div></div>
   <div class="xlsPayRow"><div class="payLabel">중도금</div><div class="payValue" id="payInterimValue">${pay.interim.toLocaleString('ko-KR')}</div><div id="payInterimLabel">중도금 (${pay.interimRate}%)</div></div>
   <div class="xlsPayRow"><div class="payLabel">잔 금</div><div class="payValue" id="payBalanceValue">${pay.balance.toLocaleString('ko-KR')}</div><div id="payBalanceLabel">잔 금 (${pay.balanceRate}%)</div></div>`;
+  const staff=recordStaff(r)||{name:'담당자',phone:'연락처 미등록'};
+  const staffAddress='제1전시장 : 장항로 3 (롯데백화점 맞은편) / 1577-7854<br>서울특별시 동대문구 고산자로 102, 3층 (청량리동)';
   $('quote').innerHTML=`<div class="quoteTools"><button onclick="window.print()">인쇄 / PDF 저장</button></div>
   <div class="xlsQuote customer">
-    <div class="xlsSide"></div><div class="xlsTop">
-      <img class="xlsLogo" src="assets/image3.png" alt="LX Z:IN 인테리어 창호 견적서"><img class="xlsBadge" src="assets/image4.png" alt="10년 무상보증">
-      <div class="xlsNotice">㈜LX하우시스의 완성 창호인 LX Z:IN WINDOW 정품 창호로만 시공합니다.</div>
-      <div class="xlsCompany"><img class="staffBrand" src="assets/staff_brand.png" alt="LX하우시스 공식대리점"><div class="staffCardName">${recordStaff(r)?.name||'담당자'}</div><div class="staffCardPhone">${staffPhone(r)}</div></div>
+    <div class="xlsTop">
+      <img class="xlsLogo" src="assets/image3.png" alt="LX Z:IN 인테리어 창호 견적서">
+      <div class="xlsNotice">고객의 공간에 더 큰 가치를 더하는 LX하우시스가 함께합니다.</div>
+      <div class="xlsCompany">
+        <img class="staffBrand" src="assets/staff_brand.png" alt="LX하우시스 공식대리점">
+        <div class="staffCompany">공식대리점<br><b>주식회사 도도</b></div>
+        <div class="staffPerson"><span>담당자</span><b>${staff.name}</b><strong>${staff.phone}</strong></div>
+        <div class="staffAddress">${staffAddress}</div>
+      </div>
       <table class="xlsMeta"><tbody><tr><td class="label">견 적 일 자</td><td class="value">${new Date(r.created_at||Date.now()).toLocaleDateString('ko-KR')}</td></tr><tr><td class="label">견 적 번 호</td><td class="value">${estimateNumber(r)}</td></tr><tr><td class="label">현 장 주 소</td><td class="value">${r.address||'-'}</td></tr><tr><td class="label">고 객 정 보</td><td class="value">${r.customer_name||'고객님'} | ${recordCustomerPhone(r)||'010-'}</td></tr><tr><td class="label amount">총 견 적 액</td><td class="value amount">${total.toLocaleString('ko-KR')}</td></tr></tbody></table>
-      <div class="xlsValidity">* 본 견적서의 유효 기간은 발행일자로 부터 3개월 이내에 한함</div>
+      <div class="xlsValidity">* 본 견적서의 유효 기간은 발행일자로부터 3개월 이내에 한함</div>
     </div>
     <div class="xlsSection">세 부 견 적 사 항 ( V A T 포 함 가 )</div>
     <table class="xlsItems"><colgroup><col class="no"><col class="kind"><col class="loc"><col class="product"><col class="glass"><col class="color"><col class="qty"><col class="screen"><col class="amount"><col class="memo"></colgroup><thead><tr><th>No.</th><th>구분</th><th>위치</th><th>제품명</th><th>유 리 및 두께</th><th>색상</th><th>수량</th><th>방충망</th><th>금액</th><th>비고</th></tr></thead><tbody>${rows.join('')}</tbody><tbody class="xlsSummary"><tr><td colspan="8" class="sumLabel">창 호 계</td><td class="sumAmount">${Number(calc.total||0).toLocaleString('ko-KR')}</td><td></td></tr><tr><td colspan="8" class="sumLabel">표준 시공 기술료</td><td class="sumAmount">0</td><td></td></tr><tr><td colspan="8" class="sumLabel">부가 시공비</td><td class="sumAmount">${Number(extras.total||0).toLocaleString('ko-KR')}</td><td></td></tr><tr><td colspan="8" class="sumLabel">[ 합 계 ]</td><td class="sumAmount">${total.toLocaleString('ko-KR')}</td><td></td></tr></tbody></table>

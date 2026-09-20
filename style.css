@@ -63,3 +63,34 @@
 .xlsCompany{right:2mm;top:34mm;width:66mm;height:31mm;background:#fff;border:1px solid #9c918c;border-radius:2mm;overflow:hidden;padding:3mm 3mm 2mm}.xlsCompany .staffBrand{display:block;width:100%;height:9mm;object-fit:cover;object-position:left top;border-bottom:1px solid #ddd5d1}.xlsCompany .staffCardName{position:absolute;left:29mm;right:3mm;top:14mm;text-align:center;font-size:8.5px;font-weight:800;color:#746661;background:#fff;line-height:1.2}.xlsCompany .staffCardPhone{position:absolute;left:29mm;right:3mm;top:19mm;text-align:center;font-size:7px;color:#746661;background:#fff;line-height:1.2}.paymentEditor{width:210mm;margin:12px auto 0;padding:14px;border:1px solid #cbd5e1;background:#fff;box-sizing:border-box}.paymentGrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:10px}.paymentGrid label{font-size:12px;font-weight:700}.paymentGrid input,.paymentGrid select{width:100%;margin-top:5px}.paymentHint{font-size:12px;color:#64748b;margin:10px 0}.paymentTotal{display:flex;justify-content:flex-end;gap:12px;align-items:center;margin:8px 0 10px;font-size:13px}.paymentTotal b{font-size:16px}.paymentTotal b.invalid{color:#b91c1c}.paymentEditor button{min-height:40px}
 @media(max-width:800px){.internalQuoteSheet,.paymentEditor{width:100%;padding:18px}.internalQuoteSheet{overflow:auto}.internalMeta{grid-template-columns:1fr}.internalMeta>div:nth-child(odd){border-right:0}.internalMeta .wide{grid-column:auto}.internalTable{overflow:auto}.internalTable table{min-width:920px}.paymentGrid{grid-template-columns:1fr 1fr}.xlsCompany{right:10px;top:210px;width:300px;height:140px}.xlsCompany .staffCardName{left:130px;top:58px}.xlsCompany .staffCardPhone{left:130px;top:80px}}
 @media print{.internalQuoteSheet{width:210mm;min-height:297mm;padding:16mm 14mm}.paymentEditor{display:none}.quoteTools{display:none}.internalTable{overflow:visible}}
+
+/* V26 - customer quote header redesigned to match the approved clean card layout */
+.xlsQuote.customer .xlsTop{height:72mm;position:relative}
+.xlsQuote.customer .xlsLogo{left:3mm;top:0;width:63mm;height:auto}
+.xlsQuote.customer .xlsNotice{left:3mm;right:auto;top:32mm;color:#746661;font-size:7px;line-height:1.4}
+.xlsQuote.customer .xlsCompany{right:2mm;top:1mm;width:66mm;height:31mm;background:#fff;border:1px solid #9c918c;border-radius:2.5mm;overflow:hidden;padding:2.5mm 3mm 2mm;box-shadow:none}
+.xlsQuote.customer .xlsCompany .staffBrand{position:relative;inset:auto;display:block;width:100%;height:8mm;object-fit:cover;object-position:left top;border:0;border-bottom:1px solid #ddd5d1}
+.xlsQuote.customer .staffCompany{position:absolute;left:3mm;top:10mm;width:28mm;text-align:center;font-size:6.7px;line-height:1.35;color:#746661}
+.xlsQuote.customer .staffCompany b{font-size:8px}
+.xlsQuote.customer .staffPerson{position:absolute;left:33mm;top:9.5mm;right:3mm;border-left:1px solid #9c918c;padding-left:3mm;display:flex;flex-direction:column;gap:.7mm;color:#746661}
+.xlsQuote.customer .staffPerson span{font-size:5.8px}
+.xlsQuote.customer .staffPerson b{font-size:8.2px;line-height:1.1}
+.xlsQuote.customer .staffPerson strong{font-size:7.2px;line-height:1.1;color:#7c181d}
+.xlsQuote.customer .staffAddress{position:absolute;left:3mm;right:3mm;bottom:2.5mm;border-top:1px solid #ddd5d1;padding-top:1.5mm;font-size:5.6px;line-height:1.35;color:#746661}
+.xlsQuote.customer .xlsMeta{position:absolute;left:3mm;top:38mm;width:calc(100% - 6mm);border-collapse:collapse;table-layout:fixed;margin:0;color:#746661}
+.xlsQuote.customer .xlsMeta td{height:6.3mm;border:1px solid #746661;padding:0 2mm;background:#fff}
+.xlsQuote.customer .xlsMeta .label{width:23mm;text-align:center;font-size:7.5px;font-weight:700}
+.xlsQuote.customer .xlsMeta .value{font-size:7.8px;text-align:left}
+.xlsQuote.customer .xlsMeta .amount{font-weight:800;color:#7c181d}
+.xlsQuote.customer .xlsValidity{right:3mm;bottom:0;font-size:5.6px}
+@media(max-width:800px){
+  .xlsQuote.customer .xlsCompany{right:15px;top:15px;width:300px;height:140px}
+  .xlsQuote.customer .xlsLogo{width:250px}
+  .xlsQuote.customer .xlsNotice{top:175px;left:15px}
+  .xlsQuote.customer .xlsMeta{top:205px;width:calc(100% - 30px)}
+}
+@media print{
+  .xlsQuote.customer .xlsTop{height:72mm}
+  .xlsQuote.customer .xlsCompany{right:2mm;top:1mm;width:66mm;height:31mm}
+  .xlsQuote.customer .xlsMeta{top:38mm;width:calc(100% - 6mm)}
+}
