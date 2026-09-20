@@ -40,6 +40,18 @@ function normalizePayment(r,total){
 }
 function recordCustomerPhone(r){return r?.customer_phone||'';}
 function recordExtras(r){return r?.extras_data||{equipment:0,demolition:0,sash:0,molding:0,protection:0,total:0};}
+function recalcStoredExtras(r,items){
+  const saved=recordExtras(r)||{};
+  const conditions=saved.conditions||{};
+  const size=conditions.size, old=conditions.old, equip=conditions.equip, protection=conditions.protection;
+  const equipment=equip!==undefined?(equip==='불가'?500000:400000):Number(saved.equipment)||0;
+  const demolition=(size!==undefined&&old!==undefined)?(size==='20'?(old==='AL'?300000:400000):(old==='AL'?400000:500000)):Number(saved.demolition)||0;
+  const protectionMap={'none':0,'1-2':140000,'3-4':170000,'5-7':200000,'8-9':230000,'10+':270000};
+  const protectionValue=protection!==undefined?(protectionMap[protection]||0):Number(saved.protection)||0;
+  const sash=(items||[]).filter(x=>itemKind(x)==='발코니창'&&Number(x.actual_height)>=2000).length*100000;
+  const molding=(items||[]).filter(x=>['분합창','내창','주방창'].includes(itemKind(x))).length*55000;
+  return {...saved,equipment,demolition,sash,molding,protection:protectionValue,total:equipment+demolition+sash+molding+protectionValue};
+}
 function recordPayment(r){return r?.payment_data||parseTaggedJSON(r?.memo,'결제 데이터')||null;}
 function encodeExtras(memo,staff,customer,payment){
   const clean=cleanMemo(memo);
@@ -105,10 +117,10 @@ async function load(){
   state.estimates=data||[];
   renderEstimateList();
 }
-async function detail(r){state.detailRecord=r;$('detailTitle').textContent=r.project_name||'현장명 미입력';$('dProject').textContent=r.project_name||'-';$('dCustomer').textContent=r.customer_name||'-';$('dAddress').textContent=r.address||'-';$('dDate').textContent=new Date(r.created_at||Date.now()).toLocaleDateString('ko-KR');$('dStaff').textContent=((recordStaff(r)?.name||'미지정'));$('dStatus').textContent=r.status||'-';$('dMemo').textContent=cleanMemo(r.memo).trim()||'-';$('dTotal').textContent='계산 중...';$('dItems').innerHTML='불러오는 중...';$('dExtras').innerHTML='불러오는 중...';$('quote').classList.add('hidden');show('detail');const{data,error}=await db.from('estimate_items').select('*').eq('estimate_id',r.id).order('id');if(error){$('dTotal').textContent='항목 조회 실패';$('dItems').textContent=error.message;return;}state.detailItems=data||[];let calc={items:state.detailItems.map(x=>({...x,available:false})),total:0};let priceError='';try{calc=await calculate(state.detailItems);}catch(err){console.error(err);priceError=err?.message||'가격표 조회 실패';}const extras=recordExtras(r)||{equipment:0,demolition:0,sash:0,molding:0,protection:0,total:0};const quoteColor=estimateColor(r);state.detailItems=state.detailItems.map(x=>({...x,color:quoteColor}));calc.items=calc.items.map(x=>({...x,color:quoteColor}));$('dItems').innerHTML=state.detailItems.length?'<table><thead><tr><th>구분</th><th>위치</th><th>제품</th><th>색상</th><th>실측</th><th>적용</th><th>방충망</th><th>창 형태</th><th>금액</th></tr></thead><tbody>'+calc.items.map(x=>`<tr><td>${itemKind(x)||'-'}</td><td>${itemName(x)||'-'}</td><td>${x.product_code||'-'}</td><td>${x.color||'기본색'}</td><td>${x.actual_width||'-'}×${x.actual_height||'-'}mm</td><td>${x.applied_width||'-'}×${x.applied_height||'-'}mm</td><td>${itemScreen(x)}</td><td>${x.window_type==='fixed'?'고정창 / 핸들 무':'일반창 / 핸들 유'}</td><td>${x.available&&x.amount>0?money(x.amount):(x.reason||priceError||'계산 후 확인')}</td></tr>`).join('')+'</tbody></table>':'등록된 창호 항목이 없습니다.';$('dExtras').innerHTML='<table><tbody>'+[['장비비',extras.equipment],['철거비',extras.demolition],['사춤 / 타일',extras.sash],['몰딩',extras.molding],['보양',extras.protection]].map(([n,v])=>`<tr><td>${n}</td><td class="amount">${money(v||0)}</td></tr>`).join('')+`<tr class="sumRow"><th>부가시공비 합계</th><th class="amount">${money(extras.total||0)}</th></tr></tbody></table>`;calc.extras=extras;$('dTotal').textContent=priceError?'가격표 확인 필요':money(calc.total+(extras.total||0));}
+async function detail(r){state.detailRecord=r;$('detailTitle').textContent=r.project_name||'현장명 미입력';$('dProject').textContent=r.project_name||'-';$('dCustomer').textContent=r.customer_name||'-';$('dAddress').textContent=r.address||'-';$('dDate').textContent=new Date(r.created_at||Date.now()).toLocaleDateString('ko-KR');$('dStaff').textContent=((recordStaff(r)?.name||'미지정'));$('dStatus').textContent=r.status||'-';$('dMemo').textContent=cleanMemo(r.memo).trim()||'-';$('dTotal').textContent='계산 중...';$('dItems').innerHTML='불러오는 중...';$('dExtras').innerHTML='불러오는 중...';$('quote').classList.add('hidden');show('detail');const{data,error}=await db.from('estimate_items').select('*').eq('estimate_id',r.id).order('id');if(error){$('dTotal').textContent='항목 조회 실패';$('dItems').textContent=error.message;return;}state.detailItems=data||[];let calc={items:state.detailItems.map(x=>({...x,available:false})),total:0};let priceError='';try{calc=await calculate(state.detailItems);}catch(err){console.error(err);priceError=err?.message||'가격표 조회 실패';}const extras=recalcStoredExtras(r,state.detailItems);const quoteColor=estimateColor(r);state.detailItems=state.detailItems.map(x=>({...x,color:quoteColor}));calc.items=calc.items.map(x=>({...x,color:quoteColor}));$('dItems').innerHTML=state.detailItems.length?'<table><thead><tr><th>구분</th><th>위치</th><th>제품</th><th>색상</th><th>실측</th><th>적용</th><th>방충망</th><th>창 형태</th><th>금액</th></tr></thead><tbody>'+calc.items.map(x=>`<tr><td>${itemKind(x)||'-'}</td><td>${itemName(x)||'-'}</td><td>${x.product_code||'-'}</td><td>${x.color||'기본색'}</td><td>${x.actual_width||'-'}×${x.actual_height||'-'}mm</td><td>${x.applied_width||'-'}×${x.applied_height||'-'}mm</td><td>${itemScreen(x)}</td><td>${x.window_type==='fixed'?'고정창 / 핸들 무':'일반창 / 핸들 유'}</td><td>${x.available&&x.amount>0?money(x.amount):(x.reason||priceError||'계산 후 확인')}</td></tr>`).join('')+'</tbody></table>':'등록된 창호 항목이 없습니다.';$('dExtras').innerHTML='<table><tbody>'+[['장비비',extras.equipment],['철거비',extras.demolition],['사춤 / 타일',extras.sash],['몰딩',extras.molding],['보양',extras.protection]].map(([n,v])=>`<tr><td>${n}</td><td class="amount">${money(v||0)}</td></tr>`).join('')+`<tr class="sumRow"><th>부가시공비 합계</th><th class="amount">${money(extras.total||0)}</th></tr></tbody></table>`;calc.extras=extras;$('dTotal').textContent=priceError?'가격표 확인 필요':money(calc.total+(extras.total||0));}
 function renderInternalQuote(calc){
   const r=state.detailRecord;
-  const extras=calc.extras||recordExtras(r)||{equipment:0,demolition:0,sash:0,molding:0,protection:0,total:0};
+  const extras=recalcStoredExtras(r,state.detailItems);
   const total=calc.total+(extras.total||0);
   const rows=(calc.items||[]).map((x,i)=>`<tr><td>${i+1}</td><td>${itemKind(x)||'-'}</td><td>${itemName(x)||'-'}</td><td>${x.product_code||'-'}</td><td>${x.actual_width||'-'} × ${x.actual_height||'-'}</td><td>${x.applied_width||'-'} × ${x.applied_height||'-'}</td><td>${x.window_type==='fixed'?'고정창 / 핸들 무':'일반창 / 핸들 유'}</td><td>${x.material?money(x.material):'-'}</td><td>${x.install?money(x.install):'-'}</td><td>${x.available?money(x.amount):'-'}</td></tr>`).join('');
   $('quote').innerHTML=`<div class="quoteTools"><button onclick="window.print()">인쇄 / PDF 저장</button></div>
@@ -124,7 +136,7 @@ function renderInternalQuote(calc){
 }
 function renderCustomerQuote(calc){
   const r=state.detailRecord;
-  const extras=calc.extras||recordExtras(r)||{equipment:0,demolition:0,sash:0,molding:0,protection:0,total:0};
+  const extras=recalcStoredExtras(r,state.detailItems);
   const total=calc.total+(extras.total||0);
   const pay=normalizePayment(r,total);
   const quoteColor=estimateColor(r);
