@@ -66,9 +66,17 @@ async function calculate(items){
     const lookup=priceProduct[item.product_code]||item.product_code;
     const code=normalize(lookup);
     const w=Number(item.actual_width), h=Number(item.actual_height);
-    const appliedWidth=Math.ceil(w/200)*200;
-    const appliedHeight=Math.ceil(h/200)*200;
-    const price=rows.find(p=>normalize(p.product_code)===code&&Number(p.width_mm)===appliedWidth&&Number(p.height_mm)===appliedHeight);
+    const productRows=rows.filter(p=>normalize(p.product_code)===code);
+    if(!productRows.length)return {...item,lookup,available:false,reason:`가격표 없음: ${lookup}`};
+    const minWidth=Math.min(...productRows.map(p=>Number(p.width_mm)).filter(Number.isFinite));
+    const minHeight=Math.min(...productRows.map(p=>Number(p.height_mm)).filter(Number.isFinite));
+    const requestedWidth=Math.ceil(w/200)*200;
+    const requestedHeight=Math.ceil(h/200)*200;
+    // 가격표보다 작은 실측 치수는 해당 제품 가격표의 최소 규격으로 계산한다.
+    // 예: 600×1300 → 최소 가로가 1000이면 1000×1400으로 계산.
+    const appliedWidth=Math.max(requestedWidth,minWidth);
+    const appliedHeight=Math.max(requestedHeight,minHeight);
+    const price=productRows.find(p=>Number(p.width_mm)===appliedWidth&&Number(p.height_mm)===appliedHeight);
     if(!price)return {...item,lookup,applied_width:appliedWidth,applied_height:appliedHeight,available:false,reason:`가격표 없음: ${lookup} / ${appliedWidth}×${appliedHeight}mm`};
     const material=Number(price.material_cost)||0;
     const install=Number(price.installation_cost)||0;
