@@ -18,3 +18,24 @@
 /* V18 */
 #customerBtn{background:#0f766e!important;color:#fff!important;border-color:#0f766e!important;}
 #internalBtn{color:#fff!important;}
+
+/* V23 customer document styling */
+.staffGate{backdrop-filter:blur(5px)}
+.staffPanel h1{letter-spacing:-.06em}
+.staffChoice{display:block;width:100%;margin:10px 0;padding:16px 18px;background:#173b63;border-radius:12px;text-align:left}
+.staffChoice:hover{background:#245b91}
+.quote{background:#fff;border:0;border-radius:0;padding:0;box-shadow:none}
+.quoteSheet{width:210mm;min-height:297mm;margin:0 auto;background:#fff;padding:14mm 13mm;color:#172033}
+.quoteSheet .quoteBrand{border-top:5px solid #173b63;border-bottom:1px solid #d5dce5;padding:12px 0 10px;color:#173b63;font-weight:800;font-size:12px}
+.quoteSheet h2{text-align:center;letter-spacing:.45em;font-size:27px;margin:24px 0;border-bottom:3px double #173b63;padding-bottom:14px}
+.quoteHead{display:grid;grid-template-columns:1fr 1fr;border:1px solid #9aa8b8;margin-bottom:22px}
+.quoteHead p{margin:0;padding:10px 12px;border-bottom:1px solid #d5dce5;font-size:12px}
+.quoteHead p:nth-child(odd){border-right:1px solid #d5dce5}
+.quoteSheet table{font-size:11px;border:1px solid #9aa8b8}
+.quoteSheet th{background:#e8eef5!important;color:#173b63;border:1px solid #9aa8b8!important;text-align:center!important;font-weight:800}
+.quoteSheet td{border:1px solid #c5ced9!important;padding:8px 5px!important}
+.quoteSheet .extraBox{border:1px solid #9aa8b8;background:#f7f9fc;border-radius:0}
+.quoteSheet .total{border-top:3px double #173b63;padding-top:14px;color:#173b63}
+.paymentEditor{margin-top:20px;padding:14px;border:1px dashed #9aa8b8;background:#fbfcfe}
+@media(max-width:800px){.quoteSheet{width:100%;min-height:auto;padding:18px}.quoteSheet table{font-size:9px}.quoteHead{grid-template-columns:1fr}}
+@media print{ @page{size:A4 portrait;margin:0} .quoteSheet{width:210mm;min-height:297mm;padding:14mm 13mm} }
