@@ -67,5 +67,21 @@ $('estimateForm').onsubmit=async e=>{e.preventDefault();if($('saveBtn').disabled
 
 $('estimateSearch').oninput=e=>{state.search=e.target.value;renderSearch();};
 function renderSearch(){const cached=state.estimates;if(cached.length)load();}
-// 앱 초기화
+function populateExcelEstimatePreview({record:r,items,staff}){
+ const no=(state.estimates||[]).findIndex(x=>x.id===r.id)+1;
+ $('excelDate').textContent=new Date(r.created_at||Date.now()).toLocaleDateString('ko-KR');
+ $('excelNumber').textContent=`${String(no).padStart(4,'0')}`;
+ $('excelAddress').textContent=r.address||'';
+ $('excelCustomer').textContent=`${r.customer_name||'고객님'} | ${recordCustomerPhone(r)||''}`;
+ $('excelTotal').textContent=money(Number(r.total_amount||0));
+ $('excelStaff').textContent=staff?`${staff.name} ${staff.phone||''}`:'';
+ $('excelItems').innerHTML=(items||[]).map((x,i)=>`<tr><td>${i+1}</td><td>${inferKind(itemName(x))}</td><td>${itemName(x)||''}</td><td>${x.product_code||''}</td><td>${x.glass_type||'28T'}</td><td>${x.color||''}</td><td>1</td><td></td><td>${money(x.total_cost||x.amount||0)}</td><td></td></tr>`).join('');
+ $('printExcelEstimate').onclick=()=>window.print();
+}
+\n// 앱 초기화
 staffInit();
+if(state.staff){
+  show('home');
+  load();
+}
+
