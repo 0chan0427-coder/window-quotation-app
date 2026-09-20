@@ -39,3 +39,23 @@
 .paymentEditor{margin-top:20px;padding:14px;border:1px dashed #9aa8b8;background:#fbfcfe}
 @media(max-width:800px){.quoteSheet{width:100%;min-height:auto;padding:18px}.quoteSheet table{font-size:9px}.quoteHead{grid-template-columns:1fr}}
 @media print{ @page{size:A4 portrait;margin:0} .quoteSheet{width:210mm;min-height:297mm;padding:14mm 13mm} }
+
+/* Excel-template estimate sheet */
+.excelToolbar{display:flex;justify-content:space-between;align-items:center;margin:18px 0 10px}
+.excelPaper{width:210mm;min-height:297mm;margin:0 auto;background:#fff;color:#111;padding:10mm 9mm;border:1px solid #bbb;box-shadow:0 3px 18px #0001;font-family:"Malgun Gothic",Arial,sans-serif;font-size:10px}
+.excelNotice{text-align:center;font-weight:700;font-size:11px;border-bottom:1px solid #111;padding:4px}
+.excelSpacer{height:32mm}
+.excelMeta{display:grid;grid-template-columns:24mm 1fr;border-top:1px solid #222;border-left:1px solid #222}
+.excelMeta>div{min-height:8mm;padding:2mm;border-right:1px solid #222;border-bottom:1px solid #222}
+.excelMeta .metaLabel{font-weight:700;background:#f2f2f2;text-align:center}
+.excelValidity{padding:4mm 0;font-size:9px}
+.excelSectionTitle{font-size:12px;border:1px solid #222;background:#e9eef5;padding:3mm;margin:0}
+.excelTable{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:0}
+.excelTable th,.excelTable td{border:1px solid #222;padding:2mm 1mm;text-align:center;min-height:9mm;word-break:break-all}
+.excelTable th{background:#d9e2f3;font-weight:700}
+.excelTable th:nth-child(1){width:5%}.excelTable th:nth-child(2){width:8%}.excelTable th:nth-child(3){width:13%}.excelTable th:nth-child(4){width:15%}.excelTable th:nth-child(5){width:14%}.excelTable th:nth-child(6){width:9%}.excelTable th:nth-child(7){width:6%}.excelTable th:nth-child(8){width:8%}.excelTable th:nth-child(9){width:12%}.excelTable th:nth-child(10){width:10%}
+.excelBottom{margin-top:5mm;border:1px solid #222;padding:3mm;display:grid;grid-template-columns:1fr 42mm;gap:3mm;line-height:1.8}
+.excelManager{border-left:1px solid #222;padding-left:3mm}
+.excelGrandTotal{grid-column:1/-1;text-align:right;font-size:13px;font-weight:700;border-top:1px solid #222;padding-top:3mm}
+@media print{body *{visibility:hidden!important}.excelPaper,.excelPaper *{visibility:visible!important}.excelPaper{position:absolute;left:0;top:0;margin:0;box-shadow:none;border:0}.excelToolbar{display:none!important}}
+@media(max-width:900px){.excelPaper{width:100%;min-height:auto;padding:16px}.excelSpacer{height:80px}}

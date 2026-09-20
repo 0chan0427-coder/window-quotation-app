@@ -29,3 +29,9 @@ alter table public.estimates
 2. GitHub 저장소의 기존 파일을 모두 교체
 3. Commit changes
 4. Vercel 자동 배포 완료 후 테스트
+
+
+V24 변경사항:
+- 담당자 3명 연락처 자동 등록
+- 엑셀형 A4 견적서 미리보기 기반 추가
+- 인쇄/PDF 출력용 스타일 추가

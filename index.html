@@ -2,4 +2,50 @@
 <section id="home"><div class="hero"><small>ESTIMATE WORKSPACE</small><h2>현장 견적을<br>간편하게 관리하세요.</h2><p>창호 위치·제품·실측 치수를 입력하고 견적을 저장합니다.</p><button id="newBtn">+ 새 견적 작성</button></div><div class="heading"><div><small>RECENT ESTIMATES</small><h2>최근 견적</h2></div><span id="count">0건</span></div><div id="list"></div></section>
 <section id="form" class="hidden"><button class="textBtn" id="backBtn">← 목록으로</button><small id="formEyebrow">NEW ESTIMATE</small><h2 id="formTitle">새 견적 작성</h2><form id="estimateForm"><div class="basic card"><label>현장명 *<input id="projectName" required maxlength="100" placeholder="예: ○○아파트 101동"></label><label>고객명<input id="customerName" maxlength="50"></label><label>고객 연락처<input id="customerPhone" maxlength="30" placeholder="010-0000-0000"></label><label>현장 주소<input id="address" maxlength="200"></label><label>견적 상태<select id="status"><option>작성중</option><option>견적완료</option><option>계약</option><option>취소</option></select></label><label>메모<textarea id="memo" rows="3"></textarea></label></div><h3>창호 항목</h3><div id="items"></div><button type="button" class="secondary add" id="addItem">＋ 창호 항목 추가</button><section class="extras card"><h3>부가시공비</h3><p class="muted">조건을 선택하면 자동 계산됩니다.</p><div class="dims"><label>평형대<select id="sizeBand"><option value="20">20평대</option><option value="30">30평대</option></select></label><label>기존 창호<select id="oldFrame"><option value="AL">AL창</option><option value="PL">PL창</option></select></label></div><label>장비 사용 여부<select id="equipment"><option value="가능">장비 가능 (400,000원)</option><option value="불가">장비 불가 (500,000원)</option></select></label><label>보양 기준<select id="protection"><option value="none">보양 없음</option><option value="1-2">1~2룸</option><option value="3-4">3~4룸</option><option value="5-7">5~7룸</option><option value="8-9">8~9룸</option><option value="10+">10룸 이상</option></select></label><div id="extraSummary" class="extraSummary"></div></section><div class="actions"><button type="button" class="secondary" id="cancelBtn">취소</button><button type="submit" id="saveBtn">견적 저장</button></div><p id="message"></p></form></section>
 <section id="detail" class="hidden"><button class="backBtn" id="detailBackBtn">← 목록으로</button><h2 id="detailTitle"></h2><div class="detailActions"><button id="editBtn">견적 수정</button><button id="deleteBtn" class="danger">견적 삭제</button></div><div class="card detailInfo"><div class="infoGrid"><p>현장명<strong id="dProject"></strong></p><p>고객명<strong id="dCustomer"></strong></p><p>주소<strong id="dAddress"></strong></p><p>작성일<strong id="dDate"></strong></p><p>담당자<strong id="dStaff"></strong></p><p>상태<strong id="dStatus"></strong></p></div><div class="detailSection"><h3>창호 내역</h3><div id="dItems" class="detailTable"></div></div><div class="detailSection"><h3>부가시공비</h3><div id="dExtras" class="detailTable"></div></div><div class="detailSection"><h3>메모</h3><p id="dMemo" class="memoText">-</p></div><div class="detailTotal"><span>총 견적금액</span><strong id="dTotal">가격 미계산</strong></div></div><div class="quoteActions"><button id="internalBtn">내부용 상세 견적서</button><button id="customerBtn" class="secondary">고객용 견적서</button></div><div id="quote" class="quote hidden"></div></section>
-</main><footer>프로젝트 1팀 · V23</footer></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="app.js"></script></body></html>
+</main>
+<section id="excelEstimatePreview" class="hidden">
+  <div class="excelToolbar">
+    <strong>엑셀 양식 미리보기</strong>
+    <button type="button" id="printExcelEstimate">인쇄 / PDF</button>
+  </div>
+  <div class="excelPaper" id="excelPaper">
+    <div class="excelNotice">㈜ LX하우시스의 완성 창호인 LX Z:IN WINDOW 정품 창호로만 시공합니다.</div>
+    <div class="excelSpacer"></div>
+    <div class="excelMeta">
+      <div class="metaLabel">견 적 일 자</div><div id="excelDate"></div>
+      <div class="metaLabel">견 적번호</div><div id="excelNumber"></div>
+      <div class="metaLabel">현 장 주 소</div><div id="excelAddress"></div>
+      <div class="metaLabel">고 객 정 보</div><div id="excelCustomer"></div>
+      <div class="metaLabel">총 견 적 액</div><div id="excelTotal"></div>
+    </div>
+    <div class="excelValidity">* 본 견적서의 유효 기간은 발행일자로 부터 3개월 이내에 한함</div>
+    <h3 class="excelSectionTitle">세 부 견 적 사 항 ( V A T 포 함 가 )</h3>
+    <table class="excelTable">
+      <thead><tr><th>No.</th><th>구분</th><th>위치</th><th>제품명</th><th>유 리 및 두께</th><th>색상</th><th>수량</th><th>방충망</th><th>금액</th><th>비고</th></tr></thead>
+      <tbody id="excelItems"></tbody>
+    </table>
+    <div class="excelBottom">
+      <div> LX하우시스 정품 자재로 LX ENG 본사직영시공팀이 시공함 / 10년 품질보증</div>
+      <div class="excelManager">담당자: <span id="excelManager"></span><br>연락처: <span id="excelManagerPhone"></span></div>
+      <div class="excelGrandTotal">총 견적액 <span id="excelGrandTotal"></span></div>
+    </div>
+  </div>
+</section>
+<footer>프로젝트 1팀 · V23</footer></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="app.js"></script>
+<script>
+window.populateExcelEstimatePreview=function(data){
+  const root=document.getElementById('excelEstimatePreview'); if(!root)return;
+  root.classList.remove('hidden');
+  const staff=window.__selectedStaff||null;
+  const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v??''};
+  set('excelDate',data?.created_at?new Date(data.created_at).toLocaleDateString('ko-KR'):new Date().toLocaleDateString('ko-KR'));
+  set('excelNumber',data?.estimate_number||'');
+  set('excelAddress',data?.address||'');
+  set('excelCustomer',(data?.customer_name||'')+' | '+(data?.customer_phone||''));
+  set('excelTotal',Number(data?.total_amount||0).toLocaleString('ko-KR')+'원');
+  set('excelManager',staff?.name||'');
+  set('excelManagerPhone',staff?.phone||'');
+  document.getElementById('printExcelEstimate')?.addEventListener('click',()=>window.print(),{once:true});
+};
+</script>
+</body></html>
