@@ -34,8 +34,12 @@ V31 focuses on correcting legacy saved-estimate additional construction costs.
 - DB 스키마 변경은 필요하지 않습니다. 기존 `extras_data` 컬럼을 사용합니다.
 
 
-## V35 변경사항
+## V36 변경사항
 - 담당자 자동로그인 제거: 접속할 때마다 담당자 선택 화면 표시
 - DODO 창호 아이콘 적용 및 favicon / 모바일 홈 아이콘 추가
 - 기본 도메인 표기 및 PWA 시작 주소: https://dodo-pj-1.com/
 - 기존 견적/할인/결제/금액 조정 기능은 변경하지 않음
+
+
+## V36
+모바일 내부용 상세 견적에서 창호 상세 내역만 가로 스크롤되도록 분리하고, 금액 집계 및 할인 영역은 화면 폭에 맞게 표시되도록 반응형 레이아웃을 개선했습니다.
