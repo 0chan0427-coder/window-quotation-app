@@ -1,38 +1,13 @@
-# 창호 견적 관리 V27
+# Window Quotation App V28
 
-V23을 기준으로 내부용 상세 견적과 고객용 견적을 분리하고, 제품 분류/방충망/담당자 카드/인쇄 페이지 분할을 다시 정리한 버전입니다.
+V28 changes:
+- Customer print header is compacted; project/site title is not printed in the customer quote header.
+- Dealer card rebuilt from a single LX dealer logo asset; duplicate "공식대리점" branding is removed.
+- Required dealer identity: LX하우시스 logo + 주식회사 도도 대리점 name.
+- Staff name and phone remain dynamic for all three staff members.
+- Window color is selectable per item: 기본색 plus 12 requested colors.
+- Color is editable on existing estimates and printed on both customer and internal detailed estimates.
+- Existing item classification / screen logic remains: balcony/window corridor -> exterior + AL screen by default, with explicit screen override.
+- Customer print uses compact rows and avoids clipping blocks at page boundaries.
 
-## V27 핵심 변경사항
-- 창호 항목에 `window_kind`를 별도 저장하여 위치명만으로 제품 분류가 사라지는 문제를 방지
-- 기존 저장 견적에 `window_kind`가 없으면 위치(`installation_location`)로 하위 호환 분류
-- 발코니창·복도창은 방충망 `자동`일 때 `AL 방충망` 표시
-- 창호 입력 화면에 방충망 `자동 / 있음 / 없음` 선택 추가
-- 내부용 상세 견적에 창 종류, 위치, 실측 치수, 적용 치수, 방충망을 명확하게 표시
-- 고객용 담당자 카드를 이미지 위 텍스트 덮어쓰기 방식에서 분리해 깔끔한 동적 카드로 변경
-- 담당자 연락처 자동 적용
-  - 한동균 팀장: 010-7415-0619
-  - 김민찬 책임: 010-8438-7469
-  - 김영찬 책임: 010-5490-9662
-- 제2전시장 문구 삭제
-- 결제 기본값 10% / 70% / 20% 유지
-- 결제 비율 저장값이 없더라도 기존 메모의 결제 데이터 또는 10/70/20 기본값으로 복구
-- 고객용 PDF는 한 페이지 블록이 찢어지지 않도록 고정된 A4 출력 구조로 유지
-- 내부용 PDF는 표 헤더 반복, 행 단위 페이지 분할 방지, 합계/메모 블록 보호 적용
-
-## Supabase 마이그레이션
-`supabase-migration-v27.sql`을 Supabase SQL Editor에서 한 번 실행하세요.
-
-추가되는 `estimate_items` 컬럼:
-- `window_kind text`
-- `screen_option text default '자동'`
-
-기존 V24 컬럼이 없는 경우에도 함께 생성합니다.
-
-## 테스트 기준
-- 발코니창 + `거실 발코니` → 외창 / AL 방충망
-- 복도창 → 외창 / AL 방충망
-- 내창/분합창/주방창 → 내창 / 방충망 없음(자동 기준)
-- 방충망을 `없음`으로 지정하면 창 종류와 관계없이 `-`
-- 담당자 선택에 따라 이름/전화번호 변경
-- 고객용 10/70/20 기본 결제조건 표시
-- 기존 저장 견적의 제품 분류 하위 호환
+Run `supabase-migration-v28.sql` once to persist the new `estimate_items.color` column.
