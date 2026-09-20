@@ -72,15 +72,31 @@ async function calculate(items){
     const w=Number(item.actual_width), h=Number(item.actual_height);
     const productRows=rows.filter(p=>normalize(p.product_code)===code);
     if(!productRows.length)return {...item,lookup,available:false,reason:`가격표 없음: ${lookup}`};
-    const minWidth=Math.min(...productRows.map(p=>Number(p.width_mm)).filter(Number.isFinite));
-    const minHeight=Math.min(...productRows.map(p=>Number(p.height_mm)).filter(Number.isFinite));
+    const widths=productRows.map(p=>Number(p.width_mm)).filter(Number.isFinite);
+    const heights=productRows.map(p=>Number(p.height_mm)).filter(Number.isFinite);
+    const minWidth=Math.min(...widths);
+    const maxWidth=Math.max(...widths);
+    const minHeight=Math.min(...heights);
+    const maxHeight=Math.max(...heights);
     const requestedWidth=Math.ceil(w/200)*200;
     const requestedHeight=Math.ceil(h/200)*200;
-    // 가격표보다 작은 실측 치수는 해당 제품 가격표의 최소 규격으로 계산한다.
-    // 예: 600×1300 → 최소 가로가 1000이면 1000×1400으로 계산.
-    const appliedWidth=Math.max(requestedWidth,minWidth);
-    const appliedHeight=Math.max(requestedHeight,minHeight);
-    const price=productRows.find(p=>Number(p.width_mm)===appliedWidth&&Number(p.height_mm)===appliedHeight);
+    // 가격표보다 작은 실측 치수는 최소 규격으로, 큰 실측 치수는 최대 규격으로 계산한다.
+    // 예: 600×1300 → 최소 규격, 3200×2600 → 최대 규격.
+    const appliedWidth=Math.min(Math.max(requestedWidth,minWidth),maxWidth);
+    const appliedHeight=Math.min(Math.max(requestedHeight,minHeight),maxHeight);
+    let price=productRows.find(p=>Number(p.width_mm)===appliedWidth&&Number(p.height_mm)===appliedHeight);
+    // 가격표가 완전한 격자형이 아닌 제품도 가장 가까운 상위 규격을 사용한다.
+    if(!price){
+      const candidates=productRows.filter(p=>Number(p.width_mm)>=appliedWidth&&Number(p.height_mm)>=appliedHeight);
+      if(candidates.length){
+        candidates.sort((a,b)=>{
+          const da=(Number(a.width_mm)-appliedWidth)+(Number(a.height_mm)-appliedHeight);
+          const db=(Number(b.width_mm)-appliedWidth)+(Number(b.height_mm)-appliedHeight);
+          return da-db || (Number(a.width_mm)*Number(a.height_mm))-(Number(b.width_mm)*Number(b.height_mm));
+        });
+        price=candidates[0];
+      }
+    }
     if(!price)return {...item,lookup,applied_width:appliedWidth,applied_height:appliedHeight,available:false,reason:`가격표 없음: ${lookup} / ${appliedWidth}×${appliedHeight}mm`};
     const material=Number(price.material_cost)||0;
     const install=Number(price.installation_cost)||0;
@@ -130,13 +146,33 @@ async function load(){
   renderEstimateList();
 }
 async function detail(r){state.detailRecord=r;$('detailTitle').textContent=r.project_name||'현장명 미입력';$('dProject').textContent=r.project_name||'-';$('dCustomer').textContent=r.customer_name||'-';$('dAddress').textContent=r.address||'-';$('dDate').textContent=new Date(r.created_at||Date.now()).toLocaleDateString('ko-KR');$('dStaff').textContent=((recordStaff(r)?.name||'미지정'));$('dStatus').textContent=r.status||'-';$('dMemo').textContent=cleanMemo(r.memo).trim()||'-';$('dTotal').textContent='계산 중...';$('dItems').innerHTML='불러오는 중...';$('dExtras').innerHTML='불러오는 중...';$('quote').classList.add('hidden');show('detail');const{data,error}=await db.from('estimate_items').select('*').eq('estimate_id',r.id).order('id');if(error){$('dTotal').textContent='항목 조회 실패';$('dItems').textContent=error.message;return;}state.detailItems=data||[];let calc={items:state.detailItems.map(x=>({...x,available:false})),total:0};let priceError='';try{calc=await calculate(state.detailItems);}catch(err){console.error(err);priceError=err?.message||'가격표 조회 실패';}const extras=recalcStoredExtras(r,state.detailItems);const quoteColor=estimateColor(r);state.detailItems=state.detailItems.map(x=>({...x,color:quoteColor}));calc.items=calc.items.map(x=>({...x,color:quoteColor}));$('dItems').innerHTML=state.detailItems.length?'<table><thead><tr><th>구분</th><th>위치</th><th>제품</th><th>색상</th><th>실측</th><th>적용</th><th>방충망</th><th>창 형태</th><th>금액</th></tr></thead><tbody>'+calc.items.map(x=>`<tr><td>${itemKind(x)||'-'}</td><td>${itemName(x)||'-'}</td><td>${x.product_code||'-'}</td><td>${x.color||'기본색'}</td><td>${x.actual_width||'-'}×${x.actual_height||'-'}mm</td><td>${x.applied_width||'-'}×${x.applied_height||'-'}mm</td><td>${itemScreen(x)}</td><td>${x.window_type==='fixed'?'고정창 / 핸들 무':'일반창 / 핸들 유'}</td><td>${x.available&&x.amount>0?money(x.amount):(x.reason||priceError||'계산 후 확인')}</td></tr>`).join('')+'</tbody></table>':'등록된 창호 항목이 없습니다.';$('dExtras').innerHTML='<table><tbody>'+[['장비비',extras.equipment],['철거비',extras.demolition],['사춤 / 타일',extras.sash],['몰딩',extras.molding],['보양',extras.protection]].map(([n,v])=>`<tr><td>${n}</td><td class="amount">${money(v||0)}</td></tr>`).join('')+`<tr class="sumRow"><th>부가시공비 합계</th><th class="amount">${money(extras.total||0)}</th></tr></tbody></table>`;calc.extras=extras;const detailDiscount=discountInfo(calc,extras);$('dTotal').textContent=priceError?'가격표 확인 필요':money(detailDiscount.finalTotal);}
+async function saveQuoteAsImage(mode){
+  const target=$(mode==='internal'?'.internalQuoteSheet':'.xlsQuote.customer');
+  if(!target){alert('저장할 견적서를 먼저 열어주세요.');return;}
+  if(typeof html2canvas!=='function'){alert('이미지 저장 기능을 불러오지 못했습니다. 인터넷 연결 후 페이지를 새로고침해주세요.');return;}
+  const btn=document.querySelector('.quoteTools .imageSaveBtn');
+  if(btn){btn.disabled=true;btn.textContent='이미지 생성 중...';}
+  try{
+    const canvas=await html2canvas(target,{scale:2,useCORS:true,backgroundColor:'#ffffff',logging:false,windowWidth:Math.max(document.documentElement.clientWidth,target.scrollWidth)});
+    const link=document.createElement('a');
+    const no=estimateNumber(state.detailRecord)||'견적서';
+    link.download=`DODO_${no}_${mode==='internal'?'내부용':'고객용'}.png`;
+    link.href=canvas.toDataURL('image/png');
+    link.click();
+  }catch(err){
+    console.error(err);
+    alert('이미지 저장에 실패했습니다. 잠시 후 다시 시도해주세요.');
+  }finally{
+    if(btn){btn.disabled=false;btn.textContent='이미지 저장';}
+  }
+}
 function renderInternalQuote(calc){
   const r=state.detailRecord;
   const extras=recalcStoredExtras(r,state.detailItems);
   const di=discountInfo(calc,extras);
   const total=di.finalTotal;
   const rows=(calc.items||[]).map((x,i)=>`<tr><td>${i+1}</td><td>${itemKind(x)||'-'}</td><td>${itemName(x)||'-'}</td><td>${x.product_code||'-'}</td><td>${x.actual_width||'-'} × ${x.actual_height||'-'}</td><td>${x.applied_width||'-'} × ${x.applied_height||'-'}</td><td>${x.window_type==='fixed'?'고정창 / 핸들 무':'일반창 / 핸들 유'}</td><td>${x.material?money(x.material):'-'}</td><td>${x.install?money(x.install):'-'}</td><td>${x.available?money(x.amount):'-'}</td></tr>`).join('');
-  $('quote').innerHTML=`<div class="quoteTools"><button onclick="window.print()">인쇄 / PDF 저장</button></div>
+  $('quote').innerHTML=`<div class="quoteTools"><button onclick="window.print()">인쇄 / PDF 저장</button><button class="imageSaveBtn secondary" type="button" onclick="saveQuoteAsImage('internal')">이미지 저장</button></div>
     <div class="internalQuoteSheet">
       <div class="internalHeader"><div><small>INTERNAL ESTIMATE</small><h2>내부용 상세 견적서</h2></div><div class="internalStaff"><b>${recordStaff(r)?.name||'담당자 미지정'}</b><span>${staffPhone(r)}</span></div></div>
       <div class="internalMeta"><div><b>현장명</b><span>${r.project_name||'-'}</span></div><div><b>고객명</b><span>${r.customer_name||'-'}</span></div><div><b>견적번호</b><span>${estimateNumber(r)}</span></div><div><b>작성일</b><span>${new Date(r.created_at||Date.now()).toLocaleDateString('ko-KR')}</span></div><div class="wide"><b>현장주소</b><span>${r.address||'-'}</span></div></div>
@@ -174,7 +210,7 @@ function renderCustomerQuote(calc){
   <div class="xlsPayRow"><div class="payLabel">중도금</div><div class="payValue" id="payInterimValue">${pay.interim.toLocaleString('ko-KR')}</div><div id="payInterimLabel">중도금 (${pay.interimRate}%)</div></div>
   <div class="xlsPayRow"><div class="payLabel">잔 금</div><div class="payValue" id="payBalanceValue">${pay.balance.toLocaleString('ko-KR')}</div><div id="payBalanceLabel">잔 금 (${pay.balanceRate}%)</div></div>`;
   const staff=recordStaff(r)||{name:'담당자',phone:'연락처 미등록'};
-  $('quote').innerHTML=`<div class="quoteTools"><button onclick="window.print()">인쇄 / PDF 저장</button></div>
+  $('quote').innerHTML=`<div class="quoteTools"><button onclick="window.print()">인쇄 / PDF 저장</button><button class="imageSaveBtn secondary" type="button" onclick="saveQuoteAsImage('customer')">이미지 저장</button></div>
   <div class="xlsQuote customer">
     <div class="xlsTop">
       <img class="xlsLogo" src="assets/image3.png" alt="LX Z:IN 인테리어 창호 견적서">

@@ -207,3 +207,7 @@
 
 /* V30 - estimate-wide color selection */
 #estimateColor{font-weight:700;border-color:#7c181d}
+
+/* V37 - quote image export */
+.quoteTools .imageSaveBtn{background:#e8eefc;color:#1d4ed8}
+@media(max-width:600px){.quoteTools{justify-content:stretch}.quoteTools button{flex:1;min-width:0}}
