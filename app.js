@@ -7,7 +7,20 @@ $('changeStaff').onclick=()=>{state.staff=null;renderStaff();show('home');};
 const locations={'발코니창':['입구방 발코니','입구방(2) 발코니','거실 발코니','안방 발코니','건너방 발코니','건너방(2) 발코니','주방 발코니'],'분합창':['입구방 분합','거실 분합','안방 분합','건너방 분합','주방 분합'],'내창':['입구방 내창','안방 내창','건너방 내창'],'주방창':['주방창'],'복도창':['복도형 아파트 복도창']};
 const products=['F-140','F-130I','F-230W','F-230WF','F-250','F-250I'];
 const COLORS=['기본색','퓨어 화이트','스노우 화이트','모노 화이트','크림 화이트','라이트 베이지','크리미','크레마','내추럴 오크','워시 베이지','모던 그레이','어반 그레이','모던 블랙']; const priceProduct={'F-130I':'F-140','F-250I':'F-250'};
-async function getPrices(){if(state.prices)return state.prices;const{data,error}=await db.from('product_prices').select('product_code,width_mm,height_mm,material_cost,installation_cost');if(error){console.error(error);throw new Error('가격표를 불러오지 못했습니다: '+error.message);}state.prices=data||[];return state.prices;}
+async function getPrices(){
+  if(state.prices)return state.prices;
+  try{
+    const res=await fetch('assets/price-table-v38.json',{cache:'no-store'});
+    if(!res.ok)throw new Error('가격표 파일 HTTP '+res.status);
+    const data=await res.json();
+    if(!Array.isArray(data)||!data.length)throw new Error('가격표 데이터가 비어 있습니다.');
+    state.prices=data;
+    return state.prices;
+  }catch(err){
+    console.error(err);
+    throw new Error('엑셀 기준 가격표를 불러오지 못했습니다. assets/price-table-v38.json 파일을 확인해주세요.');
+  }
+}
 function field(o,names){for(const n of names)if(o&&o[n]!==undefined)return o[n];return null;}
 async function insertItemCompatible(payload){let p={...payload};for(let attempt=0;attempt<12;attempt++){const result=await db.from('estimate_items').insert(p);if(!result.error)return result;const msg=result.error.message||'';const m=msg.match(/Could not find the '([^']+)' column of 'estimate_items'/i);if(!m)return result;const missing=m[1];if(missing==='window_name'){delete p.window_name;p.item_name=payload.window_name;}else if(missing==='item_name'){delete p.item_name;p.name=payload.window_name;}else if(missing==='name'){delete p.name;p.location=payload.window_name;}else{delete p[missing];}}return{error:{message:'estimate_items 컬럼 호환 처리에 실패했습니다.'}};}
 function show(id){['home','form','detail'].forEach(x=>$(x).classList.toggle('hidden',x!==id));}
@@ -147,7 +160,18 @@ async function load(){
 }
 async function detail(r){state.detailRecord=r;$('detailTitle').textContent=r.project_name||'현장명 미입력';$('dProject').textContent=r.project_name||'-';$('dCustomer').textContent=r.customer_name||'-';$('dAddress').textContent=r.address||'-';$('dDate').textContent=new Date(r.created_at||Date.now()).toLocaleDateString('ko-KR');$('dStaff').textContent=((recordStaff(r)?.name||'미지정'));$('dStatus').textContent=r.status||'-';$('dMemo').textContent=cleanMemo(r.memo).trim()||'-';$('dTotal').textContent='계산 중...';$('dItems').innerHTML='불러오는 중...';$('dExtras').innerHTML='불러오는 중...';$('quote').classList.add('hidden');show('detail');const{data,error}=await db.from('estimate_items').select('*').eq('estimate_id',r.id).order('id');if(error){$('dTotal').textContent='항목 조회 실패';$('dItems').textContent=error.message;return;}state.detailItems=data||[];let calc={items:state.detailItems.map(x=>({...x,available:false})),total:0};let priceError='';try{calc=await calculate(state.detailItems);}catch(err){console.error(err);priceError=err?.message||'가격표 조회 실패';}const extras=recalcStoredExtras(r,state.detailItems);const quoteColor=estimateColor(r);state.detailItems=state.detailItems.map(x=>({...x,color:quoteColor}));calc.items=calc.items.map(x=>({...x,color:quoteColor}));$('dItems').innerHTML=state.detailItems.length?'<table><thead><tr><th>구분</th><th>위치</th><th>제품</th><th>색상</th><th>실측</th><th>적용</th><th>방충망</th><th>창 형태</th><th>금액</th></tr></thead><tbody>'+calc.items.map(x=>`<tr><td>${itemKind(x)||'-'}</td><td>${itemName(x)||'-'}</td><td>${x.product_code||'-'}</td><td>${x.color||'기본색'}</td><td>${x.actual_width||'-'}×${x.actual_height||'-'}mm</td><td>${x.applied_width||'-'}×${x.applied_height||'-'}mm</td><td>${itemScreen(x)}</td><td>${x.window_type==='fixed'?'고정창 / 핸들 무':'일반창 / 핸들 유'}</td><td>${x.available&&x.amount>0?money(x.amount):(x.reason||priceError||'계산 후 확인')}</td></tr>`).join('')+'</tbody></table>':'등록된 창호 항목이 없습니다.';$('dExtras').innerHTML='<table><tbody>'+[['장비비',extras.equipment],['철거비',extras.demolition],['사춤 / 타일',extras.sash],['몰딩',extras.molding],['보양',extras.protection]].map(([n,v])=>`<tr><td>${n}</td><td class="amount">${money(v||0)}</td></tr>`).join('')+`<tr class="sumRow"><th>부가시공비 합계</th><th class="amount">${money(extras.total||0)}</th></tr></tbody></table>`;calc.extras=extras;const detailDiscount=discountInfo(calc,extras);$('dTotal').textContent=priceError?'가격표 확인 필요':money(detailDiscount.finalTotal);}
 async function saveQuoteAsImage(mode){
-  const target=$(mode==='internal'?'.internalQuoteSheet':'.xlsQuote.customer');
+  let target=$(mode==='internal'?'.internalQuoteSheet':'.xlsQuote.customer');
+  if(!target && state.detailRecord && state.detailItems?.length){
+    try{
+      const calc=await calculate(state.detailItems);
+      renderQuote(mode,calc);
+      target=$(mode==='internal'?'.internalQuoteSheet':'.xlsQuote.customer');
+    }catch(err){
+      console.error(err);
+      alert('견적서를 먼저 열지 못했습니다. 가격표를 확인해주세요.');
+      return;
+    }
+  }
   if(!target){alert('저장할 견적서를 먼저 열어주세요.');return;}
   if(typeof html2canvas!=='function'){alert('이미지 저장 기능을 불러오지 못했습니다. 인터넷 연결 후 페이지를 새로고침해주세요.');return;}
   const btn=document.querySelector('.quoteTools .imageSaveBtn');
