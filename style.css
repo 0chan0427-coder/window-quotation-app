@@ -94,3 +94,54 @@
   .xlsQuote.customer .xlsCompany{right:2mm;top:1mm;width:66mm;height:31mm}
   .xlsQuote.customer .xlsMeta{top:38mm;width:calc(100% - 6mm)}
 }
+
+/* V27 - reliable product classification, clean staff card, print-safe pagination */
+.xlsQuote.customer{page-break-after:auto;break-after:auto}
+.xlsQuote.customer .xlsTop{height:72mm;position:relative;overflow:visible}
+.xlsQuote.customer .xlsLogo{left:3mm;top:0;width:63mm;height:auto;object-fit:contain}
+.xlsQuote.customer .xlsNotice{left:3mm;top:30mm;right:auto;max-width:92mm;color:#746661;font-size:7px;line-height:1.35}
+.xlsQuote.customer .xlsCompany{right:2mm;top:1mm;width:66mm;height:31mm;padding:2.5mm 3mm 2mm;background:#fff;border:1px solid #9c918c;border-radius:2.5mm;overflow:hidden;box-shadow:none;position:absolute}
+.xlsQuote.customer .xlsCompany .staffBrand{position:relative;inset:auto;display:block;width:100%;height:8mm;object-fit:contain;object-position:left center;border:0;border-bottom:1px solid #ddd5d1}
+.xlsQuote.customer .staffCompany{position:absolute;left:3mm;top:10.5mm;width:27mm;text-align:center;font-size:6.6px;line-height:1.35;color:#746661;white-space:normal}
+.xlsQuote.customer .staffCompany b{font-size:7.8px}
+.xlsQuote.customer .staffPerson{position:absolute;left:32mm;top:10mm;right:3mm;border-left:1px solid #9c918c;padding:0 0 0 3mm;display:flex;flex-direction:column;gap:.8mm;color:#746661;min-width:0;white-space:nowrap}
+.xlsQuote.customer .staffPerson span{font-size:5.8px;line-height:1.1}
+.xlsQuote.customer .staffPerson b{font-size:8.2px;line-height:1.15;overflow:visible}
+.xlsQuote.customer .staffPerson strong{font-size:7.2px;line-height:1.1;color:#7c181d;letter-spacing:.01em}
+.xlsQuote.customer .staffAddress{position:absolute;left:3mm;right:3mm;bottom:2.5mm;border-top:1px solid #ddd5d1;padding-top:1.3mm;font-size:5.4px;line-height:1.3;color:#746661;white-space:nowrap}
+.xlsQuote.customer .xlsMeta{position:absolute;left:3mm;top:38mm;width:calc(100% - 6mm);border-collapse:collapse;table-layout:fixed;margin:0;color:#746661}
+.xlsQuote.customer .xlsMeta td{height:6.2mm;border:1px solid #746661;padding:0 2mm;background:#fff;vertical-align:middle}
+.xlsQuote.customer .xlsMeta .label{width:23mm;text-align:center;font-size:7.5px;font-weight:700}
+.xlsQuote.customer .xlsMeta .value{font-size:7.8px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xlsQuote.customer .xlsMeta .amount{font-weight:800;color:#7c181d}
+.xlsQuote.customer .xlsValidity{right:3mm;bottom:0;font-size:5.4px}
+.xlsQuote.customer .xlsItems{page-break-inside:auto}
+.xlsQuote.customer .xlsItems thead{display:table-header-group}
+.xlsQuote.customer .xlsItems tbody tr{break-inside:avoid;page-break-inside:avoid}
+.xlsQuote.customer .xlsSummary{break-inside:avoid;page-break-inside:avoid}
+.xlsQuote.customer .xlsSpacer,.xlsQuote.customer .xlsBottom,.xlsQuote.customer .xlsFooter{break-inside:avoid;page-break-inside:avoid}
+.xlsQuote.customer .xlsBottom{margin-top:0}
+.internalQuoteSheet{min-height:0}
+.internalTable{break-inside:auto;page-break-inside:auto}
+.internalTable table{page-break-inside:auto}
+.internalTable thead{display:table-header-group}
+.internalTable tbody tr{break-inside:avoid;page-break-inside:avoid}
+.internalTable h3{break-after:avoid;page-break-after:avoid}
+.internalGrand,.internalMemo{break-inside:avoid;page-break-inside:avoid}
+@page{size:A4 portrait;margin:0}
+@media print{
+  body{background:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .xlsQuote.customer{width:210mm;height:297mm;min-height:297mm;margin:0;padding:6mm 8.5mm 7mm;overflow:hidden;break-after:auto;page-break-after:auto}
+  .xlsQuote.customer .xlsTop{height:72mm}
+  .xlsQuote.customer .xlsCompany{right:2mm;top:1mm;width:66mm;height:31mm}
+  .xlsQuote.customer .xlsMeta{top:38mm;width:calc(100% - 6mm)}
+  .xlsQuote.customer .xlsItems{min-width:0;width:100%}
+  .xlsQuote.customer .xlsBottom,.xlsQuote.customer .xlsFooter,.xlsQuote.customer .xlsSummary{break-inside:avoid;page-break-inside:avoid}
+  .internalQuoteSheet{width:210mm;min-height:0;height:auto;padding:14mm 14mm 12mm;break-inside:auto;page-break-inside:auto}
+  .internalTable{overflow:visible}
+  .internalTable table{width:100%;font-size:9.5px}
+  .internalTable th,.internalTable td{padding:6px 4px}
+  .internalGrand{margin-top:14px}
+}
+.internalQuoteSheet h3{break-after:avoid;page-break-after:avoid}
+.internalMeta{break-inside:avoid;page-break-inside:avoid}
