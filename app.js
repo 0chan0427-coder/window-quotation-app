@@ -1,9 +1,9 @@
 const { createClient } = supabase; const db=createClient(SUPABASE_URL,SUPABASE_ANON_KEY); const $=id=>document.getElementById(id);
 function money(value){return `${Number(value||0).toLocaleString('ko-KR')}원`;}
 const STAFF=[{id:1,name:'한동균 팀장',phone:'010-7415-0619'},{id:2,name:'김민찬 책임',phone:'010-8438-7469'},{id:3,name:'김영찬 책임',phone:'010-5490-9662'}]; const STAFF_KEY='window_quote_staff'; const state={items:[],editingId:null,detailRecord:null,detailItems:[],prices:null,staff:null,estimates:[],hasEstimateNo:false};
-function staffInit(){const saved=localStorage.getItem(STAFF_KEY);state.staff=STAFF.find(x=>String(x.id)===saved)||null;renderStaff();}
-function renderStaff(){const gate=$('staffGate'),choices=$('staffChoices');choices.innerHTML=STAFF.map(x=>`<button class="staffChoice" data-id="${x.id}">${x.name}</button>`).join('');choices.querySelectorAll('button').forEach(b=>b.onclick=()=>{state.staff=STAFF.find(x=>String(x.id)===b.dataset.id);localStorage.setItem(STAFF_KEY,state.staff.id);renderStaff();show('home');load();});gate.classList.toggle('hidden',!!state.staff);$('currentStaff').textContent=state.staff?`현재 담당자: ${state.staff.name}`:'';}
-$('changeStaff').onclick=()=>{localStorage.removeItem(STAFF_KEY);state.staff=null;renderStaff();show('home');};
+function staffInit(){state.staff=null;renderStaff();}
+function renderStaff(){const gate=$('staffGate'),choices=$('staffChoices');choices.innerHTML=STAFF.map(x=>`<button class="staffChoice" data-id="${x.id}">${x.name}</button>`).join('');choices.querySelectorAll('button').forEach(b=>b.onclick=()=>{state.staff=STAFF.find(x=>String(x.id)===b.dataset.id);renderStaff();show('home');load();});gate.classList.toggle('hidden',!!state.staff);$('currentStaff').textContent=state.staff?`현재 담당자: ${state.staff.name}`:'';}
+$('changeStaff').onclick=()=>{state.staff=null;renderStaff();show('home');};
 const locations={'발코니창':['입구방 발코니','입구방(2) 발코니','거실 발코니','안방 발코니','건너방 발코니','건너방(2) 발코니','주방 발코니'],'분합창':['입구방 분합','거실 분합','안방 분합','건너방 분합','주방 분합'],'내창':['입구방 내창','안방 내창','건너방 내창'],'주방창':['주방창'],'복도창':['복도형 아파트 복도창']};
 const products=['F-140','F-130I','F-230W','F-230WF','F-250','F-250I'];
 const COLORS=['기본색','퓨어 화이트','스노우 화이트','모노 화이트','크림 화이트','라이트 베이지','크리미','크레마','내추럴 오크','워시 베이지','모던 그레이','어반 그레이','모던 블랙']; const priceProduct={'F-130I':'F-140','F-250I':'F-250'};

@@ -1,0 +1,13 @@
+{
+  "name": "DODO 창호 견적 관리",
+  "short_name": "DODO 견적",
+  "description": "주식회사 도도 창호 견적 관리 프로그램",
+  "start_url": "https://dodo-pj-1.com/",
+  "display": "standalone",
+  "background_color": "#f5f8fc",
+  "theme_color": "#0b3b78",
+  "icons": [
+    {"src":"assets/dodo-icon-64.png","sizes":"64x64","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/dodo-icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

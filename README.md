@@ -32,3 +32,10 @@ V31 focuses on correcting legacy saved-estimate additional construction costs.
 - 저장된 할인율은 견적별로 `extras_data.discountRate`에 저장되며 기존 견적에도 적용됩니다.
 - 고객용 견적서의 총 견적액과 결제금액도 할인 적용 후 최종 금액을 기준으로 계산됩니다.
 - DB 스키마 변경은 필요하지 않습니다. 기존 `extras_data` 컬럼을 사용합니다.
+
+
+## V35 변경사항
+- 담당자 자동로그인 제거: 접속할 때마다 담당자 선택 화면 표시
+- DODO 창호 아이콘 적용 및 favicon / 모바일 홈 아이콘 추가
+- 기본 도메인 표기 및 PWA 시작 주소: https://dodo-pj-1.com/
+- 기존 견적/할인/결제/금액 조정 기능은 변경하지 않음
