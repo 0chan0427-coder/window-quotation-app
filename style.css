@@ -211,3 +211,6 @@
 /* V40 - quote image export */
 .quoteTools .imageSaveBtn{background:#e8eefc;color:#1d4ed8}
 @media(max-width:600px){.quoteTools{justify-content:stretch}.quoteTools button{flex:1;min-width:0}}
+
+/* V42 - additional products */
+.additionalProduct{margin:14px 0;background:#fbfcff}.additionalProduct .serviceLabel{display:flex;align-items:center;gap:8px}.additionalProduct .serviceCheck{width:auto;min-height:0;margin:7px 0}.additionalProduct .apResult{margin-top:10px;padding:10px;background:#eef4ff;border-radius:9px;color:#1e3a8a}.subDetailTitle{margin:16px 0 8px;font-size:14px;color:#1e3a8a}.additionalProduct textarea{min-height:70px}
