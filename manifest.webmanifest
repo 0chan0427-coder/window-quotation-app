@@ -8,13 +8,13 @@
   "theme_color": "#7c181d",
   "icons": [
     {
-      "src": "assets/dodo-d-favicon-32.png?v=49.1",
+      "src": "assets/dodo-d-favicon-32.png?v=50.1",
       "sizes": "32x32",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/dodo-d-icon-512.png?v=49.1",
+      "src": "assets/dodo-d-icon-512.png?v=50.1",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

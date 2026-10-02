@@ -254,3 +254,23 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 .pageHead .navBackBtn{margin:0 0 26px 0!important}
 #form>.navBackBtn,#detail>.navBackBtn{margin:0 0 24px 0!important}
 @media(max-width:600px){.navBackBtn{min-width:96px;height:38px;padding:0 14px!important}.pageHead .navBackBtn{margin-bottom:22px!important}.topLogo{cursor:pointer}}
+/* V50 utilities: copy, history, search filters, Excel/backup */
+.savedTools{display:block}
+.savedSearchLine{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.savedSearchLine input{flex:1;margin:0}
+.savedSearchLine select{width:150px;margin:0;background:#fff}
+.savedSearchLine span{min-width:42px;text-align:right}
+.savedUtilityLine{display:flex;justify-content:flex-end;gap:8px;margin:0 0 18px}
+.utilityBtn{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border:1px solid #cdbfba;border-radius:8px;background:#fff;color:var(--red);font-size:12px;font-weight:800;cursor:pointer}
+.utilityBtn:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.fileBtn{position:relative;overflow:hidden}
+.fileBtn input{position:absolute!important;inset:0;width:100%!important;height:100%!important;opacity:0;cursor:pointer;margin:0!important;padding:0!important}
+.detailActions{display:flex;gap:8px;flex-wrap:wrap}
+.detailActions #copyBtn{background:#fff!important;color:var(--red)!important;border:1px solid var(--red)!important}
+.detailActions #copyBtn:hover{background:var(--red)!important;color:#fff!important}
+.historyList{border-top:1px solid var(--line);background:#fff;border-radius:10px;overflow:hidden}
+.historyRow{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px;padding:13px 15px;border-bottom:1px solid var(--line);font-size:12px;align-items:center}
+.historyRow:last-child{border-bottom:0}
+.historyRow div{display:flex;gap:8px;align-items:center}
+.historyRow span{color:var(--muted);font-size:11px}
+@media(max-width:700px){.savedSearchLine{display:grid;grid-template-columns:1fr auto}.savedSearchLine input{grid-column:1/-1}.savedSearchLine select{width:100%}.savedUtilityLine{justify-content:stretch}.utilityBtn{flex:1}.historyRow{grid-template-columns:1fr;gap:5px}}
