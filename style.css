@@ -240,3 +240,17 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 .staffGate{background:linear-gradient(135deg,#f7f5f3 0%,#eee7e4 100%)}.staffPanel{border-color:var(--line);border-radius:18px;box-shadow:0 20px 60px rgba(76,32,28,.10)}.staffCompanyLogo{border-radius:0}.staffTeamMark small{color:var(--red)}.staffPanel h1{color:var(--ink)}.staffChoice{background:var(--red)!important;text-align:center!important}.staffChoice:hover{background:var(--red-dark)!important}
 @media(max-width:800px){.topbar{height:66px;padding:0 18px}.topLogo{width:190px;height:52px}.brandDivider,.teamName{display:none}.topRight{gap:10px}.topbar .currentStaff{font-size:12px}.smallBtn{font-size:12px}main{padding:0 18px}.homeHero{margin:0 -18px;padding:48px 18px 42px;min-height:250px}.homeActions{gap:12px;margin:20px 0 38px}.homeAction{min-height:135px;padding:22px!important}.homeAction span{font-size:23px}.homeAction em{font-size:12px}.heading h2{font-size:24px}.listrow{padding:17px 16px}.pageHead{padding-top:34px}}
 @media(max-width:560px){.homeActions{grid-template-columns:1fr}.homeAction{min-height:112px}.savedTools{display:block}.savedTools span{display:block;margin-top:8px}.pageHead h2{font-size:30px}#form,#detail{padding-top:24px}.topLogo{width:165px}}
+
+/* V48 navigation refinement - make return actions obvious without icons */
+.brandHomeBtn{display:flex;align-items:center;background:transparent!important;border:0!important;padding:0!important;margin:0!important;border-radius:0!important;color:inherit!important;cursor:pointer;line-height:0;box-shadow:none!important}
+.brandHomeBtn:hover{background:transparent!important;transform:none!important}
+.brandHomeBtn:focus-visible{outline:2px solid rgba(255,255,255,.9);outline-offset:5px;border-radius:4px}
+.navBackBtn{display:inline-flex!important;align-items:center;justify-content:center;min-width:104px;height:40px;padding:0 17px!important;border-radius:8px!important;font-size:13px!important;font-weight:800!important;letter-spacing:-.02em;cursor:pointer;transition:background .16s ease,color .16s ease,border-color .16s ease,transform .16s ease;box-shadow:none!important}
+.navBackBtn:hover{transform:translateY(-1px)}
+.homeBackBtn{background:var(--red)!important;color:#fff!important;border:1px solid var(--red)!important}
+.homeBackBtn:hover{background:var(--red-dark)!important;border-color:var(--red-dark)!important}
+.listBackBtn{background:#fff!important;color:var(--red)!important;border:1px solid var(--red)!important}
+.listBackBtn:hover{background:var(--red)!important;color:#fff!important}
+.pageHead .navBackBtn{margin:0 0 26px 0!important}
+#form>.navBackBtn,#detail>.navBackBtn{margin:0 0 24px 0!important}
+@media(max-width:600px){.navBackBtn{min-width:96px;height:38px;padding:0 14px!important}.pageHead .navBackBtn{margin-bottom:22px!important}.topLogo{cursor:pointer}}
