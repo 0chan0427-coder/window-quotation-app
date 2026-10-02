@@ -219,7 +219,7 @@
 .staffGate{background:linear-gradient(135deg,#f7f4f3 0%,#eee7e5 100%)}
 .staffPanel{max-width:470px;padding:30px 34px 34px;border-color:#ded4d1;border-radius:26px;box-shadow:0 24px 70px rgba(76,32,28,.12)}
 .staffCompanyLogo{display:block;width:210px;height:105px;object-fit:contain;margin:0 auto 18px;border-radius:12px}
-.staffTeamMark{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:10px}
+.staffTeamMark{display:flex;flex-direction:column;align-items:center;margin-bottom:10px}
 .staffTeamMark small{color:#7c181d;font-size:16px;letter-spacing:.08em;font-weight:800}
 .staffDIcon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;background:#7c181d;color:#fff;font-size:34px;line-height:1;font-weight:800;font-family:Arial,Helvetica,sans-serif;box-shadow:0 8px 18px rgba(124,24,29,.18)}
 .staffPanel h1{font-size:28px;margin:12px 0 10px;letter-spacing:-.05em;color:#2d2523}
