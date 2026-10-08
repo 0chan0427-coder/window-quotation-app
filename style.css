@@ -281,3 +281,7 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 .customScope:not(.hidden){display:block!important}
 .customScope .windowScope{width:100%;margin-top:6px;min-height:42px;font-size:15px}
 .scopeRequired .customScope{display:block!important}
+
+.extraFormulaBtn{margin-top:8px;width:100%;}.extraFormula{margin-top:10px;padding:12px;border:1px solid #ddd;border-radius:10px;background:#fafafa;font-size:13px;line-height:1.6}.extraFormula ul{margin:6px 0 10px;padding-left:18px}.extraFormula li{margin:3px 0}.extraFormulaBtn{white-space:normal}.scopeHelp{font-size:12px}.scopeWarning{display:block;color:#b45309;font-size:12px;margin-top:4px}
+
+.extraInfoButtons{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.extraInfoBtn{flex:1 1 220px}.extraFormula{margin-top:10px;padding:12px;border:1px solid #ddd;border-radius:10px;background:#fafafa;line-height:1.55}.extraFormula ul{padding-left:20px;margin:8px 0}.extraFormula li{margin:6px 0}
