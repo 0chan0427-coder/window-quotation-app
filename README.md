@@ -64,3 +64,6 @@ V31 focuses on correcting legacy saved-estimate additional construction costs.
 - 창별 요율 영구 저장/복원
 - 기존 견적 수정 시 재계산
 - 실행가 공식 및 실행가 캐시 데이터 적용
+
+
+V57: saved-detail extra-cost rules/formula panels; 10% VAT on construction extras; VAT-inclusive construction total is included in estimate final total.
