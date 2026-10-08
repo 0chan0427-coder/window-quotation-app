@@ -275,5 +275,9 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 .historyRow span{color:var(--muted);font-size:11px}
 @media(max-width:700px){.savedSearchLine{display:grid;grid-template-columns:1fr auto}.savedSearchLine input{grid-column:1/-1}.savedSearchLine select{width:100%}.savedUtilityLine{justify-content:stretch}.utilityBtn{flex:1}.historyRow{grid-template-columns:1fr;gap:5px}}
 
-/* V52 - 직접입력 창 구분 UI */
-.customScope{margin:12px 0;padding:12px 14px;border:1px solid #93c5fd;border-radius:12px;background:#eff6ff}.customScope label{display:block;margin:0}.scopeRequired{color:#dc2626;font-size:12px;font-weight:700}.scopeHint{margin-top:7px;color:#64748b;font-size:12px;font-weight:500}.scopeWarning{margin:0 0 10px!important;padding:10px 12px;border-radius:9px;background:#fff7ed;color:#c2410c!important}
+/* V52 direct-input scope */
+.customScope{margin-top:10px;padding:10px 12px;border:1px solid #cbd5e1;border-radius:10px;background:#f8fafc}.scopeHelp{font-size:12px;color:#64748b;font-weight:400}.scopeWarning{display:block;margin-top:7px;color:#b45309;font-size:12px;font-weight:600}.scopeRequired .customScope{border-color:#f59e0b;background:#fffbeb}.scopeRequired .windowScope{border-color:#f59e0b}
+/* V53: direct-entry internal/external selector must remain visibly actionable */
+.customScope:not(.hidden){display:block!important}
+.customScope .windowScope{width:100%;margin-top:6px;min-height:42px;font-size:15px}
+.scopeRequired .customScope{display:block!important}
