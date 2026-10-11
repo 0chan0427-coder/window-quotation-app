@@ -52,7 +52,7 @@ async function analyze(buffer){
  for(const g of [...source.values()].sort((a,b)=>parseFloat(a.flat)-parseFloat(b.flat))){
   if(g.materialFiles.length!==1||g.installationFiles.length!==1)issue(issues,g.flat,null,'평형마다 자재비 표와 시공비 표가 각각 하나 필요합니다. 발견: '+g.materialFiles.length+' / '+g.installationFiles.length);
   uniqueIds(g.material,issues,g.flat);uniqueIds(g.installation,issues,g.flat);
-  const windows=g.material.filter(isProduct),inst=g.installation.filter(isProduct),usedGlass=new Set(),usedIGlass=new Set();
+  const windows=g.material.filter(isProduct).sort((a,b)=>Number(idOf(a))-Number(idOf(b))),inst=g.installation.filter(isProduct).sort((a,b)=>Number(idOf(a))-Number(idOf(b))),usedGlass=new Set(),usedIGlass=new Set();
   if(!windows.length)issue(issues,g.flat,null,'자재비에서 창 제품을 찾지 못했습니다.');if(windows.length>500)issue(issues,g.flat,null,'평형당 창 제품은 최대 500개까지 처리합니다.');
   const iitems=inst.map(r=>{
    const glass=g.installation.filter(x=>isGlass(x)&&parentId(x,false)===idOf(r));let total=num(get(r,'판매금액'));
@@ -79,8 +79,8 @@ async function analyze(buffer){
    if(!candidates.length)issue(issues,g.flat,r,'제품·형태·틀짝망·유리스펙이 일치하는 시공비가 없습니다.');
    return{id:g.flat+':'+r._row,sourceId:idOf(r),sourceRow:r._row,location:get(r,'창위치'),brand:get(r,'브랜드'),model:get(r,'모형'),frame:get(r,'틀짝망'),size:get(r,'사이즈'),shape:get(r,'형태명'),glass:glasses.map(x=>get(x,'모형')).join(' / '),qty,unit,glassUnit,section,candidates:candidates.map(x=>({id:x.id,sourceId:x.sourceId,row:x.row,total:x.total,model:x.model,shape:x.shape})),selected:null};
   });
-  // Only unambiguous matches or price-identical interchangeable entries may be assigned automatically.
-  const assigned=new Set();for(const p of products){const cs=p.candidates.filter(x=>!assigned.has(x.id));if(cs.length&&new Set(cs.map(x=>x.total)).size===1){p.selected=cs[0].id;assigned.add(p.selected);}}
+  // Headquarters exports use fixed window order; glass rows are linked separately.
+  products.forEach((p,i)=>{const target=iitems[i];if(target&&p.candidates.some(c=>c.id===target.id))p.selected=target.id;else issue(issues,g.flat,windows[i],'창 제품 순번 '+p.sourceId+'와 시공 순번 '+(target?.sourceId||'없음')+'의 제품·형태·유리 정보가 다릅니다. 같은 본사 견적의 파일인지 확인해주세요.');});
   for(const x of iitems)if(!products.some(p=>p.candidates.some(c=>c.id===x.id)))issue(issues,g.flat,x.raw,'대응하는 자재 제품이 없는 시공비입니다.');
   if(inst.length!==windows.length)issue(issues,g.flat,null,'자재 창 수와 시공 창 수가 다릅니다: '+windows.length+' / '+inst.length);
   const tw=templates[0].workbook;const base=tw.SheetNames.find(s=>s===g.flat&&findHeader(rows(tw,s),['설치위치','원가(DC전)']))||tw.SheetNames.find(s=>findHeader(rows(tw,s),['설치위치','원가(DC전)']));
@@ -95,7 +95,7 @@ function validate(analysis,settings){
   for(const k of ['innerDiscount','outerDiscount'])if(num(s[k])===null||num(s[k])<0||num(s[k])>1)errors.push(g.flat+': 할인율은 0~100%입니다.');
   for(const k of ['innerIncrease','outerIncrease'])if(num(s[k])===null||num(s[k])<0)errors.push(g.flat+': 인상률을 확인해주세요.');
   if(!Array.isArray(s.costs)||s.costs.length!==6)errors.push(g.flat+': 부가시공비 설정 누락');else for(const c of s.costs)if(num(c.outer)===null||num(c.total)===null||num(c.outer)<0||num(c.total)<num(c.outer))errors.push(g.flat+': 전체 부가시공비는 외창 비용 이상이어야 합니다.');
-  const used=new Set();for(const p of g.products){const choice=s.items?.[p.id];const candidate=p.candidates.find(x=>x.id===choice?.installation);if(!candidate)errors.push(g.flat+' '+p.size+': 시공비 연결을 선택해주세요.');else if(used.has(candidate.id))errors.push(g.flat+': 같은 시공비를 두 창에 중복 연결했습니다 ('+candidate.sourceId+')');else used.add(candidate.id);if(num(choice?.rate)===null||num(choice.rate)<=0)errors.push(g.flat+' '+p.size+': 요율은 0보다 커야 합니다.');}
+  const used=new Set();for(const p of g.products){const choice=s.items?.[p.id];const candidate=p.candidates.find(x=>x.id===choice?.installation);if(!candidate)errors.push(g.flat+' '+p.size+': 시공비 자동 연결을 확인할 수 없습니다.');else if(used.has(candidate.id))errors.push(g.flat+': 같은 시공비를 두 창에 중복 연결했습니다 ('+candidate.sourceId+')');else used.add(candidate.id);if(candidate&&p.selected&&candidate.id!==p.selected)errors.push(g.flat+': 시공비가 자동 연결된 원본 순번과 다릅니다.');if(num(choice?.rate)===null||num(choice.rate)<=0)errors.push(g.flat+' '+p.size+': 요율은 0보다 커야 합니다.');}
  }
  return errors;
 }
