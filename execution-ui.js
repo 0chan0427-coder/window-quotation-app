@@ -6,7 +6,7 @@ const money=n=>Number(n).toLocaleString('ko-KR')+'원';
 let analysis=null,busy=false,revision=0;
 let dependencies=null,downloadURL=null;
 function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=()=>{s.remove();reject(Error('처리 파일을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.'));};document.head.appendChild(s);});}
-function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=60');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
+function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionFormulaCache)await loadScript('execution-formulas.js?v=61');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=61');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
 function message(text,error=false){for(const id of ['executionStatus','executionBottomStatus']){const target=$(id);if(target){target.textContent=text;target.classList.toggle('execError',error);}}}
 function clearDownload(){if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;}const box=$('executionDownload');if(box)box.replaceChildren();}
 function pending(){clearDownload();if(analysis)message('입력값이 변경되었습니다. 생성 버튼을 누르면 다시 검증합니다.');}
