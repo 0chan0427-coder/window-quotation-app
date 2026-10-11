@@ -6,7 +6,7 @@ const money=n=>Number(n).toLocaleString('ko-KR')+'원';
 let analysis=null,busy=false,revision=0;
 let dependencies=null,downloadURL=null;
 function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=()=>{s.remove();reject(Error('처리 파일을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.'));};document.head.appendChild(s);});}
-function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionIndividualLayout)await loadScript('assets/execution-individual-layout.js?v=63');if(!window.ExecutionFormulaCache)await loadScript('execution-formulas.js?v=63');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=63');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
+function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionIndividualLayout)await loadScript('assets/execution-individual-layout.js?v=63');if(!window.ExecutionFormulaCache)await loadScript('execution-formulas.js?v=63');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=66');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
 function message(text,error=false){for(const id of ['executionStatus','executionBottomStatus']){const target=$(id);if(target){target.textContent=text;target.classList.toggle('execError',error);}}}
 function clearDownload(){if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;}const box=$('executionDownload');if(box)box.replaceChildren();}
 function syncConfirmAll(){const all=$('executionConfirmAll');if(!all)return;const checks=Array.from(document.querySelectorAll('.execConfirmed'));all.disabled=busy||!checks.length;all.checked=checks.length>0&&checks.every(c=>c.checked);all.indeterminate=checks.some(c=>c.checked)&&!all.checked;}
@@ -15,12 +15,13 @@ function pending(){syncConfirmAll();clearDownload();if(analysis)message('입력�
 function setBusy(value){busy=value;$('executionAnalyze').disabled=value;$('executionGenerate').disabled=value||!analysis;$('executionFile').disabled=value;syncConfirmAll();}
 $('executionBtn').onclick=()=>{if(!state.staff)return;show('execution');};
 $('executionBack').onclick=()=>{show('home');renderRecentList();};
-$('executionFile').onchange=()=>{revision++;analysis=null;clearDownload();$('executionResults').replaceChildren();$('executionGenerate').disabled=true;message('ZIP을 선택했으면 자료 분석을 눌러주세요.');};
+$('executionFile').onchange=()=>{revision++;analysis=null;clearDownload();$('executionResults').replaceChildren();$('executionGenerate').disabled=true;message('파일을 선택했으면 자료 분석을 눌러주세요.');};
 $('executionAnalyze').onclick=async()=>{
- if(busy)return;const file=$('executionFile').files[0];if(!file)return message('자재비·시공비·실행가 양식이 들어 있는 ZIP을 선택해주세요.',true);
- if(file.size>20*1024*1024)return message('ZIP 파일은 20MB 이하로 준비해주세요.',true);
+ if(busy)return;const files=Array.from($('executionFile').files);if(!files.length)return message('자재비·시공비 엑셀을 여러 개 선택하거나 ZIP을 넣어주세요.',true);
+ if(files.length>100)return message('한 번에 최대 100개 파일을 선택해주세요.',true);
+ if(files.some(f=>f.size>20*1024*1024)||files.reduce((n,f)=>n+f.size,0)>60*1024*1024)return message('파일당 20MB, 선택한 전체 파일 60MB 이하로 준비해주세요.',true);
  const current=++revision;analysis=null;clearDownload();$('executionResults').replaceChildren();setBusy(true);message('엑셀 파일과 제품 정보를 분석하고 있습니다…');
- try{await deps();const a=await ExecutionEngine.analyze(await file.arrayBuffer());if(current!==revision)return;analysis=a;render();message(a.issues.length?'원본 자료에서 '+a.issues.length+'개 문제가 발견됐습니다. 아래 내용을 확인하고 원본 ZIP을 수정해주세요.':a.groups.length+'개 평형을 읽었습니다. 시공비는 원본 순번대로 자동 연결했습니다. 요율은 비워둬도 됩니다. 할인율·부가시공비를 확인해주세요.',!!a.issues.length);}catch(e){message(e.message,true);}finally{setBusy(false);}
+ try{await deps();const response=await fetch('assets/execution-blank-template.xlsx?v=63');if(!response.ok)throw Error('앱 기본 양식을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.');const defaultTemplate=await response.arrayBuffer();const inputs=await Promise.all(files.map(async file=>({name:file.name,bytes:await file.arrayBuffer()})));const a=await ExecutionEngine.analyze(inputs,{defaultTemplate});if(current!==revision)return;analysis=a;render();message(a.issues.length?'원본 자료에서 '+a.issues.length+'개 문제가 발견됐습니다. 아래 내용을 확인하고 원본 파일을 수정해주세요.':a.groups.length+'개 평형을 읽었습니다. 시공비는 원본 순번대로 자동 연결했습니다. 요율은 비워둬도 됩니다. 할인율·부가시공비를 확인해주세요.',!!a.issues.length);}catch(e){message(e.message,true);}finally{setBusy(false);}
 };
 function render(){
  const root=$('executionResults');root.replaceChildren();
@@ -52,10 +53,10 @@ $('executionGenerate').onclick=async()=>{
   clearDownload();setBusy(true);message('제품 수에 맞춰 시트·수식·합계를 생성하고 있습니다…');
   const b=await ExecutionEngine.generate(analysis,s);
   const file=$('executionFile').files[0];
-  if(!file)throw Error('입력 ZIP을 다시 선택하고 자료 분석을 실행해주세요.');
+  if(!file)throw Error('입력 파일을 다시 선택하고 자료 분석을 실행해주세요.');
   const blob=new Blob([b],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
   downloadURL=URL.createObjectURL(blob);
-  const a=document.createElement('a');a.href=downloadURL;a.download=file.name.replace(/\.zip$/i,'')+'_실행가.xlsx';a.textContent='생성된 실행가 엑셀 다운로드';a.className='utilityBtn execDownloadLink';
+  const a=document.createElement('a');a.href=downloadURL;a.download=file.name.replace(/\.(?:zip|xlsx?)$/i,'').replace(/(?:[_\s-]*(?:자재비|시공비))$/,'')+'_실행가.xlsx';a.textContent='생성된 실행가 엑셀 다운로드';a.className='utilityBtn execDownloadLink';
   $('executionDownload').appendChild(a);
   message('실행가 엑셀을 생성했습니다. 다운로드가 시작되지 않으면 아래 다운로드 버튼을 눌러주세요.');
   a.click();

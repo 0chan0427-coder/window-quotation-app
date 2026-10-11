@@ -25,10 +25,15 @@ const isProduct=r=>/^\d+$/.test(idOf(r))&&!isGlass(r);
 function key(r,material){return [get(r,material?'카테고리명':'카테고리'),get(r,material?'모형':'제품명'),get(r,'틀짝망'),get(r,material?'형태명':'창명')].map(norm).join('|');}
 function issue(list,flat,r,message){list.push({flat,file:r?._file||'',sheet:r?._sheet||'',row:r?._row||'',message});}
 function uniqueIds(list,issues,flat){const seen=new Set();for(const r of list){const id=idOf(r);if(seen.has(id))issue(issues,flat,r,'원본 순번 중복: '+id);seen.add(id);}}
-async function analyze(buffer){
- const zip=await JSZip.loadAsync(buffer,{decodeFileName:decodeName});
- const files=Object.values(zip.files).filter(x=>!x.dir&&!/(^|\/)__MACOSX\/|(^|\/)~\$/.test(x.name)&&/\.xlsx?$/i.test(x.name));
- if(!files.length)throw Error('ZIP 안에 .xls 또는 .xlsx 파일이 없습니다.');
+async function analyze(buffer,options={}){
+ const files=[];
+ const inputs=Array.isArray(buffer)?buffer:[{name:'자료.zip',bytes:buffer}];
+ for(const input of inputs){
+  if(/\.zip$/i.test(input.name)){const zip=await JSZip.loadAsync(input.bytes,{decodeFileName:decodeName});files.push(...Object.values(zip.files).filter(x=>!x.dir&&!/(^|\/)__MACOSX\/|(^|\/)~\$/.test(x.name)&&/\.xlsx?$/i.test(x.name)));}
+  else if(/\.xlsx?$/i.test(input.name)){const bytes=new Uint8Array(input.bytes);files.push({name:input.name,_data:{uncompressedSize:bytes.length},async:async()=>bytes});}
+  else throw Error('자재비·시공비 .xls/.xlsx 또는 ZIP 파일을 선택해주세요.');
+ }
+ if(!files.length)throw Error('자재비·시공비 엑셀 파일이 없습니다.');
  if(files.length>100)throw Error('엑셀 파일은 한 번에 최대 100개까지 처리합니다.');
  let bytes=0;const templates=[],source=new Map(),issues=[];
  for(const file of files){
@@ -46,7 +51,8 @@ async function analyze(buffer){
   }
   if(!recognized)issue(issues,'',null,file.name+': 자재비·시공비 표의 필수 열을 찾을 수 없습니다.');
  }
- if(templates.length!==1)throw Error('실행가 양식은 한 개만 넣어주세요. 감지된 양식: '+templates.length+'개'+(templates.length?' ('+templates.map(x=>x.name).join(', ')+')':''));
+ if(!templates.length&&options.defaultTemplate){const b=new Uint8Array(options.defaultTemplate);templates.push({name:'앱 기본 빈 양식',bytes:b,workbook:XLSX.read(b,{type:'array',cellFormula:true})});}
+ if(templates.length!==1)throw Error('실행가 양식은 한 개만 사용할 수 있습니다. 감지된 양식: '+templates.length+'개'+(templates.length?' ('+templates.map(x=>x.name).join(', ')+')':''));
  if(!source.size)throw Error('평형별 자재비·시공비 자료를 찾지 못했습니다.');
  const groups=[];
  for(const g of [...source.values()].sort((a,b)=>parseFloat(a.flat)-parseFloat(b.flat))){
