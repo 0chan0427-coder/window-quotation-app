@@ -4,19 +4,20 @@ const $=id=>document.getElementById(id);
 const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>Number(n).toLocaleString('ko-KR')+'원';
 let analysis=null,busy=false,revision=0;
-let dependencies=null;
+let dependencies=null,downloadURL=null;
 function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=()=>{s.remove();reject(Error('처리 파일을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.'));};document.head.appendChild(s);});}
-function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=58.1');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
-function message(text,error=false){$('executionStatus').textContent=text;$('executionStatus').classList.toggle('execError',error);}
-function pending(){if(analysis)message('입력값이 변경되었습니다. 생성 버튼을 누르면 다시 검증합니다.');}
-function setBusy(value){busy=value;$('executionAnalyze').disabled=value;$('executionGenerate').disabled=value||!analysis||analysis.issues.length>0;$('executionFile').disabled=value;}
+function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=58.2');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
+function message(text,error=false){for(const id of ['executionStatus','executionBottomStatus']){const target=$(id);if(target){target.textContent=text;target.classList.toggle('execError',error);}}}
+function clearDownload(){if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;}const box=$('executionDownload');if(box)box.replaceChildren();}
+function pending(){clearDownload();if(analysis)message('입력값이 변경되었습니다. 생성 버튼을 누르면 다시 검증합니다.');}
+function setBusy(value){busy=value;$('executionAnalyze').disabled=value;$('executionGenerate').disabled=value||!analysis;$('executionFile').disabled=value;}
 $('executionBtn').onclick=()=>{if(!state.staff)return;show('execution');};
 $('executionBack').onclick=()=>{show('home');renderRecentList();};
-$('executionFile').onchange=()=>{revision++;analysis=null;$('executionResults').replaceChildren();$('executionGenerate').disabled=true;message('ZIP을 선택했으면 자료 분석을 눌러주세요.');};
+$('executionFile').onchange=()=>{revision++;analysis=null;clearDownload();$('executionResults').replaceChildren();$('executionGenerate').disabled=true;message('ZIP을 선택했으면 자료 분석을 눌러주세요.');};
 $('executionAnalyze').onclick=async()=>{
  if(busy)return;const file=$('executionFile').files[0];if(!file)return message('자재비·시공비·실행가 양식이 들어 있는 ZIP을 선택해주세요.',true);
  if(file.size>20*1024*1024)return message('ZIP 파일은 20MB 이하로 준비해주세요.',true);
- const current=++revision;analysis=null;$('executionResults').replaceChildren();setBusy(true);message('엑셀 파일과 제품 정보를 분석하고 있습니다…');
+ const current=++revision;analysis=null;clearDownload();$('executionResults').replaceChildren();setBusy(true);message('엑셀 파일과 제품 정보를 분석하고 있습니다…');
  try{await deps();const a=await ExecutionEngine.analyze(await file.arrayBuffer());if(current!==revision)return;analysis=a;render();message(a.issues.length?'원본 자료에서 '+a.issues.length+'개 문제가 발견됐습니다. 아래 내용을 확인하고 원본 ZIP을 수정해주세요.':a.groups.length+'개 평형을 읽었습니다. 시공비는 원본 순번대로 자동 연결했습니다. 요율·부가시공비를 확인해주세요.',!!a.issues.length);}catch(e){message(e.message,true);}finally{setBusy(false);}
 };
 function render(){
@@ -40,5 +41,23 @@ function render(){
  });
 }
 function settings(){const out={};document.querySelectorAll('.execGroup').forEach(box=>{const s={items:{},costs:Array.from({length:6},()=>({})),confirmed:box.querySelector('.execConfirmed').checked};box.querySelectorAll('.execSetting').forEach(i=>s[i.dataset.key]=i.value===''?null:Number(i.value)/100);box.querySelectorAll('.execCost').forEach(i=>s.costs[+i.dataset.index][i.dataset.kind]=i.value===''?null:Number(i.value));box.querySelectorAll('.execProduct').forEach(c=>s.items[c.dataset.id]={installation:c.dataset.installation,rate:c.querySelector('.execRate').value});out[box.dataset.flat]=s;});return out;}
-$('executionGenerate').onclick=async()=>{if(busy||!analysis)return;const s=settings(),errors=ExecutionEngine.validate(analysis,s);if(errors.length){message(errors.slice(0,20).join('\n')+(errors.length>20?'\n외 '+(errors.length-20)+'개':''),true);return;}setBusy(true);message('제품 수에 맞춰 시트·수식·합계를 생성하고 있습니다…');try{const b=await ExecutionEngine.generate(analysis,s);const blob=new Blob([b],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=$('executionFile').files[0].name.replace(/\.zip$/i,'')+'_실행가.xlsx';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);message('실행가 엑셀을 생성했습니다. Excel에서 열면 수식이 자동 계산됩니다.');}catch(e){message(e.message,true);}finally{setBusy(false);}};
+$('executionGenerate').onclick=async()=>{
+ if(busy)return;
+ if(!analysis){message('먼저 자료 분석을 실행해주세요.',true);return;}
+ try{
+  const s=settings(),errors=ExecutionEngine.validate(analysis,s);
+  if(errors.length){message('생성할 수 없습니다. 다음 항목을 확인해주세요.\n'+errors.slice(0,20).join('\n')+(errors.length>20?'\n외 '+(errors.length-20)+'개':''),true);return;}
+  clearDownload();setBusy(true);message('제품 수에 맞춰 시트·수식·합계를 생성하고 있습니다…');
+  const b=await ExecutionEngine.generate(analysis,s);
+  const file=$('executionFile').files[0];
+  if(!file)throw Error('입력 ZIP을 다시 선택하고 자료 분석을 실행해주세요.');
+  const blob=new Blob([b],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+  downloadURL=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=downloadURL;a.download=file.name.replace(/\.zip$/i,'')+'_실행가.xlsx';a.textContent='생성된 실행가 엑셀 다운로드';a.className='utilityBtn execDownloadLink';
+  $('executionDownload').appendChild(a);
+  message('실행가 엑셀을 생성했습니다. 다운로드가 시작되지 않으면 아래 다운로드 버튼을 눌러주세요.');
+  a.click();
+ }catch(e){console.error('실행가 생성 오류',e);message('실행가 생성 실패: '+(e?.message||String(e)||'알 수 없는 오류'),true);}
+ finally{setBusy(false);}
+};
 })();
