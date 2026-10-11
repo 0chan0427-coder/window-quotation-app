@@ -10,8 +10,13 @@ function analyze(buffer){const w=XLSX.read(buffer,{type:'array',cellFormula:true
  for(const name of w.SheetNames){const match=name.match(/^(\d+(?:\.\d+)?)평_개별단가$/);if(!match)continue;const sheet=w.Sheets[name],flat=match[1]+'평',labels=[];for(const addr of Object.keys(sheet)){if(!/^[A-D]\d+$/.test(addr))continue;const label=norm(sheet[addr].v);if(/창호(?:외부|외창)교체비용/.test(label))labels.push({kind:'outer',row:+addr.match(/\d+/)[0]});if(/창호전체교체비용/.test(label))labels.push({kind:'total',row:+addr.match(/\d+/)[0]});}
  const outer=labels.filter(x=>x.kind==='outer'),total=labels.filter(x=>x.kind==='total');if(outer.length!==1||total.length!==1)throw Error(flat+': 외창·전체창 합계 항목을 하나씩 찾을 수 없습니다.');
  const outerAddress='E'+outer[0].row,totalAddress='E'+total[0].row,outerAmount=readValue(sheet,outerAddress,name),totalAmount=readValue(sheet,totalAddress,name);if(totalAmount<outerAmount)throw Error(flat+': 전체창 금액이 외창 금액보다 작습니다.');
- const productRows=Object.keys(sheet).filter(a=>/^A\d+$/.test(a)&&+a.slice(1)>=20&&+a.slice(1)<outer[0].row&&typeof sheet[a].v==='number'&&sheet[a].v>0).map(a=>+a.slice(1));if(!productRows.length)throw Error(flat+': 창 항목을 찾을 수 없습니다.');
- let outerCount=productRows.filter(r=>norm(sheet['H'+r]?.v)==='외창').length;if(!productRows.some(r=>sheet['H'+r]?.v)){const f=sheet[outerAddress]?.f||'',m=f.match(/(?:COUNT|SUM)\(\$?E\$?(\d+):\$?E\$?(\d+)\)/i);if(!m)throw Error(flat+': 외창 개수를 확인할 수 없습니다. 앱에서 생성한 실행가 파일을 넣어주세요.');outerCount=+m[2]-+m[1]+1;}
+ const productRows=Object.keys(sheet).filter(a=>/^A\d+$/.test(a)&&+a.slice(1)>=20&&+a.slice(1)<outer[0].row&&/^\d+$/.test(String(sheet[a].v))&&Number(sheet[a].v)>0).map(a=>+a.slice(1)).sort((a,b)=>a-b);if(!productRows.length)throw Error(flat+': 창 항목을 찾을 수 없습니다.');
+ const candidates=[];const labelsText=norm(sheet['A'+outer[0].row]?.v);const range=labelsText.match(/\(1[~～-](\d+)\)/);if(range)candidates.push(+range[1]);
+ const sections=productRows.map(r=>norm(sheet['H'+r]?.v));if(sections.every(s=>s==='외창'||s==='내창'))candidates.push(sections.filter(s=>s==='외창').length);
+ const f=sheet[outerAddress]?.f||'',m=f.match(/(?:COUNT|SUM)\(\$?E\$?(\d+):\$?E\$?(\d+)\)/i);if(m)candidates.push(+m[2]-+m[1]+1);
+ if(!candidates.length){const refs=[...f.matchAll(/\$?E\$?(\d+)/g)].map(m=>+m[1]);if(refs.length&&refs.every(r=>productRows.includes(r)))candidates.push(new Set(refs).size);}
+ if(!candidates.length&&(/없음/.test(labelsText)||f.trim()==='0')&&outerAmount===0)candidates.push(0);
+ if(!candidates.length||candidates.some(n=>n!==candidates[0]))throw Error(flat+': 외창 번호 범위를 확인할 수 없거나 구분이 서로 다릅니다. 실행가의 외창 합계와 번호를 확인해주세요.');const outerCount=candidates[0];
  if(outerCount>productRows.length)throw Error(flat+': 외창 개수가 전체창보다 많습니다.');groups.push({flat,outerAmount,totalAmount,outerCount,totalCount:productRows.length,sourceSheet:name,outerAddress,totalAddress});
  }
  if(!groups.length)throw Error('평형_개별단가 시트가 없습니다. 앱에서 생성한 실행가 .xlsx 파일을 넣어주세요.');if(groups.length>50)throw Error('한 번에 최대 50개 평형을 지원합니다.');return {groups:groups.sort((a,b)=>parseFloat(a.flat)-parseFloat(b.flat))};
