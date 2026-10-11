@@ -6,11 +6,13 @@ const money=n=>Number(n).toLocaleString('ko-KR')+'원';
 let analysis=null,busy=false,revision=0;
 let dependencies=null,downloadURL=null;
 function loadScript(src){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=()=>{s.remove();reject(Error('처리 파일을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.'));};document.head.appendChild(s);});}
-function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionIndividualLayout)await loadScript('assets/execution-individual-layout.js?v=62');if(!window.ExecutionFormulaCache)await loadScript('execution-formulas.js?v=62');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=62');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
+function deps(){if(!dependencies)dependencies=(async()=>{if(!window.JSZip)await loadScript('vendor/jszip.min.js');if(!window.XLSX)await loadScript('vendor/xlsx.full.min.js');if(!window.ExecutionIndividualLayout)await loadScript('assets/execution-individual-layout.js?v=63');if(!window.ExecutionFormulaCache)await loadScript('execution-formulas.js?v=63');if(!window.ExecutionEngine)await loadScript('execution-engine.js?v=63');})().catch(e=>{dependencies=null;throw e;});return dependencies;}
 function message(text,error=false){for(const id of ['executionStatus','executionBottomStatus']){const target=$(id);if(target){target.textContent=text;target.classList.toggle('execError',error);}}}
 function clearDownload(){if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;}const box=$('executionDownload');if(box)box.replaceChildren();}
-function pending(){clearDownload();if(analysis)message('입력값이 변경되었습니다. 생성 버튼을 누르면 다시 검증합니다.');}
-function setBusy(value){busy=value;$('executionAnalyze').disabled=value;$('executionGenerate').disabled=value||!analysis;$('executionFile').disabled=value;}
+function syncConfirmAll(){const all=$('executionConfirmAll');if(!all)return;const checks=Array.from(document.querySelectorAll('.execConfirmed'));all.disabled=busy||!checks.length;all.checked=checks.length>0&&checks.every(c=>c.checked);all.indeterminate=checks.some(c=>c.checked)&&!all.checked;}
+const confirmAll=$('executionConfirmAll');if(confirmAll)confirmAll.onchange=()=>{document.querySelectorAll('.execConfirmed').forEach(c=>c.checked=confirmAll.checked);pending();};
+function pending(){syncConfirmAll();clearDownload();if(analysis)message('입력값이 변경되었습니다. 생성 버튼을 누르면 다시 검증합니다.');}
+function setBusy(value){busy=value;$('executionAnalyze').disabled=value;$('executionGenerate').disabled=value||!analysis;$('executionFile').disabled=value;syncConfirmAll();}
 $('executionBtn').onclick=()=>{if(!state.staff)return;show('execution');};
 $('executionBack').onclick=()=>{show('home');renderRecentList();};
 $('executionFile').onchange=()=>{revision++;analysis=null;clearDownload();$('executionResults').replaceChildren();$('executionGenerate').disabled=true;message('ZIP을 선택했으면 자료 분석을 눌러주세요.');};
