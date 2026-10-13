@@ -8,3 +8,15 @@
 #events .ev-review-tags label{min-height:40px;font-size:13px}
 
 #events .ev-staff-filter{flex-basis:100%;border:1px solid #ddd;border-radius:9px;padding:10px;margin:0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}#events .ev-staff-filter legend{font-size:13px;padding:0 6px}#events #eventStaff{display:flex;gap:10px;flex-wrap:wrap}#events #eventStaff label{display:flex;align-items:center;gap:5px;min-width:0;flex:none;padding:7px;min-height:40px}#events #eventStaff input{width:17px;height:17px}#events #eventStaff i,#events .ev-bar-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}#events .ev-bar-legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;margin:12px 0}#events .ev-bar-legend span{display:flex;align-items:center;gap:5px}#events .ev-bars{height:250px;padding:8px 0;gap:16px;align-items:flex-end}#events .ev-month-group{min-width:130px;flex:0 0 auto;text-align:center}#events .ev-month-bars{height:218px;display:flex;gap:6px;align-items:flex-end;justify-content:center}#events .ev-series{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:0;background:transparent;color:#172033;border-radius:0;width:42px;font-size:10px;min-height:40px}#events .ev-series:focus-visible{outline:2px solid #2976b8;outline-offset:3px}#events .ev-bar-value{white-space:nowrap;margin-bottom:6px}#events .ev-series-bar{display:block;width:26px;border-radius:4px 4px 0 0}#events .ev-month-label{display:block;border-top:1px solid #d9dce2;padding-top:7px;margin-top:5px;font-size:12px}
+#events .ev-chart-grid{grid-template-columns:minmax(0,1fr)}
+#events .ev-panel{min-width:0}
+#events #eventLegend{max-width:520px;margin:0 auto}
+@media(min-width:701px){
+ #events .ev-bars{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));height:auto;min-height:250px;overflow:visible;gap:14px 8px;align-items:end}
+ #events .ev-month-group{min-width:0;width:100%}
+ #events .ev-month-bars{gap:3px;min-width:0}
+ #events .ev-series{flex:1 1 0;width:auto;min-width:0;max-width:48px}
+ #events .ev-series-bar{width:70%;max-width:26px}
+ #events .ev-bars.ev-dense .ev-bar-value{display:none}
+ #events .ev-bar-value{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+}
