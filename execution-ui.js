@@ -57,7 +57,7 @@ $('executionGenerate').onclick=async()=>{
   const blob=new Blob([b],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
   downloadURL=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=downloadURL;a.download=file.name.replace(/\.(?:zip|xlsx?)$/i,'').replace(/(?:[_\s-]*(?:자재비|시공비))$/,'')+'_실행가.xlsx';a.textContent='생성된 실행가 엑셀 다운로드';a.className='utilityBtn execDownloadLink';
-  $('executionDownload').appendChild(a);
+  $('executionDownload').appendChild(a);const next=document.createElement('button');next.type='button';next.className='utilityBtn';next.textContent='이 실행가로 신청서 만들기';next.onclick=()=>window.openApplicationFromExecution(b,a.download);$('executionDownload').appendChild(next);
   message('실행가 엑셀을 생성했습니다. 다운로드가 시작되지 않으면 아래 다운로드 버튼을 눌러주세요.');
   a.click();
  }catch(e){console.error('실행가 생성 오류',e);message('실행가 생성 실패: '+(e?.message||String(e)||'알 수 없는 오류'),true);}
