@@ -1,0 +1,8472 @@
+[
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 600,
+  "material_cost": 303000,
+  "installation_cost": 53972
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 600,
+  "material_cost": 317000,
+  "installation_cost": 57837
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 600,
+  "material_cost": 330000,
+  "installation_cost": 61703
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 600,
+  "material_cost": 342000,
+  "installation_cost": 65574
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 600,
+  "material_cost": 360000,
+  "installation_cost": 69754
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 600,
+  "material_cost": 381000,
+  "installation_cost": 74213
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 600,
+  "material_cost": 401000,
+  "installation_cost": 78687
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 600,
+  "material_cost": 517000,
+  "installation_cost": 84509
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 600,
+  "material_cost": 533000,
+  "installation_cost": 88670
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 600,
+  "material_cost": 553000,
+  "installation_cost": 109970
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 600,
+  "material_cost": 570000,
+  "installation_cost": 114138
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 600,
+  "material_cost": 586000,
+  "installation_cost": 118306
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 600,
+  "material_cost": 604000,
+  "installation_cost": 122536
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 600,
+  "material_cost": 624000,
+  "installation_cost": 126992
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 600,
+  "material_cost": 645000,
+  "installation_cost": 131479
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 600,
+  "material_cost": 666000,
+  "installation_cost": 135944
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 600,
+  "material_cost": 686000,
+  "installation_cost": 140408
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 600,
+  "material_cost": 707000,
+  "installation_cost": 144866
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 600,
+  "material_cost": 727000,
+  "installation_cost": 149327
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 600,
+  "material_cost": 759000,
+  "installation_cost": 153813
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 600,
+  "material_cost": 768000,
+  "installation_cost": 158275
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 600,
+  "material_cost": 788000,
+  "installation_cost": 162744
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 600,
+  "material_cost": 808000,
+  "installation_cost": 167205
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 600,
+  "material_cost": 824000,
+  "installation_cost": 169479
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 800,
+  "material_cost": 387000,
+  "installation_cost": 58065
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 800,
+  "material_cost": 401000,
+  "installation_cost": 62031
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 800,
+  "material_cost": 425000,
+  "installation_cost": 66883
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 800,
+  "material_cost": 448000,
+  "installation_cost": 71755
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 800,
+  "material_cost": 473000,
+  "installation_cost": 76641
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 800,
+  "material_cost": 498000,
+  "installation_cost": 81509
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 800,
+  "material_cost": 528000,
+  "installation_cost": 103505
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 800,
+  "material_cost": 642000,
+  "installation_cost": 108267
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 800,
+  "material_cost": 666000,
+  "installation_cost": 113134
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 800,
+  "material_cost": 691000,
+  "installation_cost": 118016
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 800,
+  "material_cost": 716000,
+  "installation_cost": 122885
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 800,
+  "material_cost": 740000,
+  "installation_cost": 127759
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 800,
+  "material_cost": 763000,
+  "installation_cost": 132650
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 800,
+  "material_cost": 788000,
+  "installation_cost": 137518
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 800,
+  "material_cost": 812000,
+  "installation_cost": 142394
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 800,
+  "material_cost": 843000,
+  "installation_cost": 147267
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 800,
+  "material_cost": 867000,
+  "installation_cost": 152140
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 800,
+  "material_cost": 891000,
+  "installation_cost": 157029
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 800,
+  "material_cost": 916000,
+  "installation_cost": 161899
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 800,
+  "material_cost": 951000,
+  "installation_cost": 166777
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 800,
+  "material_cost": 960000,
+  "installation_cost": 171646
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 800,
+  "material_cost": 984000,
+  "installation_cost": 201274
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 800,
+  "material_cost": 1007000,
+  "installation_cost": 206161
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 800,
+  "material_cost": 1019000,
+  "installation_cost": 208658
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 1000,
+  "material_cost": 427000,
+  "installation_cost": 62378
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 1000,
+  "material_cost": 456000,
+  "installation_cost": 67661
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 1000,
+  "material_cost": 483000,
+  "installation_cost": 72940
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 1000,
+  "material_cost": 517000,
+  "installation_cost": 78232
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 1000,
+  "material_cost": 545000,
+  "installation_cost": 100639
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 1000,
+  "material_cost": 574000,
+  "installation_cost": 105932
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 1000,
+  "material_cost": 602000,
+  "installation_cost": 111215
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 1000,
+  "material_cost": 743000,
+  "installation_cost": 116319
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 1000,
+  "material_cost": 770000,
+  "installation_cost": 121594
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 1000,
+  "material_cost": 798000,
+  "installation_cost": 126885
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 1000,
+  "material_cost": 827000,
+  "installation_cost": 132182
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 1000,
+  "material_cost": 860000,
+  "installation_cost": 137466
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 1000,
+  "material_cost": 888000,
+  "installation_cost": 142747
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 1000,
+  "material_cost": 916000,
+  "installation_cost": 148022
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 1000,
+  "material_cost": 945000,
+  "installation_cost": 153309
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 1000,
+  "material_cost": 975000,
+  "installation_cost": 158609
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 1000,
+  "material_cost": 1003000,
+  "installation_cost": 188644
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 1000,
+  "material_cost": 1031000,
+  "installation_cost": 193920
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 1000,
+  "material_cost": 1059000,
+  "installation_cost": 199201
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 1000,
+  "material_cost": 1097000,
+  "installation_cost": 204490
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 1000,
+  "material_cost": 1086000,
+  "installation_cost": 209783
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 1000,
+  "material_cost": 1114000,
+  "installation_cost": 215071
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 1000,
+  "material_cost": 1141000,
+  "installation_cost": 220350
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 1000,
+  "material_cost": 1155000,
+  "installation_cost": 223065
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 1200,
+  "material_cost": 467000,
+  "installation_cost": 67616
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 1200,
+  "material_cost": 500000,
+  "installation_cost": 73320
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 1200,
+  "material_cost": 536000,
+  "installation_cost": 96136
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 1200,
+  "material_cost": 568000,
+  "installation_cost": 101822
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 1200,
+  "material_cost": 600000,
+  "installation_cost": 107524
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 1200,
+  "material_cost": 634000,
+  "installation_cost": 113217
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 1200,
+  "material_cost": 666000,
+  "installation_cost": 118922
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 1200,
+  "material_cost": 821000,
+  "installation_cost": 124371
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 1200,
+  "material_cost": 859000,
+  "installation_cost": 130072
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 1200,
+  "material_cost": 890000,
+  "installation_cost": 135772
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 1200,
+  "material_cost": 924000,
+  "installation_cost": 141460
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 1200,
+  "material_cost": 955000,
+  "installation_cost": 147154
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 1200,
+  "material_cost": 987000,
+  "installation_cost": 177593
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 1200,
+  "material_cost": 1019000,
+  "installation_cost": 183294
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 1200,
+  "material_cost": 1051000,
+  "installation_cost": 188994
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 1200,
+  "material_cost": 1085000,
+  "installation_cost": 194684
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 1200,
+  "material_cost": 1115000,
+  "installation_cost": 200376
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 1200,
+  "material_cost": 1148000,
+  "installation_cost": 206067
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 1200,
+  "material_cost": 1180000,
+  "installation_cost": 211771
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 1200,
+  "material_cost": 1222000,
+  "installation_cost": 217465
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 1200,
+  "material_cost": 1272000,
+  "installation_cost": 223152
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 1200,
+  "material_cost": 1303000,
+  "installation_cost": 228851
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 1200,
+  "material_cost": 1333000,
+  "installation_cost": 234539
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 1200,
+  "material_cost": 1349000,
+  "installation_cost": 283234
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 1400,
+  "material_cost": 506000,
+  "installation_cost": 72866
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 1400,
+  "material_cost": 548000,
+  "installation_cost": 96091
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 1400,
+  "material_cost": 583000,
+  "installation_cost": 102204
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 1400,
+  "material_cost": 619000,
+  "installation_cost": 108301
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 1400,
+  "material_cost": 655000,
+  "installation_cost": 114399
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 1400,
+  "material_cost": 693000,
+  "installation_cost": 120514
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 1400,
+  "material_cost": 728000,
+  "installation_cost": 126610
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 1400,
+  "material_cost": 903000,
+  "installation_cost": 132439
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 1400,
+  "material_cost": 940000,
+  "installation_cost": 138533
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 1400,
+  "material_cost": 975000,
+  "installation_cost": 144642
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 1400,
+  "material_cost": 1011000,
+  "installation_cost": 175489
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 1400,
+  "material_cost": 1047000,
+  "installation_cost": 181606
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 1400,
+  "material_cost": 1083000,
+  "installation_cost": 187707
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 1400,
+  "material_cost": 1119000,
+  "installation_cost": 193805
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 1400,
+  "material_cost": 1155000,
+  "installation_cost": 199909
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 1400,
+  "material_cost": 1191000,
+  "installation_cost": 206009
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 1400,
+  "material_cost": 1227000,
+  "installation_cost": 212127
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 1400,
+  "material_cost": 1263000,
+  "installation_cost": 218226
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 1400,
+  "material_cost": 1299000,
+  "installation_cost": 224324
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 1400,
+  "material_cost": 1344000,
+  "installation_cost": 276165
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 1400,
+  "material_cost": 1390000,
+  "installation_cost": 282264
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 1400,
+  "material_cost": 1425000,
+  "installation_cost": 288385
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 1400,
+  "material_cost": 1458000,
+  "installation_cost": 294482
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 1400,
+  "material_cost": 1476000,
+  "installation_cost": 297644
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 1600,
+  "material_cost": 545000,
+  "installation_cost": 78102
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 1600,
+  "material_cost": 592000,
+  "installation_cost": 101749
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 1600,
+  "material_cost": 630000,
+  "installation_cost": 108256
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 1600,
+  "material_cost": 670000,
+  "installation_cost": 114783
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 1600,
+  "material_cost": 709000,
+  "installation_cost": 121290
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 1600,
+  "material_cost": 751000,
+  "installation_cost": 127792
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 1600,
+  "material_cost": 791000,
+  "installation_cost": 134317
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 1600,
+  "material_cost": 980000,
+  "installation_cost": 140489
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 1600,
+  "material_cost": 1020000,
+  "installation_cost": 171743
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 1600,
+  "material_cost": 1060000,
+  "installation_cost": 178276
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 1600,
+  "material_cost": 1100000,
+  "installation_cost": 184786
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 1600,
+  "material_cost": 1140000,
+  "installation_cost": 191295
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 1600,
+  "material_cost": 1178000,
+  "installation_cost": 197806
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 1600,
+  "material_cost": 1218000,
+  "installation_cost": 204308
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 1600,
+  "material_cost": 1258000,
+  "installation_cost": 210840
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 1600,
+  "material_cost": 1299000,
+  "installation_cost": 217351
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 1600,
+  "material_cost": 1339000,
+  "installation_cost": 269601
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 1600,
+  "material_cost": 1378000,
+  "installation_cost": 276106
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 1600,
+  "material_cost": 1418000,
+  "installation_cost": 282612
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 1600,
+  "material_cost": 1468000,
+  "installation_cost": 289144
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 1600,
+  "material_cost": 1509000,
+  "installation_cost": 295652
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 1600,
+  "material_cost": 1547000,
+  "installation_cost": 302167
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 1600,
+  "material_cost": 1584000,
+  "installation_cost": 308674
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 1600,
+  "material_cost": 1604000,
+  "installation_cost": 312058
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 1800,
+  "material_cost": 584000,
+  "installation_cost": 100481
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 1800,
+  "material_cost": 634000,
+  "installation_cost": 107395
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 1800,
+  "material_cost": 677000,
+  "installation_cost": 114329
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 1800,
+  "material_cost": 720000,
+  "installation_cost": 121244
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 1800,
+  "material_cost": 764000,
+  "installation_cost": 128175
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 1800,
+  "material_cost": 809000,
+  "installation_cost": 135090
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 1800,
+  "material_cost": 853000,
+  "installation_cost": 142005
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 1800,
+  "material_cost": 1057000,
+  "installation_cost": 173307
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 1800,
+  "material_cost": 1101000,
+  "installation_cost": 180221
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 1800,
+  "material_cost": 1143000,
+  "installation_cost": 187149
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 1800,
+  "material_cost": 1188000,
+  "installation_cost": 194062
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 1800,
+  "material_cost": 1231000,
+  "installation_cost": 200983
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 1800,
+  "material_cost": 1275000,
+  "installation_cost": 207921
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 1800,
+  "material_cost": 1318000,
+  "installation_cost": 214833
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 1800,
+  "material_cost": 1362000,
+  "installation_cost": 267494
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 1800,
+  "material_cost": 1406000,
+  "installation_cost": 274414
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 1800,
+  "material_cost": 1449000,
+  "installation_cost": 281333
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 1800,
+  "material_cost": 1493000,
+  "installation_cost": 288267
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 1800,
+  "material_cost": 1536000,
+  "installation_cost": 295184
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 1800,
+  "material_cost": 1590000,
+  "installation_cost": 302106
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 1800,
+  "material_cost": 1627000,
+  "installation_cost": 309024
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 1800,
+  "material_cost": 1669000,
+  "installation_cost": 315947
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 1800,
+  "material_cost": 1709000,
+  "installation_cost": 322878
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 1800,
+  "material_cost": 1730000,
+  "installation_cost": 326487
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 2000,
+  "material_cost": 627000,
+  "installation_cost": 105729
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 2000,
+  "material_cost": 681000,
+  "installation_cost": 113057
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 2000,
+  "material_cost": 728000,
+  "installation_cost": 120382
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 2000,
+  "material_cost": 774000,
+  "installation_cost": 127721
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 2000,
+  "material_cost": 822000,
+  "installation_cost": 135046
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 2000,
+  "material_cost": 871000,
+  "installation_cost": 142389
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 2000,
+  "material_cost": 918000,
+  "installation_cost": 174462
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 2000,
+  "material_cost": 1139000,
+  "installation_cost": 181361
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 2000,
+  "material_cost": 1187000,
+  "installation_cost": 188680
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 2000,
+  "material_cost": 1234000,
+  "installation_cost": 196017
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 2000,
+  "material_cost": 1282000,
+  "installation_cost": 203360
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 2000,
+  "material_cost": 1330000,
+  "installation_cost": 210691
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 2000,
+  "material_cost": 1376000,
+  "installation_cost": 263754
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 2000,
+  "material_cost": 1424000,
+  "installation_cost": 271076
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 2000,
+  "material_cost": 1471000,
+  "installation_cost": 278411
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 2000,
+  "material_cost": 1520000,
+  "installation_cost": 285755
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 2000,
+  "material_cost": 1567000,
+  "installation_cost": 293085
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 2000,
+  "material_cost": 1614000,
+  "installation_cost": 300409
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 2000,
+  "material_cost": 1662000,
+  "installation_cost": 307735
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 2000,
+  "material_cost": 1719000,
+  "installation_cost": 315069
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 2000,
+  "material_cost": 1753000,
+  "installation_cost": 322411
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 2000,
+  "material_cost": 1797000,
+  "installation_cost": 329743
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 2000,
+  "material_cost": 1841000,
+  "installation_cost": 337068
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 2000,
+  "material_cost": 1864000,
+  "installation_cost": 340895
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 2200,
+  "material_cost": 666000,
+  "installation_cost": 110966
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 2200,
+  "material_cost": 724000,
+  "installation_cost": 118717
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 2200,
+  "material_cost": 775000,
+  "installation_cost": 126450
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 2200,
+  "material_cost": 826000,
+  "installation_cost": 134183
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 2200,
+  "material_cost": 878000,
+  "installation_cost": 141934
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 2200,
+  "material_cost": 930000,
+  "installation_cost": 174421
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 2200,
+  "material_cost": 981000,
+  "installation_cost": 182171
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 2200,
+  "material_cost": 1217000,
+  "installation_cost": 189410
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 2200,
+  "material_cost": 1269000,
+  "installation_cost": 197158
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 2200,
+  "material_cost": 1319000,
+  "installation_cost": 204905
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 2200,
+  "material_cost": 1371000,
+  "installation_cost": 258377
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 2200,
+  "material_cost": 1422000,
+  "installation_cost": 266116
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 2200,
+  "material_cost": 1473000,
+  "installation_cost": 273852
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 2200,
+  "material_cost": 1524000,
+  "installation_cost": 281600
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 2200,
+  "material_cost": 1576000,
+  "installation_cost": 289343
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 2200,
+  "material_cost": 1628000,
+  "installation_cost": 297079
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 2200,
+  "material_cost": 1679000,
+  "installation_cost": 304819
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 2200,
+  "material_cost": 1730000,
+  "installation_cost": 312555
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 2200,
+  "material_cost": 1781000,
+  "installation_cost": 320305
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 2200,
+  "material_cost": 1842000,
+  "installation_cost": 328047
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 2200,
+  "material_cost": 1871000,
+  "installation_cost": 335778
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 2200,
+  "material_cost": 1919000,
+  "installation_cost": 343525
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 2200,
+  "material_cost": 1967000,
+  "installation_cost": 351259
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 2200,
+  "material_cost": 1992000,
+  "installation_cost": 355326
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 2400,
+  "material_cost": 706000,
+  "installation_cost": 116220
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 2400,
+  "material_cost": 767000,
+  "installation_cost": 124359
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 2400,
+  "material_cost": 822000,
+  "installation_cost": 132520
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 2400,
+  "material_cost": 877000,
+  "installation_cost": 140664
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 2400,
+  "material_cost": 932000,
+  "installation_cost": 173558
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 2400,
+  "material_cost": 989000,
+  "installation_cost": 181716
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 2400,
+  "material_cost": 1043000,
+  "installation_cost": 189861
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 2400,
+  "material_cost": 1294000,
+  "installation_cost": 197479
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 2400,
+  "material_cost": 1349000,
+  "installation_cost": 205620
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 2400,
+  "material_cost": 1404000,
+  "installation_cost": 259513
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 2400,
+  "material_cost": 1459000,
+  "installation_cost": 267654
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 2400,
+  "material_cost": 1514000,
+  "installation_cost": 275818
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 2400,
+  "material_cost": 1569000,
+  "installation_cost": 283968
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 2400,
+  "material_cost": 1624000,
+  "installation_cost": 292108
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 2400,
+  "material_cost": 1679000,
+  "installation_cost": 300258
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 2400,
+  "material_cost": 1735000,
+  "installation_cost": 308406
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 2400,
+  "material_cost": 1790000,
+  "installation_cost": 316571
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 2400,
+  "material_cost": 1764000,
+  "installation_cost": 324713
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 2400,
+  "material_cost": 1814000,
+  "installation_cost": 332859
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 2400,
+  "material_cost": 1875000,
+  "installation_cost": 341007
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 2400,
+  "material_cost": 1989000,
+  "installation_cost": 349154
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 2400,
+  "material_cost": 2042000,
+  "installation_cost": 357319
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 2400,
+  "material_cost": 2092000,
+  "installation_cost": 365462
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 2400,
+  "material_cost": 2119000,
+  "installation_cost": 369735
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1000,
+  "height_mm": 2600,
+  "material_cost": 745000,
+  "installation_cost": 121452
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1200,
+  "height_mm": 2600,
+  "material_cost": 810000,
+  "installation_cost": 130020
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1400,
+  "height_mm": 2600,
+  "material_cost": 868000,
+  "installation_cost": 138573
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1600,
+  "height_mm": 2600,
+  "material_cost": 927000,
+  "installation_cost": 171894
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 1800,
+  "height_mm": 2600,
+  "material_cost": 986000,
+  "installation_cost": 180445
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2000,
+  "height_mm": 2600,
+  "material_cost": 1047000,
+  "installation_cost": 188998
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2200,
+  "height_mm": 2600,
+  "material_cost": 1106000,
+  "installation_cost": 197565
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2400,
+  "height_mm": 2600,
+  "material_cost": 1370000,
+  "installation_cost": 205529
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2600,
+  "height_mm": 2600,
+  "material_cost": 1428000,
+  "installation_cost": 259817
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 2800,
+  "height_mm": 2600,
+  "material_cost": 1487000,
+  "installation_cost": 268395
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3000,
+  "height_mm": 2600,
+  "material_cost": 1547000,
+  "installation_cost": 276952
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3200,
+  "height_mm": 2600,
+  "material_cost": 1606000,
+  "installation_cost": 285508
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3400,
+  "height_mm": 2600,
+  "material_cost": 1664000,
+  "installation_cost": 294064
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3600,
+  "height_mm": 2600,
+  "material_cost": 1724000,
+  "installation_cost": 302613
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 3800,
+  "height_mm": 2600,
+  "material_cost": 1782000,
+  "installation_cost": 311191
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4000,
+  "height_mm": 2600,
+  "material_cost": 1842000,
+  "installation_cost": 319747
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4200,
+  "height_mm": 2600,
+  "material_cost": 1901000,
+  "installation_cost": 328305
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4400,
+  "height_mm": 2600,
+  "material_cost": 1870000,
+  "installation_cost": 336857
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4600,
+  "height_mm": 2600,
+  "material_cost": 1925000,
+  "installation_cost": 345408
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 4800,
+  "height_mm": 2600,
+  "material_cost": 1990000,
+  "installation_cost": 353987
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5000,
+  "height_mm": 2600,
+  "material_cost": 2108000,
+  "installation_cost": 362541
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5200,
+  "height_mm": 2600,
+  "material_cost": 2163000,
+  "installation_cost": 371100
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5400,
+  "height_mm": 2600,
+  "material_cost": 2218000,
+  "installation_cost": 379653
+ },
+ {
+  "product_code": "F-140",
+  "width_mm": 5500,
+  "height_mm": 2600,
+  "material_cost": 2246000,
+  "installation_cost": 384150
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 800,
+  "material_cost": 264000,
+  "installation_cost": 55057
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 800,
+  "material_cost": 281000,
+  "installation_cost": 58898
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 800,
+  "material_cost": 298000,
+  "installation_cost": 62739
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 800,
+  "material_cost": 316000,
+  "installation_cost": 66800
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 800,
+  "material_cost": 340000,
+  "installation_cost": 71597
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 800,
+  "material_cost": 364000,
+  "installation_cost": 76375
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 800,
+  "material_cost": 387000,
+  "installation_cost": 81171
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 800,
+  "material_cost": 416000,
+  "installation_cost": 85950
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 800,
+  "material_cost": 440000,
+  "installation_cost": 116369
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 800,
+  "material_cost": 502000,
+  "installation_cost": 121002
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 800,
+  "material_cost": 526000,
+  "installation_cost": 125788
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 800,
+  "material_cost": 549000,
+  "installation_cost": 130585
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 800,
+  "material_cost": 573000,
+  "installation_cost": 135373
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 800,
+  "material_cost": 596000,
+  "installation_cost": 140151
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 800,
+  "material_cost": 619000,
+  "installation_cost": 144932
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 800,
+  "material_cost": 643000,
+  "installation_cost": 149718
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 800,
+  "material_cost": 666000,
+  "installation_cost": 154514
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 800,
+  "material_cost": 695000,
+  "installation_cost": 159299
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 800,
+  "material_cost": 719000,
+  "installation_cost": 164079
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 800,
+  "material_cost": 743000,
+  "installation_cost": 168861
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 800,
+  "material_cost": 767000,
+  "installation_cost": 173645
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 800,
+  "material_cost": 793000,
+  "installation_cost": 178441
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 1000,
+  "material_cost": 151000,
+  "installation_cost": 58860
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 1000,
+  "material_cost": 162000,
+  "installation_cost": 62765
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 1000,
+  "material_cost": 172000,
+  "installation_cost": 67138
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 1000,
+  "material_cost": 182000,
+  "installation_cost": 72291
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 1000,
+  "material_cost": 193000,
+  "installation_cost": 77461
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 1000,
+  "material_cost": 203000,
+  "installation_cost": 82613
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 1000,
+  "material_cost": 214000,
+  "installation_cost": 113407
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 1000,
+  "material_cost": 260000,
+  "installation_cost": 118579
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 1000,
+  "material_cost": 271000,
+  "installation_cost": 123732
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 1000,
+  "material_cost": 281000,
+  "installation_cost": 128693
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 1000,
+  "material_cost": 292000,
+  "installation_cost": 133842
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 1000,
+  "material_cost": 302000,
+  "installation_cost": 139004
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 1000,
+  "material_cost": 312000,
+  "installation_cost": 144159
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 1000,
+  "material_cost": 323000,
+  "installation_cost": 149319
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 1000,
+  "material_cost": 402000,
+  "installation_cost": 154489
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 1000,
+  "material_cost": 412000,
+  "installation_cost": 159640
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 1000,
+  "material_cost": 422000,
+  "installation_cost": 164802
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 1000,
+  "material_cost": 433000,
+  "installation_cost": 169958
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 1000,
+  "material_cost": 443000,
+  "installation_cost": 205114
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 1000,
+  "material_cost": 454000,
+  "installation_cost": 210284
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 1000,
+  "material_cost": 464000,
+  "installation_cost": 215435
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 1000,
+  "material_cost": 474000,
+  "installation_cost": 220597
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 1200,
+  "material_cost": 324000,
+  "installation_cost": 62669
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 1200,
+  "material_cost": 340000,
+  "installation_cost": 66711
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 1200,
+  "material_cost": 369000,
+  "installation_cost": 72255
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 1200,
+  "material_cost": 398000,
+  "installation_cost": 77781
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 1200,
+  "material_cost": 431000,
+  "installation_cost": 108948
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 1200,
+  "material_cost": 459000,
+  "installation_cost": 114494
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 1200,
+  "material_cost": 488000,
+  "installation_cost": 120021
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 1200,
+  "material_cost": 515000,
+  "installation_cost": 125564
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 1200,
+  "material_cost": 544000,
+  "installation_cost": 131090
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 1200,
+  "material_cost": 631000,
+  "installation_cost": 136362
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 1200,
+  "material_cost": 665000,
+  "installation_cost": 141886
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 1200,
+  "material_cost": 693000,
+  "installation_cost": 147415
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 1200,
+  "material_cost": 722000,
+  "installation_cost": 152970
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 1200,
+  "material_cost": 749000,
+  "installation_cost": 158494
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 1200,
+  "material_cost": 778000,
+  "installation_cost": 194027
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 1200,
+  "material_cost": 806000,
+  "installation_cost": 199554
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 1200,
+  "material_cost": 834000,
+  "installation_cost": 205081
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 1200,
+  "material_cost": 862000,
+  "installation_cost": 210633
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 1200,
+  "material_cost": 891000,
+  "installation_cost": 216161
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 1200,
+  "material_cost": 918000,
+  "installation_cost": 221695
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 1200,
+  "material_cost": 947000,
+  "installation_cost": 227222
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 1200,
+  "material_cost": 978000,
+  "installation_cost": 232750
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 1400,
+  "material_cost": 349000,
+  "installation_cost": 66475
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 1400,
+  "material_cost": 372000,
+  "installation_cost": 71453
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 1400,
+  "material_cost": 403000,
+  "installation_cost": 77354
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 1400,
+  "material_cost": 439000,
+  "installation_cost": 108914
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 1400,
+  "material_cost": 470000,
+  "installation_cost": 114815
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 1400,
+  "material_cost": 501000,
+  "installation_cost": 120732
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 1400,
+  "material_cost": 530000,
+  "installation_cost": 126632
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 1400,
+  "material_cost": 561000,
+  "installation_cost": 132532
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 1400,
+  "material_cost": 591000,
+  "installation_cost": 138452
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 1400,
+  "material_cost": 696000,
+  "installation_cost": 144026
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 1400,
+  "material_cost": 726000,
+  "installation_cost": 149950
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 1400,
+  "material_cost": 757000,
+  "installation_cost": 155854
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 1400,
+  "material_cost": 788000,
+  "installation_cost": 191751
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 1400,
+  "material_cost": 817000,
+  "installation_cost": 197660
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 1400,
+  "material_cost": 848000,
+  "installation_cost": 203562
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 1400,
+  "material_cost": 878000,
+  "installation_cost": 209484
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 1400,
+  "material_cost": 909000,
+  "installation_cost": 215389
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 1400,
+  "material_cost": 940000,
+  "installation_cost": 221292
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 1400,
+  "material_cost": 969000,
+  "installation_cost": 227198
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 1400,
+  "material_cost": 1000000,
+  "installation_cost": 233100
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 1400,
+  "material_cost": 1031000,
+  "installation_cost": 239023
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 1400,
+  "material_cost": 1064000,
+  "installation_cost": 297496
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 1600,
+  "material_cost": 375000,
+  "installation_cost": 70278
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 1600,
+  "material_cost": 404000,
+  "installation_cost": 76197
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 1600,
+  "material_cost": 437000,
+  "installation_cost": 82471
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 1600,
+  "material_cost": 476000,
+  "installation_cost": 114404
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 1600,
+  "material_cost": 508000,
+  "installation_cost": 120678
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 1600,
+  "material_cost": 541000,
+  "installation_cost": 126952
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 1600,
+  "material_cost": 574000,
+  "installation_cost": 133247
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 1600,
+  "material_cost": 606000,
+  "installation_cost": 139520
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 1600,
+  "material_cost": 640000,
+  "installation_cost": 145811
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 1600,
+  "material_cost": 754000,
+  "installation_cost": 151714
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 1600,
+  "material_cost": 788000,
+  "installation_cost": 187985
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 1600,
+  "material_cost": 821000,
+  "installation_cost": 194270
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 1600,
+  "material_cost": 853000,
+  "installation_cost": 200547
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 1600,
+  "material_cost": 886000,
+  "installation_cost": 206834
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 1600,
+  "material_cost": 919000,
+  "installation_cost": 213119
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 1600,
+  "material_cost": 951000,
+  "installation_cost": 219393
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 1600,
+  "material_cost": 984000,
+  "installation_cost": 225677
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 1600,
+  "material_cost": 1017000,
+  "installation_cost": 231954
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 1600,
+  "material_cost": 1049000,
+  "installation_cost": 290811
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 1600,
+  "material_cost": 1082000,
+  "installation_cost": 297097
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 1600,
+  "material_cost": 1115000,
+  "installation_cost": 303372
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 1600,
+  "material_cost": 1150000,
+  "installation_cost": 309655
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 1800,
+  "material_cost": 401000,
+  "installation_cost": 74274
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 1800,
+  "material_cost": 436000,
+  "installation_cost": 80938
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 1800,
+  "material_cost": 472000,
+  "installation_cost": 113227
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 1800,
+  "material_cost": 512000,
+  "installation_cost": 119876
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 1800,
+  "material_cost": 547000,
+  "installation_cost": 126544
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 1800,
+  "material_cost": 583000,
+  "installation_cost": 133192
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 1800,
+  "material_cost": 617000,
+  "installation_cost": 139856
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 1800,
+  "material_cost": 653000,
+  "installation_cost": 146507
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 1800,
+  "material_cost": 688000,
+  "installation_cost": 153155
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 1800,
+  "material_cost": 814000,
+  "installation_cost": 189376
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 1800,
+  "material_cost": 849000,
+  "installation_cost": 196032
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 1800,
+  "material_cost": 884000,
+  "installation_cost": 202696
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 1800,
+  "material_cost": 919000,
+  "installation_cost": 209355
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 1800,
+  "material_cost": 954000,
+  "installation_cost": 216003
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 1800,
+  "material_cost": 988000,
+  "installation_cost": 222653
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 1800,
+  "material_cost": 1024000,
+  "installation_cost": 229310
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 1800,
+  "material_cost": 1059000,
+  "installation_cost": 288546
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 1800,
+  "material_cost": 1094000,
+  "installation_cost": 295202
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 1800,
+  "material_cost": 1129000,
+  "installation_cost": 301851
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 1800,
+  "material_cost": 1164000,
+  "installation_cost": 308503
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 1800,
+  "material_cost": 1199000,
+  "installation_cost": 315158
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 1800,
+  "material_cost": 1237000,
+  "installation_cost": 321823
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 2000,
+  "material_cost": 431000,
+  "installation_cost": 78640
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 2000,
+  "material_cost": 468000,
+  "installation_cost": 85662
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 2000,
+  "material_cost": 505000,
+  "installation_cost": 118345
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 2000,
+  "material_cost": 549000,
+  "installation_cost": 125368
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 2000,
+  "material_cost": 586000,
+  "installation_cost": 132406
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 2000,
+  "material_cost": 623000,
+  "installation_cost": 139431
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 2000,
+  "material_cost": 661000,
+  "installation_cost": 146453
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 2000,
+  "material_cost": 699000,
+  "installation_cost": 153493
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 2000,
+  "material_cost": 735000,
+  "installation_cost": 190515
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 2000,
+  "material_cost": 873000,
+  "installation_cost": 197064
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 2000,
+  "material_cost": 910000,
+  "installation_cost": 204084
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 2000,
+  "material_cost": 947000,
+  "installation_cost": 211116
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 2000,
+  "material_cost": 985000,
+  "installation_cost": 218142
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 2000,
+  "material_cost": 1022000,
+  "installation_cost": 225171
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 2000,
+  "material_cost": 1059000,
+  "installation_cost": 284781
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 2000,
+  "material_cost": 1097000,
+  "installation_cost": 291803
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 2000,
+  "material_cost": 1134000,
+  "installation_cost": 298835
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 2000,
+  "material_cost": 1171000,
+  "installation_cost": 305860
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 2000,
+  "material_cost": 1209000,
+  "installation_cost": 312889
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 2000,
+  "material_cost": 1245000,
+  "installation_cost": 319929
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 2000,
+  "material_cost": 1283000,
+  "installation_cost": 326950
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 2000,
+  "material_cost": 1324000,
+  "installation_cost": 333982
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 2200,
+  "material_cost": 460000,
+  "installation_cost": 83011
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 2200,
+  "material_cost": 500000,
+  "installation_cost": 116048
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 2200,
+  "material_cost": 540000,
+  "installation_cost": 123459
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 2200,
+  "material_cost": 585000,
+  "installation_cost": 130858
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 2200,
+  "material_cost": 625000,
+  "installation_cost": 138254
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 2200,
+  "material_cost": 665000,
+  "installation_cost": 145669
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 2200,
+  "material_cost": 705000,
+  "installation_cost": 153068
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 2200,
+  "material_cost": 744000,
+  "installation_cost": 190476
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 2200,
+  "material_cost": 784000,
+  "installation_cost": 197872
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 2200,
+  "material_cost": 932000,
+  "installation_cost": 204734
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 2200,
+  "material_cost": 971000,
+  "installation_cost": 212129
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 2200,
+  "material_cost": 1011000,
+  "installation_cost": 219528
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 2200,
+  "material_cost": 1051000,
+  "installation_cost": 279522
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 2200,
+  "material_cost": 1090000,
+  "installation_cost": 286917
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 2200,
+  "material_cost": 1130000,
+  "installation_cost": 294322
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 2200,
+  "material_cost": 1170000,
+  "installation_cost": 301719
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 2200,
+  "material_cost": 1208000,
+  "installation_cost": 309115
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 2200,
+  "material_cost": 1249000,
+  "installation_cost": 316539
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 2200,
+  "material_cost": 1288000,
+  "installation_cost": 323935
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 2200,
+  "material_cost": 1327000,
+  "installation_cost": 331340
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 2200,
+  "material_cost": 1367000,
+  "installation_cost": 338736
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 2200,
+  "material_cost": 1410000,
+  "installation_cost": 346136
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 2400,
+  "material_cost": 490000,
+  "installation_cost": 87376
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 2400,
+  "material_cost": 531000,
+  "installation_cost": 120790
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 2400,
+  "material_cost": 574000,
+  "installation_cost": 128561
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 2400,
+  "material_cost": 622000,
+  "installation_cost": 136349
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 2400,
+  "material_cost": 663000,
+  "installation_cost": 144121
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 2400,
+  "material_cost": 705000,
+  "installation_cost": 151907
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 2400,
+  "material_cost": 748000,
+  "installation_cost": 189674
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 2400,
+  "material_cost": 790000,
+  "installation_cost": 197445
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 2400,
+  "material_cost": 831000,
+  "installation_cost": 205235
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 2400,
+  "material_cost": 990000,
+  "installation_cost": 212398
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 2400,
+  "material_cost": 1032000,
+  "installation_cost": 220192
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 2400,
+  "material_cost": 1075000,
+  "installation_cost": 280537
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 2400,
+  "material_cost": 1116000,
+  "installation_cost": 288307
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 2400,
+  "material_cost": 1158000,
+  "installation_cost": 296085
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 2400,
+  "material_cost": 1200000,
+  "installation_cost": 303857
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 2400,
+  "material_cost": 1242000,
+  "installation_cost": 311649
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 2400,
+  "material_cost": 1284000,
+  "installation_cost": 319423
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 2400,
+  "material_cost": 1326000,
+  "installation_cost": 327196
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 2400,
+  "material_cost": 1367000,
+  "installation_cost": 334972
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 2400,
+  "material_cost": 1319000,
+  "installation_cost": 342746
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 2400,
+  "material_cost": 1357000,
+  "installation_cost": 350537
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 2400,
+  "material_cost": 1397000,
+  "installation_cost": 358311
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 600,
+  "height_mm": 2500,
+  "material_cost": 504000,
+  "installation_cost": 89547
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 800,
+  "height_mm": 2500,
+  "material_cost": 548000,
+  "installation_cost": 123161
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1000,
+  "height_mm": 2500,
+  "material_cost": 591000,
+  "installation_cost": 131119
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1200,
+  "height_mm": 2500,
+  "material_cost": 639000,
+  "installation_cost": 139092
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1400,
+  "height_mm": 2500,
+  "material_cost": 683000,
+  "installation_cost": 147051
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1600,
+  "height_mm": 2500,
+  "material_cost": 726000,
+  "installation_cost": 155011
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 1800,
+  "height_mm": 2500,
+  "material_cost": 770000,
+  "installation_cost": 192981
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2000,
+  "height_mm": 2500,
+  "material_cost": 812000,
+  "installation_cost": 200941
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2200,
+  "height_mm": 2500,
+  "material_cost": 855000,
+  "installation_cost": 208914
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2400,
+  "height_mm": 2500,
+  "material_cost": 1020000,
+  "installation_cost": 216245
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2600,
+  "height_mm": 2500,
+  "material_cost": 1063000,
+  "installation_cost": 276776
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 2800,
+  "height_mm": 2500,
+  "material_cost": 1106000,
+  "installation_cost": 284735
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3000,
+  "height_mm": 2500,
+  "material_cost": 1149000,
+  "installation_cost": 292713
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3200,
+  "height_mm": 2500,
+  "material_cost": 1192000,
+  "installation_cost": 300673
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3400,
+  "height_mm": 2500,
+  "material_cost": 1235000,
+  "installation_cost": 308638
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3600,
+  "height_mm": 2500,
+  "material_cost": 1278000,
+  "installation_cost": 316598
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 3800,
+  "height_mm": 2500,
+  "material_cost": 1321000,
+  "installation_cost": 324557
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4000,
+  "height_mm": 2500,
+  "material_cost": 1364000,
+  "installation_cost": 332538
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4200,
+  "height_mm": 2500,
+  "material_cost": 1408000,
+  "installation_cost": 340496
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4400,
+  "height_mm": 2500,
+  "material_cost": 1355000,
+  "installation_cost": 348462
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4600,
+  "height_mm": 2500,
+  "material_cost": 1394000,
+  "installation_cost": 356422
+ },
+ {
+  "product_code": "F-230W",
+  "width_mm": 4800,
+  "height_mm": 2500,
+  "material_cost": 1436000,
+  "installation_cost": 364381
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 800,
+  "material_cost": 352000,
+  "installation_cost": 55054
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 800,
+  "material_cost": 370000,
+  "installation_cost": 58896
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 800,
+  "material_cost": 388000,
+  "installation_cost": 62737
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 800,
+  "material_cost": 407000,
+  "installation_cost": 66781
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 800,
+  "material_cost": 432000,
+  "installation_cost": 71575
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 800,
+  "material_cost": 445000,
+  "installation_cost": 76356
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 800,
+  "material_cost": 470000,
+  "installation_cost": 81134
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 800,
+  "material_cost": 507000,
+  "installation_cost": 85912
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 800,
+  "material_cost": 530000,
+  "installation_cost": 116331
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 800,
+  "material_cost": 619000,
+  "installation_cost": 120965
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 800,
+  "material_cost": 644000,
+  "installation_cost": 125742
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 800,
+  "material_cost": 668000,
+  "installation_cost": 130529
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 800,
+  "material_cost": 693000,
+  "installation_cost": 135307
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 800,
+  "material_cost": 706000,
+  "installation_cost": 140102
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 800,
+  "material_cost": 731000,
+  "installation_cost": 144881
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 800,
+  "material_cost": 756000,
+  "installation_cost": 149660
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 800,
+  "material_cost": 781000,
+  "installation_cost": 154446
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 800,
+  "material_cost": 818000,
+  "installation_cost": 159228
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 800,
+  "material_cost": 843000,
+  "installation_cost": 164004
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 800,
+  "material_cost": 867000,
+  "installation_cost": 168784
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 800,
+  "material_cost": 891000,
+  "installation_cost": 173560
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 800,
+  "material_cost": 922000,
+  "installation_cost": 178348
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 1000,
+  "material_cost": 387000,
+  "installation_cost": 58860
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 1000,
+  "material_cost": 404000,
+  "installation_cost": 62765
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 1000,
+  "material_cost": 426000,
+  "installation_cost": 67121
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 1000,
+  "material_cost": 453000,
+  "installation_cost": 72273
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 1000,
+  "material_cost": 468000,
+  "installation_cost": 77426
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 1000,
+  "material_cost": 506000,
+  "installation_cost": 82594
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 1000,
+  "material_cost": 534000,
+  "installation_cost": 113390
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 1000,
+  "material_cost": 561000,
+  "installation_cost": 118541
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 1000,
+  "material_cost": 588000,
+  "installation_cost": 123694
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 1000,
+  "material_cost": 690000,
+  "installation_cost": 128651
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 1000,
+  "material_cost": 705000,
+  "installation_cost": 133804
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 1000,
+  "material_cost": 732000,
+  "installation_cost": 138957
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 1000,
+  "material_cost": 759000,
+  "installation_cost": 144108
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 1000,
+  "material_cost": 799000,
+  "installation_cost": 149271
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 1000,
+  "material_cost": 825000,
+  "installation_cost": 154421
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 1000,
+  "material_cost": 852000,
+  "installation_cost": 159577
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 1000,
+  "material_cost": 879000,
+  "installation_cost": 164728
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 1000,
+  "material_cost": 906000,
+  "installation_cost": 169882
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 1000,
+  "material_cost": 933000,
+  "installation_cost": 205036
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 1000,
+  "material_cost": 961000,
+  "installation_cost": 210208
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 1000,
+  "material_cost": 988000,
+  "installation_cost": 215361
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 1000,
+  "material_cost": 1021000,
+  "installation_cost": 220514
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 1200,
+  "material_cost": 414000,
+  "installation_cost": 62666
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 1200,
+  "material_cost": 432000,
+  "installation_cost": 66709
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 1200,
+  "material_cost": 463000,
+  "installation_cost": 72235
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 1200,
+  "material_cost": 480000,
+  "installation_cost": 77762
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 1200,
+  "material_cost": 520000,
+  "installation_cost": 108931
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 1200,
+  "material_cost": 550000,
+  "installation_cost": 114458
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 1200,
+  "material_cost": 579000,
+  "installation_cost": 119999
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 1200,
+  "material_cost": 609000,
+  "installation_cost": 125525
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 1200,
+  "material_cost": 638000,
+  "installation_cost": 131052
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 1200,
+  "material_cost": 739000,
+  "installation_cost": 136318
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 1200,
+  "material_cost": 780000,
+  "installation_cost": 141850
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 1200,
+  "material_cost": 810000,
+  "installation_cost": 147380
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 1200,
+  "material_cost": 839000,
+  "installation_cost": 152904
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 1200,
+  "material_cost": 869000,
+  "installation_cost": 158432
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 1200,
+  "material_cost": 898000,
+  "installation_cost": 193954
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 1200,
+  "material_cost": 928000,
+  "installation_cost": 199506
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 1200,
+  "material_cost": 956000,
+  "installation_cost": 205034
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 1200,
+  "material_cost": 986000,
+  "installation_cost": 210560
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 1200,
+  "material_cost": 1015000,
+  "installation_cost": 216087
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 1200,
+  "material_cost": 1045000,
+  "installation_cost": 221615
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 1200,
+  "material_cost": 1074000,
+  "installation_cost": 227146
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 1200,
+  "material_cost": 1110000,
+  "installation_cost": 232676
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 1400,
+  "material_cost": 442000,
+  "installation_cost": 66470
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 1400,
+  "material_cost": 466000,
+  "installation_cost": 71433
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 1400,
+  "material_cost": 498000,
+  "installation_cost": 77351
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 1400,
+  "material_cost": 530000,
+  "installation_cost": 108892
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 1400,
+  "material_cost": 562000,
+  "installation_cost": 114792
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 1400,
+  "material_cost": 592000,
+  "installation_cost": 120693
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 1400,
+  "material_cost": 624000,
+  "installation_cost": 126593
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 1400,
+  "material_cost": 656000,
+  "installation_cost": 132512
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 1400,
+  "material_cost": 688000,
+  "installation_cost": 138412
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 1400,
+  "material_cost": 811000,
+  "installation_cost": 143989
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 1400,
+  "material_cost": 843000,
+  "installation_cost": 149887
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 1400,
+  "material_cost": 875000,
+  "installation_cost": 155805
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 1400,
+  "material_cost": 906000,
+  "installation_cost": 191711
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 1400,
+  "material_cost": 938000,
+  "installation_cost": 197612
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 1400,
+  "material_cost": 970000,
+  "installation_cost": 203513
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 1400,
+  "material_cost": 1002000,
+  "installation_cost": 209416
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 1400,
+  "material_cost": 1033000,
+  "installation_cost": 215314
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 1400,
+  "material_cost": 1065000,
+  "installation_cost": 221225
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 1400,
+  "material_cost": 1097000,
+  "installation_cost": 227122
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 1400,
+  "material_cost": 1128000,
+  "installation_cost": 233027
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 1400,
+  "material_cost": 1159000,
+  "installation_cost": 238924
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 1400,
+  "material_cost": 1197000,
+  "installation_cost": 297412
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 1600,
+  "material_cost": 469000,
+  "installation_cost": 70278
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 1600,
+  "material_cost": 500000,
+  "installation_cost": 76177
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 1600,
+  "material_cost": 534000,
+  "installation_cost": 82452
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 1600,
+  "material_cost": 568000,
+  "installation_cost": 114384
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 1600,
+  "material_cost": 602000,
+  "installation_cost": 120659
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 1600,
+  "material_cost": 636000,
+  "installation_cost": 126934
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 1600,
+  "material_cost": 670000,
+  "installation_cost": 133208
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 1600,
+  "material_cost": 704000,
+  "installation_cost": 139482
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 1600,
+  "material_cost": 738000,
+  "installation_cost": 145776
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 1600,
+  "material_cost": 871000,
+  "installation_cost": 151676
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 1600,
+  "material_cost": 905000,
+  "installation_cost": 187947
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 1600,
+  "material_cost": 939000,
+  "installation_cost": 194224
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 1600,
+  "material_cost": 973000,
+  "installation_cost": 200498
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 1600,
+  "material_cost": 1008000,
+  "installation_cost": 206773
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 1600,
+  "material_cost": 1042000,
+  "installation_cost": 213054
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 1600,
+  "material_cost": 1076000,
+  "installation_cost": 219331
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 1600,
+  "material_cost": 1110000,
+  "installation_cost": 225602
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 1600,
+  "material_cost": 1144000,
+  "installation_cost": 231896
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 1600,
+  "material_cost": 1178000,
+  "installation_cost": 290738
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 1600,
+  "material_cost": 1212000,
+  "installation_cost": 297021
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 1600,
+  "material_cost": 1246000,
+  "installation_cost": 303296
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 1600,
+  "material_cost": 1286000,
+  "installation_cost": 309572
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 1800,
+  "material_cost": 497000,
+  "installation_cost": 74269
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 1800,
+  "material_cost": 533000,
+  "installation_cost": 80920
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 1800,
+  "material_cost": 570000,
+  "installation_cost": 113209
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 1800,
+  "material_cost": 606000,
+  "installation_cost": 119857
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 1800,
+  "material_cost": 642000,
+  "installation_cost": 126522
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 1800,
+  "material_cost": 679000,
+  "installation_cost": 133170
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 1800,
+  "material_cost": 715000,
+  "installation_cost": 139821
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 1800,
+  "material_cost": 751000,
+  "installation_cost": 146469
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 1800,
+  "material_cost": 788000,
+  "installation_cost": 153118
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 1800,
+  "material_cost": 932000,
+  "installation_cost": 189337
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 1800,
+  "material_cost": 969000,
+  "installation_cost": 195985
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 1800,
+  "material_cost": 1005000,
+  "installation_cost": 202643
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 1800,
+  "material_cost": 1041000,
+  "installation_cost": 209290
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 1800,
+  "material_cost": 1078000,
+  "installation_cost": 215955
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 1800,
+  "material_cost": 1114000,
+  "installation_cost": 222603
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 1800,
+  "material_cost": 1149000,
+  "installation_cost": 229254
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 1800,
+  "material_cost": 1186000,
+  "installation_cost": 288479
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 1800,
+  "material_cost": 1222000,
+  "installation_cost": 295129
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 1800,
+  "material_cost": 1259000,
+  "installation_cost": 301775
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 1800,
+  "material_cost": 1295000,
+  "installation_cost": 308426
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 1800,
+  "material_cost": 1331000,
+  "installation_cost": 315073
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 1800,
+  "material_cost": 1374000,
+  "installation_cost": 321731
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 2000,
+  "material_cost": 529000,
+  "installation_cost": 78640
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 2000,
+  "material_cost": 567000,
+  "installation_cost": 85662
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 2000,
+  "material_cost": 606000,
+  "installation_cost": 118328
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 2000,
+  "material_cost": 645000,
+  "installation_cost": 125351
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 2000,
+  "material_cost": 682000,
+  "installation_cost": 132373
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 2000,
+  "material_cost": 721000,
+  "installation_cost": 139411
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 2000,
+  "material_cost": 760000,
+  "installation_cost": 146433
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 2000,
+  "material_cost": 798000,
+  "installation_cost": 153457
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 2000,
+  "material_cost": 837000,
+  "installation_cost": 190477
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 2000,
+  "material_cost": 993000,
+  "installation_cost": 197025
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 2000,
+  "material_cost": 1031000,
+  "installation_cost": 204047
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 2000,
+  "material_cost": 1070000,
+  "installation_cost": 211069
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 2000,
+  "material_cost": 1108000,
+  "installation_cost": 218091
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 2000,
+  "material_cost": 1147000,
+  "installation_cost": 225125
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 2000,
+  "material_cost": 1186000,
+  "installation_cost": 284714
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 2000,
+  "material_cost": 1224000,
+  "installation_cost": 291739
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 2000,
+  "material_cost": 1263000,
+  "installation_cost": 298759
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 2000,
+  "material_cost": 1302000,
+  "installation_cost": 305783
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 2000,
+  "material_cost": 1340000,
+  "installation_cost": 312812
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 2000,
+  "material_cost": 1379000,
+  "installation_cost": 319852
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 2000,
+  "material_cost": 1417000,
+  "installation_cost": 326875
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 2000,
+  "material_cost": 1461000,
+  "installation_cost": 333898
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 2200,
+  "material_cost": 560000,
+  "installation_cost": 82992
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 2200,
+  "material_cost": 601000,
+  "installation_cost": 116046
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 2200,
+  "material_cost": 642000,
+  "installation_cost": 123442
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 2200,
+  "material_cost": 683000,
+  "installation_cost": 130839
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 2200,
+  "material_cost": 724000,
+  "installation_cost": 138235
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 2200,
+  "material_cost": 765000,
+  "installation_cost": 145634
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 2200,
+  "material_cost": 806000,
+  "installation_cost": 153045
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 2200,
+  "material_cost": 847000,
+  "installation_cost": 190438
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 2200,
+  "material_cost": 888000,
+  "installation_cost": 197835
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 2200,
+  "material_cost": 1053000,
+  "installation_cost": 204692
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 2200,
+  "material_cost": 1094000,
+  "installation_cost": 212094
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 2200,
+  "material_cost": 1134000,
+  "installation_cost": 219492
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 2200,
+  "material_cost": 1175000,
+  "installation_cost": 279456
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 2200,
+  "material_cost": 1216000,
+  "installation_cost": 286854
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 2200,
+  "material_cost": 1257000,
+  "installation_cost": 294249
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 2200,
+  "material_cost": 1298000,
+  "installation_cost": 301671
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 2200,
+  "material_cost": 1339000,
+  "installation_cost": 309067
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 2200,
+  "material_cost": 1380000,
+  "installation_cost": 316464
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 2200,
+  "material_cost": 1421000,
+  "installation_cost": 323860
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 2200,
+  "material_cost": 1462000,
+  "installation_cost": 331260
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 2200,
+  "material_cost": 1503000,
+  "installation_cost": 338661
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 2200,
+  "material_cost": 1549000,
+  "installation_cost": 346060
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 2400,
+  "material_cost": 591000,
+  "installation_cost": 87359
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 2400,
+  "material_cost": 634000,
+  "installation_cost": 120770
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 2400,
+  "material_cost": 678000,
+  "installation_cost": 128556
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 2400,
+  "material_cost": 721000,
+  "installation_cost": 136328
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 2400,
+  "material_cost": 764000,
+  "installation_cost": 144099
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 2400,
+  "material_cost": 807000,
+  "installation_cost": 151869
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 2400,
+  "material_cost": 850000,
+  "installation_cost": 189636
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 2400,
+  "material_cost": 894000,
+  "installation_cost": 197422
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 2400,
+  "material_cost": 937000,
+  "installation_cost": 205196
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 2400,
+  "material_cost": 1114000,
+  "installation_cost": 212362
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 2400,
+  "material_cost": 1157000,
+  "installation_cost": 220130
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 2400,
+  "material_cost": 1199000,
+  "installation_cost": 280487
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 2400,
+  "material_cost": 1243000,
+  "installation_cost": 288266
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 2400,
+  "material_cost": 1287000,
+  "installation_cost": 296036
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 2400,
+  "material_cost": 1330000,
+  "installation_cost": 303807
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 2400,
+  "material_cost": 1372000,
+  "installation_cost": 311579
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 2400,
+  "material_cost": 1415000,
+  "installation_cost": 319348
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 2400,
+  "material_cost": 1459000,
+  "installation_cost": 327129
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 2400,
+  "material_cost": 1502000,
+  "installation_cost": 334897
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 2400,
+  "material_cost": 1454000,
+  "installation_cost": 342670
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 2400,
+  "material_cost": 1493000,
+  "installation_cost": 350438
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 2400,
+  "material_cost": 1538000,
+  "installation_cost": 358227
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 600,
+  "height_mm": 2500,
+  "material_cost": 607000,
+  "installation_cost": 89542
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 800,
+  "height_mm": 2500,
+  "material_cost": 652000,
+  "installation_cost": 123143
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1000,
+  "height_mm": 2500,
+  "material_cost": 696000,
+  "installation_cost": 131100
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1200,
+  "height_mm": 2500,
+  "material_cost": 740000,
+  "installation_cost": 139074
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1400,
+  "height_mm": 2500,
+  "material_cost": 785000,
+  "installation_cost": 147032
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1600,
+  "height_mm": 2500,
+  "material_cost": 829000,
+  "installation_cost": 154989
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 1800,
+  "height_mm": 2500,
+  "material_cost": 872000,
+  "installation_cost": 192945
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2000,
+  "height_mm": 2500,
+  "material_cost": 917000,
+  "installation_cost": 200903
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2200,
+  "height_mm": 2500,
+  "material_cost": 961000,
+  "installation_cost": 208876
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2400,
+  "height_mm": 2500,
+  "material_cost": 1144000,
+  "installation_cost": 216200
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2600,
+  "height_mm": 2500,
+  "material_cost": 1188000,
+  "installation_cost": 276728
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 2800,
+  "height_mm": 2500,
+  "material_cost": 1233000,
+  "installation_cost": 284692
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3000,
+  "height_mm": 2500,
+  "material_cost": 1277000,
+  "installation_cost": 292652
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3200,
+  "height_mm": 2500,
+  "material_cost": 1321000,
+  "installation_cost": 300607
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3400,
+  "height_mm": 2500,
+  "material_cost": 1366000,
+  "installation_cost": 308582
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3600,
+  "height_mm": 2500,
+  "material_cost": 1409000,
+  "installation_cost": 316539
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 3800,
+  "height_mm": 2500,
+  "material_cost": 1453000,
+  "installation_cost": 324506
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4000,
+  "height_mm": 2500,
+  "material_cost": 1498000,
+  "installation_cost": 332463
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4200,
+  "height_mm": 2500,
+  "material_cost": 1542000,
+  "installation_cost": 340423
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4400,
+  "height_mm": 2500,
+  "material_cost": 1492000,
+  "installation_cost": 348377
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4600,
+  "height_mm": 2500,
+  "material_cost": 1532000,
+  "installation_cost": 356337
+ },
+ {
+  "product_code": "F-230WF",
+  "width_mm": 4800,
+  "height_mm": 2500,
+  "material_cost": 1577000,
+  "installation_cost": 364302
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 600,
+  "material_cost": 472000,
+  "installation_cost": 69564
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 600,
+  "material_cost": 501000,
+  "installation_cost": 73675
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 600,
+  "material_cost": 527000,
+  "installation_cost": 77788
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 600,
+  "material_cost": 554000,
+  "installation_cost": 81906
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 600,
+  "material_cost": 588000,
+  "installation_cost": 86648
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 600,
+  "material_cost": 629000,
+  "installation_cost": 91946
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 600,
+  "material_cost": 667000,
+  "installation_cost": 97277
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 600,
+  "material_cost": 839000,
+  "installation_cost": 105280
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 600,
+  "material_cost": 871000,
+  "installation_cost": 109980
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 600,
+  "material_cost": 909000,
+  "installation_cost": 143018
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 600,
+  "material_cost": 942000,
+  "installation_cost": 147735
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 600,
+  "material_cost": 975000,
+  "installation_cost": 152458
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 600,
+  "material_cost": 1008000,
+  "installation_cost": 157285
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 600,
+  "material_cost": 1046000,
+  "installation_cost": 162582
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 600,
+  "material_cost": 1085000,
+  "installation_cost": 167939
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 600,
+  "material_cost": 1124000,
+  "installation_cost": 173244
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 600,
+  "material_cost": 1163000,
+  "installation_cost": 178552
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 600,
+  "material_cost": 1202000,
+  "installation_cost": 183857
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 600,
+  "material_cost": 1239000,
+  "installation_cost": 189155
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 600,
+  "material_cost": 1292000,
+  "installation_cost": 194508
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 600,
+  "material_cost": 1296000,
+  "installation_cost": 199811
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 600,
+  "material_cost": 1333000,
+  "installation_cost": 205123
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 600,
+  "material_cost": 1371000,
+  "installation_cost": 210430
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 600,
+  "material_cost": 1389000,
+  "installation_cost": 213096
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 800,
+  "material_cost": 625000,
+  "installation_cost": 74049
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 800,
+  "material_cost": 653000,
+  "installation_cost": 78324
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 800,
+  "material_cost": 698000,
+  "installation_cost": 84378
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 800,
+  "material_cost": 742000,
+  "installation_cost": 90466
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 800,
+  "material_cost": 787000,
+  "installation_cost": 96578
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 800,
+  "material_cost": 835000,
+  "installation_cost": 102664
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 800,
+  "material_cost": 890000,
+  "installation_cost": 137059
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 800,
+  "material_cost": 1057000,
+  "installation_cost": 142899
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 800,
+  "material_cost": 1102000,
+  "installation_cost": 148978
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 800,
+  "material_cost": 1146000,
+  "installation_cost": 155082
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 800,
+  "material_cost": 1190000,
+  "installation_cost": 161169
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 800,
+  "material_cost": 1235000,
+  "installation_cost": 167265
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 800,
+  "material_cost": 1279000,
+  "installation_cost": 173387
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 800,
+  "material_cost": 1324000,
+  "installation_cost": 179468
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 800,
+  "material_cost": 1369000,
+  "installation_cost": 185569
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 800,
+  "material_cost": 1425000,
+  "installation_cost": 191653
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 800,
+  "material_cost": 1470000,
+  "installation_cost": 197747
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 800,
+  "material_cost": 1515000,
+  "installation_cost": 203871
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 800,
+  "material_cost": 1559000,
+  "installation_cost": 209953
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 800,
+  "material_cost": 1618000,
+  "installation_cost": 216055
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 800,
+  "material_cost": 1610000,
+  "installation_cost": 222140
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 800,
+  "material_cost": 1654000,
+  "installation_cost": 334662
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 800,
+  "material_cost": 1697000,
+  "installation_cost": 340784
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 800,
+  "material_cost": 1717000,
+  "installation_cost": 343806
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 1000,
+  "material_cost": 733000,
+  "installation_cost": 78978
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 1000,
+  "material_cost": 785000,
+  "installation_cost": 85849
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 1000,
+  "material_cost": 836000,
+  "installation_cost": 92716
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 1000,
+  "material_cost": 897000,
+  "installation_cost": 99611
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 1000,
+  "material_cost": 948000,
+  "installation_cost": 134795
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 1000,
+  "material_cost": 1002000,
+  "installation_cost": 141690
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 1000,
+  "material_cost": 1053000,
+  "installation_cost": 148565
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 1000,
+  "material_cost": 1279000,
+  "installation_cost": 155050
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 1000,
+  "material_cost": 1330000,
+  "installation_cost": 161909
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 1000,
+  "material_cost": 1380000,
+  "installation_cost": 168796
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 1000,
+  "material_cost": 1431000,
+  "installation_cost": 175702
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 1000,
+  "material_cost": 1493000,
+  "installation_cost": 182582
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 1000,
+  "material_cost": 1543000,
+  "installation_cost": 189447
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 1000,
+  "material_cost": 1594000,
+  "installation_cost": 196314
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 1000,
+  "material_cost": 1645000,
+  "installation_cost": 203199
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 1000,
+  "material_cost": 1697000,
+  "installation_cost": 210104
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 1000,
+  "material_cost": 1748000,
+  "installation_cost": 323405
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 1000,
+  "material_cost": 1798000,
+  "installation_cost": 330275
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 1000,
+  "material_cost": 1849000,
+  "installation_cost": 337139
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 1000,
+  "material_cost": 1913000,
+  "installation_cost": 344030
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 1000,
+  "material_cost": 1822000,
+  "installation_cost": 350928
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 1000,
+  "material_cost": 1870000,
+  "installation_cost": 357808
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 1000,
+  "material_cost": 1918000,
+  "installation_cost": 364675
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 1000,
+  "material_cost": 1943000,
+  "installation_cost": 368129
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 1200,
+  "material_cost": 804000,
+  "installation_cost": 85753
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 1200,
+  "material_cost": 862000,
+  "installation_cost": 93431
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 1200,
+  "material_cost": 930000,
+  "installation_cost": 129399
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 1200,
+  "material_cost": 987000,
+  "installation_cost": 137046
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 1200,
+  "material_cost": 1044000,
+  "installation_cost": 144725
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 1200,
+  "material_cost": 1104000,
+  "installation_cost": 152382
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 1200,
+  "material_cost": 1161000,
+  "installation_cost": 160067
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 1200,
+  "material_cost": 1414000,
+  "installation_cost": 167198
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 1200,
+  "material_cost": 1481000,
+  "installation_cost": 174873
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 1200,
+  "material_cost": 1538000,
+  "installation_cost": 182544
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 1200,
+  "material_cost": 1596000,
+  "installation_cost": 190196
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 1200,
+  "material_cost": 1652000,
+  "installation_cost": 197864
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 1200,
+  "material_cost": 1709000,
+  "installation_cost": 311937
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 1200,
+  "material_cost": 1766000,
+  "installation_cost": 319613
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 1200,
+  "material_cost": 1823000,
+  "installation_cost": 327287
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 1200,
+  "material_cost": 1881000,
+  "installation_cost": 334941
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 1200,
+  "material_cost": 1937000,
+  "installation_cost": 342601
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 1200,
+  "material_cost": 1994000,
+  "installation_cost": 350258
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 1200,
+  "material_cost": 2052000,
+  "installation_cost": 357939
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 1200,
+  "material_cost": 2122000,
+  "installation_cost": 365606
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 1200,
+  "material_cost": 2091000,
+  "installation_cost": 373254
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 1200,
+  "material_cost": 2144000,
+  "installation_cost": 380921
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 1200,
+  "material_cost": 2197000,
+  "installation_cost": 388577
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 1200,
+  "material_cost": 2225000,
+  "installation_cost": 402118
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 1400,
+  "material_cost": 875000,
+  "installation_cost": 92548
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 1400,
+  "material_cost": 950000,
+  "installation_cost": 129299
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 1400,
+  "material_cost": 1014000,
+  "installation_cost": 137760
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 1400,
+  "material_cost": 1076000,
+  "installation_cost": 146196
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 1400,
+  "material_cost": 1139000,
+  "installation_cost": 154633
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 1400,
+  "material_cost": 1205000,
+  "installation_cost": 163101
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 1400,
+  "material_cost": 1269000,
+  "installation_cost": 171530
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 1400,
+  "material_cost": 1558000,
+  "installation_cost": 179380
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 1400,
+  "material_cost": 1621000,
+  "installation_cost": 187809
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 1400,
+  "material_cost": 1684000,
+  "installation_cost": 196260
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 1400,
+  "material_cost": 1747000,
+  "installation_cost": 311120
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 1400,
+  "material_cost": 1810000,
+  "installation_cost": 319598
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 1400,
+  "material_cost": 1873000,
+  "installation_cost": 328033
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 1400,
+  "material_cost": 1937000,
+  "installation_cost": 336468
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 1400,
+  "material_cost": 1999000,
+  "installation_cost": 344920
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 1400,
+  "material_cost": 2063000,
+  "installation_cost": 353358
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 1400,
+  "material_cost": 2127000,
+  "installation_cost": 361832
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 1400,
+  "material_cost": 2189000,
+  "installation_cost": 370268
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 1400,
+  "material_cost": 2252000,
+  "installation_cost": 378701
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 1400,
+  "material_cost": 2329000,
+  "installation_cost": 396854
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 1400,
+  "material_cost": 2285000,
+  "installation_cost": 405290
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 1400,
+  "material_cost": 2345000,
+  "installation_cost": 413768
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 1400,
+  "material_cost": 2403000,
+  "installation_cost": 422202
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 1400,
+  "material_cost": 2433000,
+  "installation_cost": 426406
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 1600,
+  "material_cost": 945000,
+  "installation_cost": 99321
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 1600,
+  "material_cost": 1027000,
+  "installation_cost": 136878
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 1600,
+  "material_cost": 1096000,
+  "installation_cost": 146097
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 1600,
+  "material_cost": 1165000,
+  "installation_cost": 155352
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 1600,
+  "material_cost": 1234000,
+  "installation_cost": 164568
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 1600,
+  "material_cost": 1307000,
+  "installation_cost": 173780
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 1600,
+  "material_cost": 1376000,
+  "installation_cost": 183033
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 1600,
+  "material_cost": 1691000,
+  "installation_cost": 191526
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 1600,
+  "material_cost": 1760000,
+  "installation_cost": 307162
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 1600,
+  "material_cost": 1830000,
+  "installation_cost": 316428
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 1600,
+  "material_cost": 1899000,
+  "installation_cost": 325651
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 1600,
+  "material_cost": 1967000,
+  "installation_cost": 334884
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 1600,
+  "material_cost": 2037000,
+  "installation_cost": 344098
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 1600,
+  "material_cost": 2106000,
+  "installation_cost": 353313
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 1600,
+  "material_cost": 2175000,
+  "installation_cost": 362583
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 1600,
+  "material_cost": 2245000,
+  "installation_cost": 371805
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 1600,
+  "material_cost": 2315000,
+  "installation_cost": 390730
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 1600,
+  "material_cost": 2384000,
+  "installation_cost": 399951
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 1600,
+  "material_cost": 2452000,
+  "installation_cost": 409165
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 1600,
+  "material_cost": 2535000,
+  "installation_cost": 418432
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 1600,
+  "material_cost": 2481000,
+  "installation_cost": 427653
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 1600,
+  "material_cost": 2545000,
+  "installation_cost": 436882
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 1600,
+  "material_cost": 2609000,
+  "installation_cost": 446104
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 1600,
+  "material_cost": 2641000,
+  "installation_cost": 450729
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 1800,
+  "material_cost": 1016000,
+  "installation_cost": 134435
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 1800,
+  "material_cost": 1103000,
+  "installation_cost": 144432
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 1800,
+  "material_cost": 1179000,
+  "installation_cost": 154470
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 1800,
+  "material_cost": 1254000,
+  "installation_cost": 164469
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 1800,
+  "material_cost": 1329000,
+  "installation_cost": 174500
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 1800,
+  "material_cost": 1409000,
+  "installation_cost": 184500
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 1800,
+  "material_cost": 1484000,
+  "installation_cost": 194497
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 1800,
+  "material_cost": 1824000,
+  "installation_cost": 310132
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 1800,
+  "material_cost": 1899000,
+  "installation_cost": 320127
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 1800,
+  "material_cost": 1975000,
+  "installation_cost": 330147
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 1800,
+  "material_cost": 2050000,
+  "installation_cost": 340148
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 1800,
+  "material_cost": 2125000,
+  "installation_cost": 350161
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 1800,
+  "material_cost": 2201000,
+  "installation_cost": 360198
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 1800,
+  "material_cost": 2276000,
+  "installation_cost": 370194
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 1800,
+  "material_cost": 2351000,
+  "installation_cost": 389915
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 1800,
+  "material_cost": 2427000,
+  "installation_cost": 399915
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 1800,
+  "material_cost": 2503000,
+  "installation_cost": 409926
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 1800,
+  "material_cost": 2578000,
+  "installation_cost": 419964
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 1800,
+  "material_cost": 2653000,
+  "installation_cost": 429962
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 1800,
+  "material_cost": 2742000,
+  "installation_cost": 439981
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 1800,
+  "material_cost": 2675000,
+  "installation_cost": 449984
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 1800,
+  "material_cost": 2745000,
+  "installation_cost": 459995
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 1800,
+  "material_cost": 2814000,
+  "installation_cost": 470034
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 1800,
+  "material_cost": 2849000,
+  "installation_cost": 475013
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 2000,
+  "material_cost": 1092000,
+  "installation_cost": 141232
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 2000,
+  "material_cost": 1186000,
+  "installation_cost": 152021
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 2000,
+  "material_cost": 1267000,
+  "installation_cost": 162803
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 2000,
+  "material_cost": 1349000,
+  "installation_cost": 173618
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 2000,
+  "material_cost": 1431000,
+  "installation_cost": 184401
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 2000,
+  "material_cost": 1516000,
+  "installation_cost": 195217
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 2000,
+  "material_cost": 1597000,
+  "installation_cost": 312428
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 2000,
+  "material_cost": 1965000,
+  "installation_cost": 322283
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 2000,
+  "material_cost": 2047000,
+  "installation_cost": 333057
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 2000,
+  "material_cost": 2128000,
+  "installation_cost": 343860
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 2000,
+  "material_cost": 2210000,
+  "installation_cost": 354684
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 2000,
+  "material_cost": 2292000,
+  "installation_cost": 365478
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 2000,
+  "material_cost": 2372000,
+  "installation_cost": 385959
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 2000,
+  "material_cost": 2454000,
+  "installation_cost": 396743
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 2000,
+  "material_cost": 2536000,
+  "installation_cost": 407546
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 2000,
+  "material_cost": 2618000,
+  "installation_cost": 418367
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 2000,
+  "material_cost": 2699000,
+  "installation_cost": 429159
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 2000,
+  "material_cost": 2781000,
+  "installation_cost": 439944
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 2000,
+  "material_cost": 2862000,
+  "installation_cost": 450723
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 2000,
+  "material_cost": 2957000,
+  "installation_cost": 461532
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 2000,
+  "material_cost": 2879000,
+  "installation_cost": 472343
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 2000,
+  "material_cost": 2954000,
+  "installation_cost": 483141
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 2000,
+  "material_cost": 3028000,
+  "installation_cost": 493924
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 2000,
+  "material_cost": 3065000,
+  "installation_cost": 499339
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 2200,
+  "material_cost": 1163000,
+  "installation_cost": 148008
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 2200,
+  "material_cost": 1263000,
+  "installation_cost": 159607
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 2200,
+  "material_cost": 1350000,
+  "installation_cost": 171172
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 2200,
+  "material_cost": 1438000,
+  "installation_cost": 182735
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 2200,
+  "material_cost": 1527000,
+  "installation_cost": 194336
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 2200,
+  "material_cost": 1617000,
+  "installation_cost": 312333
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 2200,
+  "material_cost": 1704000,
+  "installation_cost": 323928
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 2200,
+  "material_cost": 2098000,
+  "installation_cost": 334429
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 2200,
+  "material_cost": 2186000,
+  "installation_cost": 346020
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 2200,
+  "material_cost": 2273000,
+  "installation_cost": 357610
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 2200,
+  "material_cost": 2361000,
+  "installation_cost": 378879
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 2200,
+  "material_cost": 2449000,
+  "installation_cost": 390460
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 2200,
+  "material_cost": 2536000,
+  "installation_cost": 402026
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 2200,
+  "material_cost": 2624000,
+  "installation_cost": 413621
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 2200,
+  "material_cost": 2712000,
+  "installation_cost": 425209
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 2200,
+  "material_cost": 2800000,
+  "installation_cost": 436777
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 2200,
+  "material_cost": 2887000,
+  "installation_cost": 448355
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 2200,
+  "material_cost": 2975000,
+  "installation_cost": 459928
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 2200,
+  "material_cost": 3063000,
+  "installation_cost": 471524
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 2200,
+  "material_cost": 3164000,
+  "installation_cost": 483106
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 2200,
+  "material_cost": 3073000,
+  "installation_cost": 494671
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 2200,
+  "material_cost": 3154000,
+  "installation_cost": 506255
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 2200,
+  "material_cost": 3234000,
+  "installation_cost": 517826
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 2200,
+  "material_cost": 3274000,
+  "installation_cost": 523623
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 2400,
+  "material_cost": 1234000,
+  "installation_cost": 154809
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 2400,
+  "material_cost": 1340000,
+  "installation_cost": 167158
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 2400,
+  "material_cost": 1434000,
+  "installation_cost": 179538
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 2400,
+  "material_cost": 1528000,
+  "installation_cost": 191888
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 2400,
+  "material_cost": 1622000,
+  "installation_cost": 310668
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 2400,
+  "material_cost": 1719000,
+  "installation_cost": 323046
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 2400,
+  "material_cost": 1812000,
+  "installation_cost": 335398
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 2400,
+  "material_cost": 2231000,
+  "installation_cost": 346610
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 2400,
+  "material_cost": 2325000,
+  "installation_cost": 358956
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 2400,
+  "material_cost": 2418000,
+  "installation_cost": 381026
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 2400,
+  "material_cost": 2512000,
+  "installation_cost": 393378
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 2400,
+  "material_cost": 2607000,
+  "installation_cost": 405770
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 2400,
+  "material_cost": 2699000,
+  "installation_cost": 418124
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 2400,
+  "material_cost": 2793000,
+  "installation_cost": 430472
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 2400,
+  "material_cost": 2887000,
+  "installation_cost": 442840
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 2400,
+  "material_cost": 2982000,
+  "installation_cost": 455194
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 2400,
+  "material_cost": 3076000,
+  "installation_cost": 467587
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 2400,
+  "material_cost": 2998000,
+  "installation_cost": 479936
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 2400,
+  "material_cost": 3084000,
+  "installation_cost": 492287
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 2400,
+  "material_cost": 3182000,
+  "installation_cost": 504652
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 2400,
+  "material_cost": 3268000,
+  "installation_cost": 517006
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 2400,
+  "material_cost": 3354000,
+  "installation_cost": 529400
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 2400,
+  "material_cost": 3439000,
+  "installation_cost": 541749
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 2400,
+  "material_cost": 3482000,
+  "installation_cost": 547910
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1000,
+  "height_mm": 2500,
+  "material_cost": 1269000,
+  "installation_cost": 158202
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1200,
+  "height_mm": 2500,
+  "material_cost": 1378000,
+  "installation_cost": 170951
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1400,
+  "height_mm": 2500,
+  "material_cost": 1475000,
+  "installation_cost": 183694
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1600,
+  "height_mm": 2500,
+  "material_cost": 1572000,
+  "installation_cost": 196465
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 1800,
+  "height_mm": 2500,
+  "material_cost": 1669000,
+  "installation_cost": 315627
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2000,
+  "height_mm": 2500,
+  "material_cost": 1769000,
+  "installation_cost": 328403
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2200,
+  "height_mm": 2500,
+  "material_cost": 1865000,
+  "installation_cost": 341149
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2400,
+  "height_mm": 2500,
+  "material_cost": 2298000,
+  "installation_cost": 352667
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2600,
+  "height_mm": 2500,
+  "material_cost": 2394000,
+  "installation_cost": 375141
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 2800,
+  "height_mm": 2500,
+  "material_cost": 2492000,
+  "installation_cost": 387898
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3000,
+  "height_mm": 2500,
+  "material_cost": 2588000,
+  "installation_cost": 400638
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3200,
+  "height_mm": 2500,
+  "material_cost": 2685000,
+  "installation_cost": 413401
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3400,
+  "height_mm": 2500,
+  "material_cost": 2782000,
+  "installation_cost": 426139
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3600,
+  "height_mm": 2500,
+  "material_cost": 2879000,
+  "installation_cost": 438911
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 3800,
+  "height_mm": 2500,
+  "material_cost": 2975000,
+  "installation_cost": 451666
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4000,
+  "height_mm": 2500,
+  "material_cost": 3073000,
+  "installation_cost": 464415
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4200,
+  "height_mm": 2500,
+  "material_cost": 3170000,
+  "installation_cost": 477171
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4400,
+  "height_mm": 2500,
+  "material_cost": 3087000,
+  "installation_cost": 489910
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4600,
+  "height_mm": 2500,
+  "material_cost": 3175000,
+  "installation_cost": 502682
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 4800,
+  "height_mm": 2500,
+  "material_cost": 3277000,
+  "installation_cost": 515438
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5000,
+  "height_mm": 2500,
+  "material_cost": 3365000,
+  "installation_cost": 528187
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5200,
+  "height_mm": 2500,
+  "material_cost": 3454000,
+  "installation_cost": 540944
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5400,
+  "height_mm": 2500,
+  "material_cost": 3542000,
+  "installation_cost": 553679
+ },
+ {
+  "product_code": "F-250",
+  "width_mm": 5500,
+  "height_mm": 2500,
+  "material_cost": 3586000,
+  "installation_cost": 560089
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 500,
+  "material_cost": 30000,
+  "installation_cost": 70000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 500,
+  "material_cost": 44000,
+  "installation_cost": 80000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 500,
+  "material_cost": 59000,
+  "installation_cost": 80000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 500,
+  "material_cost": 74000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 500,
+  "material_cost": 88000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 500,
+  "material_cost": 103000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 500,
+  "material_cost": 118000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 500,
+  "material_cost": 132000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 500,
+  "material_cost": 147000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 500,
+  "material_cost": 162000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 500,
+  "material_cost": 176000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 800,
+  "material_cost": 47000,
+  "installation_cost": 80000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 800,
+  "material_cost": 71000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 800,
+  "material_cost": 94000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 800,
+  "material_cost": 118000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 800,
+  "material_cost": 141000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 800,
+  "material_cost": 165000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 800,
+  "material_cost": 188000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 800,
+  "material_cost": 212000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 800,
+  "material_cost": 235000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 800,
+  "material_cost": 259000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 800,
+  "material_cost": 282000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 1000,
+  "material_cost": 59000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 1000,
+  "material_cost": 88000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 1000,
+  "material_cost": 118000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 1000,
+  "material_cost": 147000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 1000,
+  "material_cost": 176000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 1000,
+  "material_cost": 206000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 1000,
+  "material_cost": 235000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 1000,
+  "material_cost": 264000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 1000,
+  "material_cost": 294000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 1000,
+  "material_cost": 323000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 1000,
+  "material_cost": 352000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 1200,
+  "material_cost": 71000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 1200,
+  "material_cost": 106000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 1200,
+  "material_cost": 141000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 1200,
+  "material_cost": 176000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 1200,
+  "material_cost": 212000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 1200,
+  "material_cost": 247000,
+  "installation_cost": 170000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 1200,
+  "material_cost": 282000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 1200,
+  "material_cost": 317000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 1200,
+  "material_cost": 352000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 1200,
+  "material_cost": 388000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 1200,
+  "material_cost": 423000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 1400,
+  "material_cost": 83000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 1400,
+  "material_cost": 124000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 1400,
+  "material_cost": 165000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 1400,
+  "material_cost": 206000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 1400,
+  "material_cost": 247000,
+  "installation_cost": 170000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 1400,
+  "material_cost": 288000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 1400,
+  "material_cost": 329000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 1400,
+  "material_cost": 370000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 1400,
+  "material_cost": 411000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 1400,
+  "material_cost": 452000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 1400,
+  "material_cost": 493000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 1600,
+  "material_cost": 94000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 1600,
+  "material_cost": 141000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 1600,
+  "material_cost": 188000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 1600,
+  "material_cost": 235000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 1600,
+  "material_cost": 282000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 1600,
+  "material_cost": 329000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 1600,
+  "material_cost": 376000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 1600,
+  "material_cost": 423000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 1600,
+  "material_cost": 470000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 1600,
+  "material_cost": 517000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 1600,
+  "material_cost": 564000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 1800,
+  "material_cost": 106000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 1800,
+  "material_cost": 159000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 1800,
+  "material_cost": 212000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 1800,
+  "material_cost": 264000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 1800,
+  "material_cost": 317000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 1800,
+  "material_cost": 370000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 1800,
+  "material_cost": 423000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 1800,
+  "material_cost": 476000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 1800,
+  "material_cost": 528000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 1800,
+  "material_cost": 581000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 1800,
+  "material_cost": 634000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 2000,
+  "material_cost": 118000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 2000,
+  "material_cost": 176000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 2000,
+  "material_cost": 235000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 2000,
+  "material_cost": 294000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 2000,
+  "material_cost": 352000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 2000,
+  "material_cost": 411000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 2000,
+  "material_cost": 470000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 2000,
+  "material_cost": 528000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 2000,
+  "material_cost": 587000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 2000,
+  "material_cost": 646000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 2000,
+  "material_cost": 704000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 2200,
+  "material_cost": 130000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 2200,
+  "material_cost": 194000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 2200,
+  "material_cost": 259000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 2200,
+  "material_cost": 323000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 2200,
+  "material_cost": 388000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 2200,
+  "material_cost": 452000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 2200,
+  "material_cost": 517000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 2200,
+  "material_cost": 581000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 2200,
+  "material_cost": 646000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 2200,
+  "material_cost": 710000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 2200,
+  "material_cost": 775000,
+  "installation_cost": 320000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 2400,
+  "material_cost": 141000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 2400,
+  "material_cost": 212000,
+  "installation_cost": 150000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 2400,
+  "material_cost": 282000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 2400,
+  "material_cost": 352000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 2400,
+  "material_cost": 423000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 2400,
+  "material_cost": 493000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 2400,
+  "material_cost": 564000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 2400,
+  "material_cost": 634000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 2400,
+  "material_cost": 704000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 2400,
+  "material_cost": 775000,
+  "installation_cost": 320000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 2400,
+  "material_cost": 845000,
+  "installation_cost": 330000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 400,
+  "height_mm": 2500,
+  "material_cost": 147000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 600,
+  "height_mm": 2500,
+  "material_cost": 220000,
+  "installation_cost": 150000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 800,
+  "height_mm": 2500,
+  "material_cost": 294000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1000,
+  "height_mm": 2500,
+  "material_cost": 367000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1200,
+  "height_mm": 2500,
+  "material_cost": 440000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1400,
+  "height_mm": 2500,
+  "material_cost": 514000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1600,
+  "height_mm": 2500,
+  "material_cost": 587000,
+  "installation_cost": 250000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 1800,
+  "height_mm": 2500,
+  "material_cost": 660000,
+  "installation_cost": 300000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2000,
+  "height_mm": 2500,
+  "material_cost": 734000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2200,
+  "height_mm": 2500,
+  "material_cost": 807000,
+  "installation_cost": 320000
+ },
+ {
+  "product_code": "CB-90",
+  "width_mm": 2400,
+  "height_mm": 2500,
+  "material_cost": 880000,
+  "installation_cost": 330000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 500,
+  "material_cost": 37000,
+  "installation_cost": 70000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 500,
+  "material_cost": 55000,
+  "installation_cost": 80000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 500,
+  "material_cost": 74000,
+  "installation_cost": 80000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 500,
+  "material_cost": 92000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 500,
+  "material_cost": 110000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 500,
+  "material_cost": 129000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 500,
+  "material_cost": 147000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 500,
+  "material_cost": 165000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 500,
+  "material_cost": 184000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 500,
+  "material_cost": 202000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 500,
+  "material_cost": 220000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 800,
+  "material_cost": 59000,
+  "installation_cost": 80000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 800,
+  "material_cost": 88000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 800,
+  "material_cost": 118000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 800,
+  "material_cost": 147000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 800,
+  "material_cost": 176000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 800,
+  "material_cost": 206000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 800,
+  "material_cost": 235000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 800,
+  "material_cost": 264000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 800,
+  "material_cost": 294000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 800,
+  "material_cost": 323000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 800,
+  "material_cost": 352000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 1000,
+  "material_cost": 74000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 1000,
+  "material_cost": 110000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 1000,
+  "material_cost": 147000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 1000,
+  "material_cost": 184000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 1000,
+  "material_cost": 220000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 1000,
+  "material_cost": 257000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 1000,
+  "material_cost": 294000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 1000,
+  "material_cost": 330000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 1000,
+  "material_cost": 367000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 1000,
+  "material_cost": 404000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 1000,
+  "material_cost": 440000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 1200,
+  "material_cost": 88000,
+  "installation_cost": 90000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 1200,
+  "material_cost": 132000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 1200,
+  "material_cost": 176000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 1200,
+  "material_cost": 220000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 1200,
+  "material_cost": 264000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 1200,
+  "material_cost": 308000,
+  "installation_cost": 170000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 1200,
+  "material_cost": 352000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 1200,
+  "material_cost": 396000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 1200,
+  "material_cost": 440000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 1200,
+  "material_cost": 484000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 1200,
+  "material_cost": 528000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 1400,
+  "material_cost": 103000,
+  "installation_cost": 100000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 1400,
+  "material_cost": 154000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 1400,
+  "material_cost": 206000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 1400,
+  "material_cost": 257000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 1400,
+  "material_cost": 308000,
+  "installation_cost": 170000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 1400,
+  "material_cost": 360000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 1400,
+  "material_cost": 411000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 1400,
+  "material_cost": 462000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 1400,
+  "material_cost": 514000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 1400,
+  "material_cost": 565000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 1400,
+  "material_cost": 616000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 1600,
+  "material_cost": 118000,
+  "installation_cost": 110000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 1600,
+  "material_cost": 176000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 1600,
+  "material_cost": 235000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 1600,
+  "material_cost": 294000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 1600,
+  "material_cost": 352000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 1600,
+  "material_cost": 411000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 1600,
+  "material_cost": 470000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 1600,
+  "material_cost": 528000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 1600,
+  "material_cost": 587000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 1600,
+  "material_cost": 646000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 1600,
+  "material_cost": 704000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 1800,
+  "material_cost": 132000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 1800,
+  "material_cost": 198000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 1800,
+  "material_cost": 264000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 1800,
+  "material_cost": 330000,
+  "installation_cost": 180000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 1800,
+  "material_cost": 396000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 1800,
+  "material_cost": 462000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 1800,
+  "material_cost": 528000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 1800,
+  "material_cost": 594000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 1800,
+  "material_cost": 660000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 1800,
+  "material_cost": 726000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 1800,
+  "material_cost": 792000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 2000,
+  "material_cost": 147000,
+  "installation_cost": 120000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 2000,
+  "material_cost": 220000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 2000,
+  "material_cost": 294000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 2000,
+  "material_cost": 367000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 2000,
+  "material_cost": 440000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 2000,
+  "material_cost": 514000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 2000,
+  "material_cost": 587000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 2000,
+  "material_cost": 660000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 2000,
+  "material_cost": 734000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 2000,
+  "material_cost": 807000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 2000,
+  "material_cost": 880000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 2200,
+  "material_cost": 162000,
+  "installation_cost": 130000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 2200,
+  "material_cost": 242000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 2200,
+  "material_cost": 323000,
+  "installation_cost": 190000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 2200,
+  "material_cost": 404000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 2200,
+  "material_cost": 484000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 2200,
+  "material_cost": 565000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 2200,
+  "material_cost": 646000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 2200,
+  "material_cost": 726000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 2200,
+  "material_cost": 807000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 2200,
+  "material_cost": 888000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 2200,
+  "material_cost": 968000,
+  "installation_cost": 320000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 2400,
+  "material_cost": 176000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 2400,
+  "material_cost": 264000,
+  "installation_cost": 150000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 2400,
+  "material_cost": 352000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 2400,
+  "material_cost": 440000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 2400,
+  "material_cost": 528000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 2400,
+  "material_cost": 616000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 2400,
+  "material_cost": 704000,
+  "installation_cost": 240000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 2400,
+  "material_cost": 792000,
+  "installation_cost": 290000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 2400,
+  "material_cost": 880000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 2400,
+  "material_cost": 968000,
+  "installation_cost": 320000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 2400,
+  "material_cost": 1056000,
+  "installation_cost": 330000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 400,
+  "height_mm": 2500,
+  "material_cost": 184000,
+  "installation_cost": 140000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 600,
+  "height_mm": 2500,
+  "material_cost": 275000,
+  "installation_cost": 150000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 800,
+  "height_mm": 2500,
+  "material_cost": 367000,
+  "installation_cost": 200000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1000,
+  "height_mm": 2500,
+  "material_cost": 459000,
+  "installation_cost": 210000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1200,
+  "height_mm": 2500,
+  "material_cost": 550000,
+  "installation_cost": 220000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1400,
+  "height_mm": 2500,
+  "material_cost": 642000,
+  "installation_cost": 230000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1600,
+  "height_mm": 2500,
+  "material_cost": 734000,
+  "installation_cost": 250000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 1800,
+  "height_mm": 2500,
+  "material_cost": 825000,
+  "installation_cost": 300000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2000,
+  "height_mm": 2500,
+  "material_cost": 917000,
+  "installation_cost": 310000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2200,
+  "height_mm": 2500,
+  "material_cost": 1009000,
+  "installation_cost": 320000
+ },
+ {
+  "product_code": "CB-100",
+  "width_mm": 2400,
+  "height_mm": 2500,
+  "material_cost": 1100000,
+  "installation_cost": 330000
+ }
+]
