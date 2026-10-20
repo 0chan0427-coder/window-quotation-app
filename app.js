@@ -88,7 +88,7 @@ function itemKind(item){const saved=item?.window_kind||item?.kind||item?.windowK
 function defaultWindowScope(kind){return ['발코니창','복도창'].includes(kind)?'외부창':['분합창','내창','주방창'].includes(kind)?'내부창':'';}
 function itemWindowScope(item){const saved=item?.window_scope||item?.windowScope;if(saved==='외부창'||saved==='내부창')return saved;return defaultWindowScope(itemKind(item));}
 function itemScreen(item){const option=item?.screen_option||item?.screenOption;if(option==='없음')return '-';if(option==='있음')return 'AL 방충망';const kind=itemKind(item);return ['발코니창','복도창'].includes(kind)?'AL 방충망':'-';}
-function itemOutside(item){return ['발코니창','복도창'].includes(itemKind(item));}
+function itemOutside(item){return itemWindowScope(item)==='외부창';}
 function estimateColor(r){const ex=recordExtras(r)||{};return COLORS.includes(r?.estimate_color)?r.estimate_color:(COLORS.includes(ex.color)?ex.color:(COLORS.includes(r?.color)?r.color:'기본색'));}
 function handleStatus(item){return item?.window_type==='fixed'?'무':'유';}
 function parseTaggedJSON(memo,label){const m=String(memo||'').match(new RegExp('\\['+label+'\\]\\s*(\\{[\\s\\S]*?\\})(?=\\n|$)'));if(!m)return null;try{return JSON.parse(m[1]);}catch{return null;}}
