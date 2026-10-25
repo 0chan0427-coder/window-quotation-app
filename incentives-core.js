@@ -1,0 +1,13 @@
+(function(root,factory){const api=factory(typeof Contracts!=='undefined'?Contracts:typeof require==='function'?require('./contracts-core.js'):null);if(typeof module==='object'&&module.exports)module.exports=api;else root.Incentives=api;})(typeof globalThis!=='undefined'?globalThis:this,function(C){
+'use strict';
+const order=['한동균','김민찬','김영찬'],labels={'한동균':'한동균 팀장','김민찬':'김민찬 책임','김영찬':'김영찬 책임'};
+function staffSort(a,b){const ai=order.indexOf(a),bi=order.indexOf(b);return(ai<0?99:ai)-(bi<0?99:bi)||a.localeCompare(b,'ko');}
+const label=s=>labels[s]||s;
+function candidates(records,baselines,claims,lines,month,staffs,startMonth=month){const active=new Set(claims.filter(c=>!c.cancelled_at).map(c=>c.id)),bases=new Map(baselines.map(b=>[b.id,b]));const amounts=new Map(),future=new Set();for(const l of lines){if(active.has(l.claim_id)){amounts.set(l.contract_id,(amounts.get(l.contract_id)||0)+Number(l.claim_amount));const h=claims.find(c=>c.id===l.claim_id);if(h.claim_month.slice(0,7)>month)future.add(l.contract_id);}}
+ return C.sorted(records.filter(r=>staffs.includes(C.staffName(r.staff_raw))&&r.contract_date&&r.contract_date.slice(0,7)<=month)).map(r=>{const b=bases.get(r.id),confirmed=amounts.get(r.id)||0,prior=Number(b?.amount||0)+confirmed,delta=r.received_amount===null?null:Number(r.received_amount)-prior;let reason='';if(C.kind(r)!=='계약')reason=C.kind(r)+' 계약';else if(C.warnings(r).some(x=>/불일치|수납액이 큼/.test(x))||r.contract_amount===null||r.received_amount===null||r.outstanding_amount===null||r.contract_amount<=0)reason='계약·수납 금액 확인 필요';else if(r.contract_date.slice(0,7)<startMonth&&(!b||b.needs_review))reason='시작 수납액 미확인 · 기준 조정 필요';else if(future.has(r.id))reason='이후 회차에 청구 내역 있음';else if(delta<0)reason='기준보다 수납액 감소';else if(delta===0)reason='추가 청구액 없음';return {record:r,staff:C.staffName(r.staff_raw),baseline:b||null,confirmed,prior,delta,amount:delta>0?delta:0,selected:!reason&&delta>0,reason,type:r.contract_date.slice(0,7)===month?'당월 계약':'이전 계약 · 추가 수납'};});
+}
+function calculate(receipts,rate){if(!Number.isSafeInteger(receipts)||!Number.isFinite(rate)||rate<=0)return NaN;return Number((BigInt(receipts)*BigInt(Math.round(rate*1000000))*10n+5500000n)/11000000n);}
+function totals(entries,rates){return [...new Set(entries.map(e=>e.staff))].sort(staffSort).map(staff=>{const receipts=entries.filter(e=>e.staff===staff).reduce((s,e)=>s+Number(e.amount),0),rate=Number(rates[staff]);return{staff,label:label(staff),receipts,taxable:receipts/1.1,incentive:calculate(receipts,rate),rate};});}
+function payload(e){return{id:e.record.id,version:e.record.version,prior:e.prior,amount:Number(e.amount)};}
+return{order,labels,label,staffSort,candidates,calculate,totals,payload};
+});

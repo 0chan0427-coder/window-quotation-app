@@ -24,13 +24,13 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(document.body.cl
 byId('liveToggle').onclick=()=>{const open=summary.classList.toggle('is-expanded');byId('liveToggle').setAttribute('aria-expanded',String(open));byId('liveToggle').textContent=open?'상세 닫기':'상세 보기';};
 function sync(){
  const ready=!!state.staff;document.body.classList.toggle('workspace-ready',ready);byId('workspaceStaff').textContent=state.staff?.name||'';
- const active=['home','saved','form','detail','events','contracts','development','execution','application'].find(id=>!byId(id).classList.contains('hidden'))||'home';
+ const active=['home','saved','form','detail','events','contracts','incentives','development','execution','application'].find(id=>!byId(id).classList.contains('hidden'))||'home';
  document.body.classList.toggle('quote-editing',ready&&active==='form');
- nav.querySelectorAll('[data-route]').forEach(b=>{const yes=b.dataset.route===(['form','detail'].includes(active)?'saved':active);b.classList.toggle('is-active',yes);if(yes)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+ nav.querySelectorAll('[data-route]').forEach(b=>{const yes=b.dataset.route===(['form','detail'].includes(active)?'saved':active==='incentives'?'contracts':active);b.classList.toggle('is-active',yes);if(yes)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  byId('liveSave').disabled=byId('saveBtn').disabled;byId('liveSave').textContent=byId('saveBtn').textContent;
  if(active!==route){route=active;revision++;closeDetails();if(active==='form')schedule();else clearTimeout(timer);}
 }
-const routeObserver=new MutationObserver(sync);['home','saved','form','detail','events','contracts','development','execution','application','staffGate'].forEach(id=>routeObserver.observe(byId(id),{attributes:true,attributeFilter:['class']}));
+const routeObserver=new MutationObserver(sync);['home','saved','form','detail','events','contracts','incentives','development','execution','application','staffGate'].forEach(id=>routeObserver.observe(byId(id),{attributes:true,attributeFilter:['class']}));
 new MutationObserver(sync).observe(byId('saveBtn'),{attributes:true,attributeFilter:['disabled'],childList:true});
 function schedule(){revision++;clearTimeout(timer);byId('liveTotal').textContent='—';byId('liveStatus').textContent='계산 중…';byId('liveStatus').classList.remove('has-warning');timer=setTimeout(()=>refresh(revision),140);}
 function resetAmounts(){['liveWindow','liveConstruction','liveVat','liveProducts','liveTotal'].forEach(id=>byId(id).textContent='—');byId('liveExtraDetails').replaceChildren();byId('liveExecutionNote').hidden=true;}
