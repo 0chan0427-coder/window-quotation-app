@@ -1,9 +1,9 @@
 (function(){
 'use strict';
 const byId=id=>document.getElementById(id);
-const icons={home:'<path d="m3 10 9-7 9 7v10H5V10M9 20v-7h6v7"/>',saved:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>',events:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18"/>',development:'<path d="M4 21V5l8-2v18M12 9h8v12M8 7v1m0 3v1m0 3v1m8-3v1m0 3v1M2 21h20"/>',execution:'<path d="M4 3h11l5 5v13H4zM14 3v6h6M8 13h8m-8 4h8"/>',application:'<path d="M4 3h11l5 5v13H4zM14 3v6h6M8 14l3 3 5-6"/>'};
+const icons={contracts:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8m-8 4h4"/>',home:'<path d="m3 10 9-7 9 7v10H5V10M9 20v-7h6v7"/>',saved:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/>',events:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18"/>',development:'<path d="M4 21V5l8-2v18M12 9h8v12M8 7v1m0 3v1m0 3v1m8-3v1m0 3v1M2 21h20"/>',execution:'<path d="M4 3h11l5 5v13H4zM14 3v6h6M8 13h8m-8 4h8"/>',application:'<path d="M4 3h11l5 5v13H4zM14 3v6h6M8 14l3 3 5-6"/>'};
 const svg=id=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[id]}</svg>`;
-const menu=[['home','홈','logoHomeBtn'],['saved','견적 관리','savedBtn'],['events','행사 현황','eventsBtn'],['development','단지 개발','developmentBtn'],['execution','실행가 엑셀 생성','executionBtn'],['application','신청서 엑셀 생성','applicationBtn']];
+const menu=[['home','홈','logoHomeBtn'],['saved','견적 관리','savedBtn'],['events','행사 현황','eventsBtn'],['contracts','계약 현황','contractsBtn'],['development','단지 개발','developmentBtn'],['execution','실행가 엑셀 생성','executionBtn'],['application','신청서 엑셀 생성','applicationBtn']];
 const nav=document.createElement('aside');nav.id='workspaceNav';nav.className='workspace-nav';nav.setAttribute('aria-label','주 메뉴');
 nav.innerHTML='<div class="workspace-nav-head"><span class="workspace-mark">D</span><div class="workspace-nav-label"><b>프로젝트 1팀</b><small>주식회사 도도</small></div><button type="button" id="workspacePin" aria-label="메뉴 고정" aria-pressed="false">고정</button></div><nav>'+menu.map(([id,label,target])=>`<button type="button" class="workspace-nav-item" data-route="${id}" data-target="${target}" title="${label}">${svg(id)}<span class="workspace-nav-label">${label}</span></button>`).join('')+'</nav><div class="workspace-nav-foot"><span class="workspace-avatar">팀</span><span class="workspace-nav-label" id="workspaceStaff"></span></div>';
 document.body.append(nav);
@@ -24,13 +24,13 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(document.body.cl
 byId('liveToggle').onclick=()=>{const open=summary.classList.toggle('is-expanded');byId('liveToggle').setAttribute('aria-expanded',String(open));byId('liveToggle').textContent=open?'상세 닫기':'상세 보기';};
 function sync(){
  const ready=!!state.staff;document.body.classList.toggle('workspace-ready',ready);byId('workspaceStaff').textContent=state.staff?.name||'';
- const active=['home','saved','form','detail','events','development','execution','application'].find(id=>!byId(id).classList.contains('hidden'))||'home';
+ const active=['home','saved','form','detail','events','contracts','development','execution','application'].find(id=>!byId(id).classList.contains('hidden'))||'home';
  document.body.classList.toggle('quote-editing',ready&&active==='form');
  nav.querySelectorAll('[data-route]').forEach(b=>{const yes=b.dataset.route===(['form','detail'].includes(active)?'saved':active);b.classList.toggle('is-active',yes);if(yes)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  byId('liveSave').disabled=byId('saveBtn').disabled;byId('liveSave').textContent=byId('saveBtn').textContent;
  if(active!==route){route=active;revision++;closeDetails();if(active==='form')schedule();else clearTimeout(timer);}
 }
-const routeObserver=new MutationObserver(sync);['home','saved','form','detail','events','development','execution','application','staffGate'].forEach(id=>routeObserver.observe(byId(id),{attributes:true,attributeFilter:['class']}));
+const routeObserver=new MutationObserver(sync);['home','saved','form','detail','events','contracts','development','execution','application','staffGate'].forEach(id=>routeObserver.observe(byId(id),{attributes:true,attributeFilter:['class']}));
 new MutationObserver(sync).observe(byId('saveBtn'),{attributes:true,attributeFilter:['disabled'],childList:true});
 function schedule(){revision++;clearTimeout(timer);byId('liveTotal').textContent='—';byId('liveStatus').textContent='계산 중…';byId('liveStatus').classList.remove('has-warning');timer=setTimeout(()=>refresh(revision),140);}
 function resetAmounts(){['liveWindow','liveConstruction','liveVat','liveProducts','liveTotal'].forEach(id=>byId(id).textContent='—');byId('liveExtraDetails').replaceChildren();byId('liveExecutionNote').hidden=true;}
