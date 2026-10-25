@@ -19,18 +19,18 @@ menuToggle.onclick=()=>{const open=document.body.classList.toggle('workspace-men
 overlay.onclick=closeMenu;
 window.matchMedia('(max-width:767px)').addEventListener('change',()=>{closeMenu();closeDetails();});
 byId('workspacePin').onclick=()=>{const pinned=nav.classList.toggle('is-pinned');byId('workspacePin').setAttribute('aria-pressed',String(pinned));byId('workspacePin').textContent=pinned?'해제':'고정';};
-nav.querySelectorAll('[data-target]').forEach(b=>b.onclick=()=>{closeMenu();byId(b.dataset.target).click();window.scrollTo({top:0,behavior:'auto'});});
+nav.querySelectorAll('[data-target]').forEach(b=>b.onclick=e=>{closeMenu();if(e.detail>0)b.blur();byId(b.dataset.target).click();window.scrollTo({top:0,behavior:'auto'});});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(document.body.classList.contains('workspace-menu-open')){closeMenu();menuToggle.focus();}closeDetails();}});
 byId('liveToggle').onclick=()=>{const open=summary.classList.toggle('is-expanded');byId('liveToggle').setAttribute('aria-expanded',String(open));byId('liveToggle').textContent=open?'상세 닫기':'상세 보기';};
 function sync(){
  const ready=!!state.staff;document.body.classList.toggle('workspace-ready',ready);byId('workspaceStaff').textContent=state.staff?.name||'';
- const active=['home','saved','form','detail','events','contracts','incentives','development','execution','application'].find(id=>!byId(id).classList.contains('hidden'))||'home';
+ const active=['home','saved','form','detail','events','contracts','eventLinks','incentives','development','execution','application'].find(id=>!byId(id).classList.contains('hidden'))||'home';
  document.body.classList.toggle('quote-editing',ready&&active==='form');
- nav.querySelectorAll('[data-route]').forEach(b=>{const yes=b.dataset.route===(['form','detail'].includes(active)?'saved':active==='incentives'?'contracts':active);b.classList.toggle('is-active',yes);if(yes)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+ nav.querySelectorAll('[data-route]').forEach(b=>{const yes=b.dataset.route===(['form','detail'].includes(active)?'saved':active==='incentives'?'contracts':active==='eventLinks'?'events':active);b.classList.toggle('is-active',yes);if(yes)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  byId('liveSave').disabled=byId('saveBtn').disabled;byId('liveSave').textContent=byId('saveBtn').textContent;
  if(active!==route){route=active;revision++;closeDetails();if(active==='form')schedule();else clearTimeout(timer);}
 }
-const routeObserver=new MutationObserver(sync);['home','saved','form','detail','events','contracts','incentives','development','execution','application','staffGate'].forEach(id=>routeObserver.observe(byId(id),{attributes:true,attributeFilter:['class']}));
+const routeObserver=new MutationObserver(sync);['home','saved','form','detail','events','contracts','eventLinks','incentives','development','execution','application','staffGate'].forEach(id=>routeObserver.observe(byId(id),{attributes:true,attributeFilter:['class']}));
 new MutationObserver(sync).observe(byId('saveBtn'),{attributes:true,attributeFilter:['disabled'],childList:true});
 function schedule(){revision++;clearTimeout(timer);byId('liveTotal').textContent='—';byId('liveStatus').textContent='계산 중…';byId('liveStatus').classList.remove('has-warning');timer=setTimeout(()=>refresh(revision),140);}
 function resetAmounts(){['liveWindow','liveConstruction','liveVat','liveProducts','liveTotal'].forEach(id=>byId(id).textContent='—');byId('liveExtraDetails').replaceChildren();byId('liveExecutionNote').hidden=true;}
