@@ -43,7 +43,7 @@ async function refresh(ticket){
    const value=cls=>el.querySelector('.'+cls).value;const kind=value('kind'),name=kind==='직접입력'?value('customName').trim():value('location');const width=Number(value('w')),height=Number(value('h')),rate=Number(value('pricingRate'));
    const scope=value('windowScope')||defaultWindowScope(kind);
    if(!kind||!name||!(width>0)||!(height>0)||rate<0||(kind==='직접입력'&&!['외부창','내부창'].includes(scope))){pending++;return;}
-   raw.push({installation_location:name,window_kind:kind,window_scope:scope,screen_option:value('screen'),product_code:value('product'),window_type:value('windowType')==='고정창'?'fixed':'normal',actual_width:width,actual_height:height,pricing_rate:rate>0?rate:null,pricing_rate_source:'manual',sort_order:index+1});positions.push(index);
+   raw.push({installation_location:name,window_kind:kind,window_scope:scope,screen_option:value('screen'),product_code:value('windowType')==='고정창'?value('fixedCode'):value('product'),window_type:value('windowType')==='고정창'?'fixed':'normal',actual_width:width,actual_height:height,pricing_rate:rate>0?rate:null,pricing_rate_source:'manual',sort_order:index+1});positions.push(index);
   });
   const extras=getExtras({allowIncomplete:true});extras.additionalProductTotal=readAdditionalProducts().reduce((sum,x)=>sum+x.finalAmount,0);
   const calc=raw.length?await calculate(raw,raw.map(x=>x.pricing_rate),extras.conditions):{items:[],total:0};

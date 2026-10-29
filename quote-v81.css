@@ -1,0 +1,15 @@
+/* V81 customer quotation header: original card, editable staff details. */
+.xlsQuote.customer .xlsTop{height:62mm}
+.xlsQuote.customer .xlsCompany{right:0;top:0;width:90mm;height:auto;padding:0;border:0;border-radius:0;background:#fff;overflow:visible}
+.xlsQuote.customer .xlsMeta{left:3mm;top:30mm;width:94mm}
+.xlsQuote.customer .xlsMeta .metaVal{white-space:normal;overflow-wrap:anywhere}
+.quoteStaffCard{position:relative;width:100%;aspect-ratio:1663/946;container-type:inline-size;background:#fff;overflow:hidden}
+.xlsCompany .quoteStaffCard img.staffCardBackground{position:relative;inset:auto;display:block;width:100%;height:auto;max-width:none;object-fit:contain}
+.staffCardFields{position:absolute;left:37.2%;top:34.7%;width:39%;height:36.6%;background:#fff;color:#000;text-align:left;font-family:Arial,'Noto Sans KR',sans-serif;line-height:1.15;box-sizing:border-box;padding:0}
+.staffCardFields .cardTeam{font-size:2.4cqw;white-space:nowrap;margin-bottom:1cqw;font-weight:500}
+.staffCardFields .cardPerson{font-size:5.6cqw;font-weight:800;letter-spacing:-.2cqw;margin-bottom:1cqw;white-space:nowrap}
+.staffCardFields .cardPhone{font-size:4.65cqw;font-weight:800;letter-spacing:-.15cqw;margin-bottom:.7cqw;white-space:nowrap}
+.staffCardFields .cardEmail{font-size:3.1cqw;white-space:nowrap;letter-spacing:-.07cqw}
+.quoteStaffFallback{padding:8mm;border:1px solid #777;display:grid;gap:3mm}
+#globalRateCustomBox input{width:100%;box-sizing:border-box}
+@media print{.xlsQuote.customer{min-height:0;height:auto}.xlsQuote.customer .xlsMeta{top:30mm;width:94mm}.xlsQuote.customer .xlsCompany{width:90mm;height:auto}}
