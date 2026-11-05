@@ -351,9 +351,9 @@ function renderCustomerQuote(calc){
   for(let i=0;i<18;i++){
     const x=items[i];
     if(x){
-      const name=itemName(x)||'-', kind=itemKind(x), outside=itemOutside(x);
+      const name=itemName(x)||'-', glass=customerGlassSpecification(x);
       const screen=itemScreen(x);
-      rows.push(`<tr><td>${i+1}</td><td>${outside?'외창':'내창'}</td><td class="left">${name}</td><td class="left">${x.product_code||'-'}</td><td>${x.window_type==='fixed'?'고정창 / 24T':'일반창 / 28T'}</td><td>${estimateColor(r)}</td><td>1</td><td>${screen}</td><td>${x.available?Number(x.amount).toLocaleString('ko-KR'):'-'}</td><td></td></tr>`);
+      rows.push(`<tr><td>${i+1}</td><td>${glass.knownScope?(glass.scope==='외부창'?'외창':'내창'):'미지정'}</td><td class="left">${name}</td><td class="left">${x.product_code||'-'}</td><td class="glassSpecification">${glass.label}</td><td>${estimateColor(r)}</td><td>1</td><td>${screen}</td><td>${x.available?Number(x.amount).toLocaleString('ko-KR'):'-'}</td><td></td></tr>`);
     }else rows.push(`<tr><td>${i+1}</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>`);
   }
   const payRows=`<div class="xlsPayRow total"><div class="payLabel">계 약 총 액</div><div class="payValue" id="payTotal">${total.toLocaleString('ko-KR')}</div><div id="payMethodText">${pay.method}</div></div>
@@ -361,8 +361,10 @@ function renderCustomerQuote(calc){
   <div class="xlsPayRow"><div class="payLabel">중도금</div><div class="payValue" id="payInterimValue">${pay.interim.toLocaleString('ko-KR')}</div><div id="payInterimLabel">중도금 (${pay.interimRate}%)</div></div>
   <div class="xlsPayRow"><div class="payLabel">잔 금</div><div class="payValue" id="payBalanceValue">${pay.balance.toLocaleString('ko-KR')}</div><div id="payBalanceLabel">잔 금 (${pay.balanceRate}%)</div></div>`;
   const staff=recordStaff(r)||{name:'담당자',phone:'연락처 미등록'};
+  const missingScopeRows=items.slice(0,18).map((x,i)=>customerGlassSpecification(x).knownScope?null:i+1).filter(Boolean);
+  const glassNotice=missingScopeRows.length?`<div class="quoteGlassNotice" role="status">${missingScopeRows.join(', ')}번 창호의 내부창/외부창 구분을 확인해주세요. 정보가 없는 항목은 미지정으로 표시하며, 유리 종류를 임의로 내부창 기준으로 정하지 않습니다.</div>`:'';
   $('quote').innerHTML=`<div class="quoteTools"><button onclick="window.print()">인쇄 / PDF 저장</button><button class="imageSaveBtn secondary" type="button" onclick="saveQuoteAsImage('customer')">이미지 저장</button></div>
-  <div class="xlsQuote customer">
+  ${glassNotice}<div class="xlsQuote customer">
     <div class="xlsTop">
       <img class="xlsLogo" src="assets/image3.png" alt="LX Z:IN 인테리어 창호 견적서">
       <div class="xlsCompany">${quoteStaffCard(staff)}</div>
