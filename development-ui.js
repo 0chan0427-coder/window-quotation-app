@@ -6,7 +6,7 @@ const opts=(values,empty)=> (empty?`<option value="">${empty}</option>`:'')+valu
 $('devStage').innerHTML=opts(core.stages,'전체 진행 상황');$('devLogStage').innerHTML=opts(core.stages);$('devBandChecks').innerHTML=core.bands.map(b=>`<label><input type="checkbox" value="${b.key}">${b.label}</label>`).join('');$('devLogStaff').innerHTML='<option value="한">한동균 팀장</option><option value="찬">김민찬 책임</option><option value="영">김영찬 책임</option>';
 const years=Array.from({length:Math.max(1,Math.min(301,Number(core.seoulToday().slice(0,4))+5-1900+1))},(_,i)=>1900+i);$('devYearFrom').innerHTML=opts(years,'시작연도');$('devYearTo').innerHTML=opts(years,'종료연도');
 function message(t,error=false){$('devStatus').textContent=t;$('devStatus').classList.toggle('dev-error',error);}
-function setBusy(v){busy=v;for(const root of ['devSiteForm','devLogForm'])$(root).querySelectorAll('input,select,textarea,button').forEach(x=>x.disabled=v);for(const id of ['devAdd','devEdit','devNewLog','devDetailBack'])$(id).disabled=v||!loaded;$('devRefresh').disabled=v;}
+function setBusy(v){busy=v;for(const root of ['devSiteForm','devLogForm'])$(root).querySelectorAll('input,select,textarea,button').forEach(x=>x.disabled=v);for(const id of ['devAdd','devEdit','devNewLog','devDetailBack','devImportOpen'])$(id).disabled=v||!loaded;$('devRefresh').disabled=v;}
 async function readAll(table){let all=[];for(let n=0;;n+=1000){const {data,error}=await db.from(table).select('*').order('id').range(n,n+999);if(error)throw error;all.push(...data);if(data.length<1000)return all;}}
 async function load(){message('단지와 영업 기록을 불러오고 있습니다…');setBusy(true);try{const results=await Promise.all([readAll('development_sites'),readAll('development_logs')]);[sites,logs]=results;loaded=true;regions();render();if(activeId){if(sites.some(s=>s.id===activeId))showDetail(activeId);else closeDetail();}message(sites.length?'':'등록된 단지가 없습니다. 새 단지를 등록하거나 V72 SQL 초기 데이터 실행 여부를 확인해주세요.');return true;}catch(e){message('불러오기 실패: '+e.message+'\nSupabase에서 supabase-migration-v72-development.sql을 실행했는지 확인해주세요.',true);return false;}finally{setBusy(false);}}
 function regions(){const city=$('devCity').value,district=$('devDistrict').value,dong=$('devDong').value;$('devCity').innerHTML=opts([...new Set(sites.map(s=>s.city).filter(Boolean))].sort(),'전체 시');$('devCity').value=city;const cityRows=sites.filter(s=>!city||s.city===city);$('devDistrict').innerHTML=opts([...new Set(cityRows.map(s=>s.district).filter(Boolean))].sort(),'전체 구');$('devDistrict').value=district;$('devDong').innerHTML=opts([...new Set(cityRows.filter(s=>!district||s.district===district).map(s=>s.dong).filter(Boolean))].sort(),'전체 동·읍');$('devDong').value=dong;}
@@ -29,4 +29,25 @@ for(const id of ['devCity','devDistrict','devDong'])$(id).onchange=()=>{if(id===
 function resetFilters(){for(const id of ['devSearch','devMonth','devCity','devDistrict','devDong','devTask','devStage','devYearFrom','devYearTo'])$(id).value='';$('devYearMissing').checked=false;$('devYearFrom').disabled=false;$('devYearTo').disabled=false;$('devBandChecks').querySelectorAll('input').forEach(x=>x.checked=false);regions();render();}
 $('devAll').onclick=resetFilters;for(const [id,offset]of [['devThisPending',0],['devLastPending',-1]])$(id).onclick=()=>{resetFilters();$('devMonth').value=core.monthFromDate(core.seoulToday(),offset);$('devTask').value='미처리';render();};
 $('devSourceOpen').onclick=async()=>{try{if(!seed){const res=await fetch('assets/development-seed.json?v=72');if(!res.ok)throw Error('원본 자료를 불러오지 못했습니다.');seed=await res.json();}$('devSourceList').innerHTML=seed.sources.map((s,i)=>`<details class="dev-card"><summary>${esc(s.name)}</summary><pre class="dev-content dev-source">${esc(s.text)}</pre></details>`).join('');$('devSourceBox').classList.toggle('hidden');}catch(e){message(e.message,true);}};
+window.DevelopmentImportHost={
+ snapshot:()=>sites.slice(),
+ ready:()=>loaded&&!busy,
+ refresh:load,
+ async register(selected,approvedReviewKeys){
+  if(busy||!loaded)throw Error('단지 목록을 불러온 뒤 다시 시도해주세요.');
+  setBusy(true);
+  try{
+   const fresh=await readAll('development_sites');const classified=DevelopmentImport.classify(selected,fresh);
+   const candidates=classified.filter(x=>x.status!=='duplicate');
+   if(candidates.some(x=>x.status==='error'||x.status==='review'&&!approvedReviewKeys.includes(DevelopmentImport.key(x.site))))throw Error('기존 단지 정보가 달라졌습니다. 다시 분석한 뒤 확인해주세요.');
+   if(!candidates.length){sites=fresh;regions();render();return {added:0,skipped:selected.length,refreshed:true};}
+   const payloads=await Promise.all(candidates.map(x=>DevelopmentImport.payload(x.site)));
+   const {data,error}=await db.from('development_sites').insert(payloads).select('id');
+   if(error)throw Error(error.code==='23505'?'중복 등록이 감지되었습니다. 다시 분석하면 이미 등록된 단지가 제외됩니다.':error.message);
+   if(data?.length!==payloads.length)throw Error('저장 결과를 확인할 수 없습니다. 다시 분석해 등록 여부를 확인해주세요.');
+   closeDetail();resetFilters();const refreshed=await load();
+   return {added:data.length,skipped:selected.length-data.length,refreshed};
+  }finally{setBusy(false);}
+ }
+};
 })();
