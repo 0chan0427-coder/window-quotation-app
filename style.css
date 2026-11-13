@@ -292,3 +292,6 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 .item .customProduct input,.item .customName input{width:100%;box-sizing:border-box}
 .item .customProduct,.item .custom{min-width:0}
 .item .productSelectLabel select{width:100%}
+
+/* V86 manual product specification controls */
+.customProductSpecs{margin:12px 0;padding:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px}.customProductSpecs label{display:block;margin:10px 0}.customProductSpecs .dims{margin-bottom:8px}
