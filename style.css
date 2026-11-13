@@ -287,3 +287,8 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 .extraInfoButtons{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.extraInfoBtn{flex:1 1 220px}.extraFormula{margin-top:10px;padding:12px;border:1px solid #ddd;border-radius:10px;background:#fafafa;line-height:1.55}.extraFormula ul{padding-left:20px;margin:8px 0}.extraFormula li{margin:6px 0}
 
 .detailExtraInfoButtons{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.detailExtraInfoButtons .extraInfoBtn{flex:1 1 220px}
+
+/* V85: direct PJ and product entry */
+.item .customProduct input,.item .customName input{width:100%;box-sizing:border-box}
+.item .customProduct,.item .custom{min-width:0}
+.item .productSelectLabel select{width:100%}
