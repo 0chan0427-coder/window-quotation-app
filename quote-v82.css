@@ -2,9 +2,9 @@
 .xlsQuote.customer .xlsItems col.no{width:4%}
 .xlsQuote.customer .xlsItems col.kind{width:5%}
 .xlsQuote.customer .xlsItems col.loc{width:14%}
-.xlsQuote.customer .xlsItems col.product{width:10%}
+.xlsQuote.customer .xlsItems col.product{width:7%}
 .xlsQuote.customer .xlsItems col.glass{width:32%}
-.xlsQuote.customer .xlsItems col.color{width:5%}
+.xlsQuote.customer .xlsItems col.color{width:8%}
 .xlsQuote.customer .xlsItems col.qty{width:4%}
 .xlsQuote.customer .xlsItems col.screen{width:6.5%}
 .xlsQuote.customer .xlsItems col.amount{width:12.5%}
@@ -12,3 +12,6 @@
 .xlsQuote.customer .xlsItems .glassSpecification{white-space:nowrap;font-size:8px;letter-spacing:0;padding-left:.6mm;padding-right:.6mm}
 .quoteGlassNotice{margin:8px 0;padding:10px 12px;border:1px solid #dbcdc9;background:#faf7f5;color:#7c181d;font-size:13px;line-height:1.6}
 @media print{.quoteGlassNotice{display:none}}
+
+/* V94: fit the longest color label (Snow White) without wrapping; reclaim width from product column. */
+.xlsQuote.customer .xlsItems td:nth-child(6){white-space:nowrap;font-size:7px;letter-spacing:0;padding-left:.5mm;padding-right:.5mm}
