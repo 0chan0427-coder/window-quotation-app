@@ -301,3 +301,37 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 .xlsQuote.customer .xlsNotes{display:flex;flex-direction:column;align-self:stretch;min-height:100%}
 .xlsQuote.customer .xlsNotes .xlsNoteRow{flex:1 1 0;display:flex;align-items:center;min-height:0}
 .xlsQuote.customer .xlsPayment{display:flex;flex-direction:column;align-self:stretch}
+
+
+/* V93: reserve a dedicated footer row so QR artwork and dealer branding sit below the aligned notice/payment block */
+.xlsQuote.customer .xlsFooter{
+  display:grid;
+  grid-template-columns:42mm 37mm minmax(0,1fr);
+  align-items:center;
+  column-gap:4mm;
+  height:auto;
+  min-height:22mm;
+  padding:3mm 2mm;
+  position:relative;
+  overflow:visible;
+  box-sizing:border-box;
+}
+.xlsQuote.customer .xlsFooter .xlsQr,
+.xlsQuote.customer .xlsFooter .xlsDealerLogo,
+.xlsQuote.customer .xlsFooter .xlsFooterText{
+  position:static;
+  inset:auto;
+  display:block;
+  min-width:0;
+  max-width:100%;
+  margin:0;
+}
+.xlsQuote.customer .xlsFooter .xlsQr{width:40mm;height:auto;justify-self:start;align-self:center}
+.xlsQuote.customer .xlsFooter .xlsDealerLogo{width:36mm;height:auto;justify-self:center;align-self:center}
+.xlsQuote.customer .xlsFooter .xlsFooterText{font-size:6px;line-height:1.45;text-align:left;overflow-wrap:anywhere}
+@media print{
+  .xlsQuote.customer .xlsFooter{height:auto;min-height:22mm;padding:3mm 2mm;break-inside:avoid;page-break-inside:avoid}
+  .xlsQuote.customer .xlsFooter .xlsQr{width:40mm}
+  .xlsQuote.customer .xlsFooter .xlsDealerLogo{width:36mm}
+  .xlsQuote.customer .xlsFooter .xlsFooterText{font-size:6px;line-height:1.45}
+}
