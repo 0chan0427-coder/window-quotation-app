@@ -295,3 +295,9 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
 
 /* V86 manual product specification controls */
 .customProductSpecs{margin:12px 0;padding:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px}.customProductSpecs label{display:block;margin:10px 0}.customProductSpecs .dims{margin-bottom:8px}
+
+/* V92: align customer quote notice and payment columns at the bottom */
+.xlsQuote.customer .xlsBottom{align-items:stretch;grid-template-columns:55% 45%}
+.xlsQuote.customer .xlsNotes{display:flex;flex-direction:column;align-self:stretch;min-height:100%}
+.xlsQuote.customer .xlsNotes .xlsNoteRow{flex:1 1 0;display:flex;align-items:center;min-height:0}
+.xlsQuote.customer .xlsPayment{display:flex;flex-direction:column;align-self:stretch}
