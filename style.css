@@ -335,3 +335,22 @@ main{max-width:1160px;margin:0 auto;padding:0 32px}.homeHero{min-height:300px;ma
   .xlsQuote.customer .xlsFooter .xlsDealerLogo{width:36mm}
   .xlsQuote.customer .xlsFooter .xlsFooterText{font-size:6px;line-height:1.45}
 }
+
+
+/* V95: compact customer quote print layout for a single A4 page at 15 rows */
+.xlsQuote.customer .xlsTop{height:55mm}
+.xlsQuote.customer .xlsMeta{top:28mm}
+.xlsQuote.customer .xlsMeta td{height:5.2mm}
+@media print{
+  .xlsQuote.customer:not(.multiPage){
+    height:297mm;min-height:297mm;padding:3.5mm 8.5mm 4mm;overflow:hidden;
+  }
+  .xlsQuote.customer:not(.multiPage) .xlsTop{height:55mm}
+  .xlsQuote.customer:not(.multiPage) .xlsMeta{top:28mm}
+  .xlsQuote.customer:not(.multiPage) .xlsMeta td{height:5.2mm}
+  .xlsQuote.customer:not(.multiPage) .xlsItems tbody tr{height:4.8mm}
+  .xlsQuote.customer.multiPage{height:auto;min-height:0;overflow:visible;padding:6mm 8.5mm 7mm;break-after:auto;page-break-after:auto}
+  .xlsQuote.customer.multiPage .xlsTop{height:55mm}
+  .xlsQuote.customer.multiPage .xlsMeta{top:28mm}
+  .xlsQuote.customer.multiPage .xlsMeta td{height:5.2mm}
+}
